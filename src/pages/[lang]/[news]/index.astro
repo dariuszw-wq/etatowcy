@@ -1,0 +1,23 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../../layouts/Base.astro';
+import NewsCard from '../../../components/NewsCard.astro';
+import { locales, routes, type Lang, t } from '../../../i18n/ui';
+
+export function getStaticPaths() { return locales.map((lang) => ({ params: { lang, news: routes.news[lang] } })); }
+const lang = Astro.params.lang as Lang;
+const tr = t(lang);
+const news = (await getCollection('news', (n) => n.data.lang === lang)).sort((a, b) => +b.data.published - +a.data.published);
+---
+<Base lang={lang} route="news" title={`${tr('nav.news')} — Etatowcy`} description={tr('news.lead')}>
+  <section class="section">
+    <div class="wrap split">
+      <header>
+        <span class="eyebrow">{tr('news.eyebrow')}</span>
+        <h1 class="disp h1">{tr('news.title.1')}<br>{tr('news.title.2')}</h1>
+        <p class="lead">{tr('news.lead')}</p>
+      </header>
+      <div>{news.map((item) => <NewsCard item={item} lang={lang} />)}</div>
+    </div>
+  </section>
+</Base>

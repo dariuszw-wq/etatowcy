@@ -1,0 +1,22 @@
+---
+// Strona główna bez języka: wybiera język przeglądarki (pl/en/es), domyślnie polski.
+const base = import.meta.env.BASE_URL;
+---
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<title>Etatowcy</title>
+<meta name="robots" content="noindex">
+<link rel="alternate" hreflang="pl" href={base + 'pl/'}>
+<link rel="alternate" hreflang="en" href={base + 'en/'}>
+<link rel="alternate" hreflang="es" href={base + 'es/'}>
+<link rel="alternate" hreflang="x-default" href={base + 'pl/'}>
+<meta http-equiv="refresh" content={`0;url=${base}pl/`}>
+<script is:inline set:html={`
+(function(){var b=${JSON.stringify(base)};var s=null;try{s=localStorage.getItem('etatowcy:lang')}catch(e){}
+var l=s||((navigator.language||'pl').slice(0,2).toLowerCase());if(l!=='en'&&l!=='es')l='pl';location.replace(b+l+'/');})();
+`}></script>
+</head>
+<body><a href={base + 'pl/'}>Polski</a> · <a href={base + 'en/'}>English</a> · <a href={base + 'es/'}>Español</a></body>
+</html>

@@ -1,0 +1,96 @@
+/* Tokeny z systemu projektowego Etatowcy (Claude Design) */
+
+:root,[data-theme="dark"]{
+  --surface:#0a0e14;--surface-2:#111721;--ink:#eef2f7;--ink-muted:#9aa6b8;--line:#eef2f71f;
+  --brand:#21a0fd;--brand-glow:#21a0fd38;--on-brand:#06121f;--spark:#ff7a59;--on-spark:#1a0a05;
+  --shadow-glow:0 0 0 6px #21a0fd38;--shadow-card:0 12px 40px -18px #21a0fd;
+  --blob-1:#21a0fd;--blob-2:#21a0fd8c;
+  color-scheme:dark;
+}
+[data-theme="light"]{
+  --surface:#f7f8fa;--surface-2:#ffffff;--ink:#0f1420;--ink-muted:#4b5566;--line:#0f14201a;
+  --brand:#0b6fc2;--brand-glow:#0b6fc21f;--on-brand:#ffffff;--spark:#d9451f;--on-spark:#ffffff;
+  --shadow-glow:0 0 0 6px #0b6fc21f;--shadow-card:0 12px 40px -18px #0b6fc2;
+  --blob-1:#21a0fd;--blob-2:#21a0fd66;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: light){
+  :root:not([data-theme]){
+    --surface:#f7f8fa;--surface-2:#ffffff;--ink:#0f1420;--ink-muted:#4b5566;--line:#0f14201a;
+    --brand:#0b6fc2;--brand-glow:#0b6fc21f;--on-brand:#ffffff;--spark:#d9451f;--on-spark:#ffffff;
+    --shadow-glow:0 0 0 6px #0b6fc21f;--shadow-card:0 12px 40px -18px #0b6fc2;
+    --blob-1:#21a0fd;--blob-2:#21a0fd66;
+    color-scheme:light;
+  }
+}
+:root{
+  --link:var(--brand);--focus:var(--brand);
+  --space-1:4px;--space-2:8px;--space-3:12px;--space-4:16px;--space-6:24px;--space-8:32px;--space-12:48px;--space-16:64px;--space-24:96px;
+  --radius-sm:6px;--radius-md:12px;--radius-lg:18px;--radius-pill:999px;
+  --font-display:"Big Shoulders Display","Arial Narrow",Impact,sans-serif;
+  --font-stencil:"Big Shoulders Stencil Text","Big Shoulders Display",sans-serif;
+  --font-sans:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;
+  --gutter:var(--space-12);--section:var(--space-16);--between:var(--space-24);
+}
+@media (max-width:800px){:root{--gutter:var(--space-4);--section:var(--space-12);--between:var(--space-16)}}
+
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:var(--surface);color:var(--ink);font:400 15px/22px var(--font-sans);font-optical-sizing:auto;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4,p,ul,ol,figure{margin:0}
+ul,ol{padding:0;list-style:none}
+a{color:inherit;text-decoration:none}
+img,svg{display:block;max-width:100%}
+button,input,textarea,select{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* Typografia */
+.disp{font-family:var(--font-display);text-transform:uppercase;line-height:.9;letter-spacing:.01em}
+.hero-title{font-size:clamp(64px,10vw,150px);font-weight:700;font-variation-settings:"wght" var(--w,700)}
+.h1{font-size:clamp(48px,7vw,96px);font-weight:700;line-height:.92}
+.h2{font-size:clamp(40px,5vw,64px);font-weight:700;line-height:.92}
+.h3{font-family:var(--font-display);font-size:clamp(28px,3vw,40px);font-weight:600;line-height:1;text-transform:none}
+.lead{font-size:19px;line-height:28px;color:var(--ink-muted);max-width:44ch}
+.body{max-width:60ch}
+.small{font-size:13px;line-height:18px;color:var(--ink-muted)}
+.eyebrow{font-size:12px;line-height:16px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--brand)}
+.label{font-size:15px;line-height:20px;font-weight:600}
+.data{font-weight:600;font-variant-numeric:tabular-nums}
+.link{color:var(--link);font-weight:600}
+.link:hover{text-decoration:underline;text-underline-offset:3px}
+.accent{color:var(--brand)}
+
+/* Układ */
+.wrap{max-width:1200px;margin:0 auto;padding-inline:var(--gutter)}
+.section{padding-block:var(--section)}
+.section+.section{padding-top:0}
+.split{display:grid;grid-template-columns:1fr 2fr;gap:var(--space-8);align-items:start}
+.split>header{position:sticky;top:var(--space-6)}
+.split header .eyebrow{display:block;margin-bottom:var(--space-2)}
+.split header .lead{margin:var(--space-6) 0 var(--space-8)}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:var(--space-4)}
+@media (max-width:800px){.split{grid-template-columns:1fr}.split>header{position:static}.grid-2{grid-template-columns:1fr}}
+.band{background:var(--surface);color:var(--ink)}
+
+/* Przycisk */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:14px 22px;border-radius:var(--radius-pill);font:600 15px/20px var(--font-sans);border:1px solid var(--line);background:transparent;color:var(--ink);cursor:pointer;transition:transform .18s ease-out,box-shadow .18s ease-out,background .18s ease-out,color .18s ease-out;white-space:nowrap}
+.btn.primary{background:var(--brand);color:var(--on-brand);border-color:transparent}
+.btn:hover{transform:translateY(-2px);box-shadow:var(--shadow-glow)}
+.btn.primary:hover{background:var(--spark);color:var(--on-spark)}
+.btn.wide{width:100%}
+
+/* Tag */
+.tag{display:inline-block;font:600 12px/16px var(--font-sans);color:var(--brand);background:var(--brand-glow);padding:5px 10px;border-radius:var(--radius-pill);margin:0 var(--space-2) var(--space-2) 0}
+
+/* Prose (artykuły) */
+.prose{max-width:64ch;font-size:17px;line-height:27px}
+.prose>*+*{margin-top:var(--space-4)}
+.prose h2{font-family:var(--font-display);font-size:36px;line-height:1;font-weight:700;margin-top:var(--space-8)}
+.prose h3{font-size:20px;line-height:26px;font-weight:600;margin-top:var(--space-6)}
+.prose ul{list-style:disc;padding-left:1.2em}
+.prose li+li{margin-top:var(--space-1)}
+.prose a{color:var(--link);text-decoration:underline;text-underline-offset:3px}
+.prose strong{font-weight:600}
+
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}html{scroll-behavior:auto}}

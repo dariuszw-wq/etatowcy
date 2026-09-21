@@ -1,0 +1,86 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import Hero from '../../components/Hero.astro';
+import JobCard from '../../components/JobCard.astro';
+import NewsCard from '../../components/NewsCard.astro';
+import ContactForm from '../../components/ContactForm.astro';
+import { locales, type Lang, t, href } from '../../i18n/ui';
+
+export function getStaticPaths() { return locales.map((lang) => ({ params: { lang } })); }
+const lang = Astro.params.lang as Lang;
+const tr = t(lang);
+const jobs = (await getCollection('jobs', (j) => j.data.lang === lang)).sort((a, b) => +b.data.published - +a.data.published).slice(0, 4);
+const news = (await getCollection('news', (n) => n.data.lang === lang)).sort((a, b) => +b.data.published - +a.data.published).slice(0, 3);
+const hasExample = jobs.some((j) => j.data.example);
+---
+<Base lang={lang}>
+  <script is:inline set:html={`try{localStorage.setItem('etatowcy:lang',${JSON.stringify(lang)})}catch(e){}`}></script>
+  <Hero lang={lang} />
+
+  <section class="section band" data-theme="light" id="oferty">
+    <div class="wrap split">
+      <header>
+        <span class="eyebrow">{tr('jobs.eyebrow')}</span>
+        <h2 class="disp h2">{tr('jobs.title.1')}<br>{tr('jobs.title.2')}</h2>
+        <p class="lead">{tr('jobs.lead')}</p>
+        <a class="btn primary" href={href(lang, 'jobs')}>{tr('jobs.all')}</a>
+      </header>
+      <div>
+        <div class="grid-2">{jobs.map((job) => <JobCard job={job} lang={lang} />)}</div>
+        {hasExample && <p class="small note">{tr('jobs.example')}</p>}
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap split">
+      <header>
+        <span class="eyebrow">{tr('emp.eyebrow')}</span>
+        <h2 class="disp h2">{tr('emp.title.1')}<br>{tr('emp.title.2')}</h2>
+        <p class="lead">{tr('emp.lead')}</p>
+        <a class="btn primary" href={href(lang, 'contact')}>{tr('emp.cta')}</a>
+      </header>
+      <ul class="services">
+        {(['s1', 's2', 's3', 's4'] as const).map((s) => (
+          <li>
+            <h3 class="h3">{tr(`emp.${s}.t`)}</h3><p>{tr(`emp.${s}.d`)}</p>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <section class="section band" data-theme="light">
+    <div class="wrap split">
+      <header>
+        <span class="eyebrow">{tr('news.eyebrow')}</span>
+        <h2 class="disp h2">{tr('news.title.1')}<br>{tr('news.title.2')}</h2>
+        <p class="lead">{tr('news.lead')}</p>
+        <a class="btn" href={href(lang, 'news')}>{tr('news.all')} →</a>
+      </header>
+      <div class="list">{news.map((item) => <NewsCard item={item} lang={lang} />)}</div>
+    </div>
+  </section>
+
+  <section class="section" id="kontakt">
+    <div class="wrap split">
+      <header>
+        <span class="eyebrow">{tr('contact.eyebrow')}</span>
+        <h2 class="disp h2">{tr('contact.title.1')}<br>{tr('contact.title.2')}</h2>
+        <p class="lead">{tr('contact.lead')}</p>
+      </header>
+      <ContactForm lang={lang} />
+    </div>
+  </section>
+</Base>
+
+<style>
+  .band{padding-block:var(--section)}
+  .section+.band,.band+.section{margin-top:0}
+  .note{margin-top:var(--space-4)}
+  .services{display:grid;gap:var(--space-4)}
+  .services li{padding:var(--space-6);background:var(--surface-2);border:1px solid var(--line);border-radius:var(--radius-lg)}
+  .services .h3{color:var(--brand)}
+  .services p{color:var(--ink-muted);margin-top:var(--space-2);max-width:52ch}
+</style>

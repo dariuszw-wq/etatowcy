@@ -1,0 +1,73 @@
+---
+import { getCollection, render } from 'astro:content';
+import Base from '../../../layouts/Base.astro';
+import ContactForm from '../../../components/ContactForm.astro';
+import { locales, routes, type Lang, t, href } from '../../../i18n/ui';
+
+export async function getStaticPaths() {
+  const all = await getCollection('jobs');
+  return all.map((job) => {
+    const lang = job.data.lang as Lang;
+    const slug = job.id.split('/').pop()!;
+    const translated = locales.every((l) => all.some((j) => j.data.lang === l && j.id.endsWith('/' + slug)));
+    return { params: { lang, jobs: routes.jobs[lang], slug }, props: { job, translated } };
+  });
+}
+const { job, translated } = Astro.props;
+const lang = Astro.params.lang as Lang;
+const slug = Astro.params.slug!;
+const tr = t(lang);
+const d = job.data;
+const { Content } = await render(job);
+const date = d.published.toLocaleDateString(lang === 'pl' ? 'pl-PL' : lang, { day: '2-digit', month: '2-digit', year: 'numeric' });
+const site = Astro.site?.origin ?? '';
+const jobPosting = {
+  '@context': 'https://schema.org', '@type': 'JobPosting',
+  title: d.title, description: d.terms, datePosted: d.published.toISOString().slice(0, 10),
+  ...(d.expires ? { validThrough: d.expires.toISOString().slice(0, 10) } : {}),
+  employmentType: d.contract, industry: d.industry,
+  hiringOrganization: { '@type': 'Organization', name: 'Etatowcy', sameAs: site + href(lang) },
+  jobLocation: { '@type': 'Place', address: { '@type': 'PostalAddress', addressLocality: d.city, addressCountry: 'PL' } },
+  baseSalary: { '@type': 'MonetaryAmount', currency: 'PLN', value: { '@type': 'QuantitativeValue', value: d.pay } },
+  url: site + href(lang, 'jobs', slug),
+};
+---
+<Base lang={lang} route="jobs" slug={slug} translated={translated} title={`${d.title} — ${d.city} — Etatowcy`} description={`${d.title}, ${d.city}. ${d.terms}. ${d.pay}.`} jsonLd={[jobPosting]}>
+  <article class="section">
+    <div class="wrap split">
+      <header>
+        <a class="link back" href={href(lang, 'jobs')}>{tr('jobs.back')}</a>
+        <div>{[d.industry, d.city, ...d.tags].slice(0, 3).map((x) => <span class="tag">{x}</span>)}</div>
+        <h1 class="disp h1">{d.title}</h1>
+        <dl class="facts">
+          <div><dt class="small">{tr('jobs.pay')}</dt><dd class="data">{d.pay}</dd></div>
+          <div><dt class="small">{tr('jobs.place')}</dt><dd>{d.city}</dd></div>
+          <div><dt class="small">{tr('jobs.contract')}</dt><dd>{d.contract}</dd></div>
+          <div><dt class="small">{tr('jobs.terms')}</dt><dd>{d.terms}</dd></div>
+          <div><dt class="small">{tr('jobs.published')}</dt><dd class="data">{date}</dd></div>
+        </dl>
+        <a class="btn primary" href="#aplikuj">{tr('jobs.apply')}</a>
+      </header>
+      <div>
+        <div class="prose"><Content /></div>
+        {d.example && <p class="small note">{tr('jobs.example')}</p>}
+        <section id="aplikuj" class="apply">
+          <span class="eyebrow">{tr('jobs.apply')}</span>
+          <h2 class="disp h2">{tr('contact.title.1')} {tr('contact.title.2')}</h2>
+          <ContactForm lang={lang} subject={`${d.title} — ${d.city}`} />
+        </section>
+      </div>
+    </div>
+  </article>
+</Base>
+
+<style>
+  .back{display:inline-block;margin-bottom:var(--space-6)}
+  .h1{font-size:clamp(40px,6vw,80px);margin:var(--space-2) 0 var(--space-6)}
+  .facts{display:grid;gap:var(--space-3);margin-bottom:var(--space-8)}
+  .facts div{display:grid;grid-template-columns:120px 1fr;gap:var(--space-3);padding-bottom:var(--space-3);border-bottom:1px solid var(--line)}
+  .facts dd{margin:0}
+  .note{margin-top:var(--space-6)}
+  .apply{margin-top:var(--space-16);padding-top:var(--space-12);border-top:1px solid var(--line)}
+  .apply .h2{margin:var(--space-2) 0 var(--space-8)}
+</style>

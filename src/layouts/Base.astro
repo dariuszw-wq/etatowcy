@@ -1,0 +1,85 @@
+---
+import '../styles/global.css';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { type Lang, locales, t, href, type RouteKey } from '../i18n/ui';
+
+interface Props {
+  lang: Lang;
+  title?: string;
+  description?: string;
+  /** trasa bieżącej strony — do hreflang; brak = strona główna */
+  route?: RouteKey;
+  slug?: string;
+  /** czy strona istnieje w innych językach (artykuł/oferta bez tłumaczenia → tylko x-default) */
+  translated?: boolean;
+  jsonLd?: Record<string, unknown>[];
+}
+const { lang, route, slug, translated = true, jsonLd = [] } = Astro.props;
+const tr = t(lang);
+const title = Astro.props.title ?? tr('meta.title');
+const description = Astro.props.description ?? tr('meta.desc');
+const base = import.meta.env.BASE_URL;
+const site = Astro.site?.origin ?? '';
+const canonical = site + href(lang, route, slug);
+const alt = (l: Lang) => site + href(l, route, translated ? slug : undefined);
+const ogLocale = { pl: 'pl_PL', en: 'en_GB', es: 'es_ES' }[lang];
+
+const org = {
+  '@context': 'https://schema.org',
+  '@type': 'EmploymentAgency',
+  name: 'Etatowcy',
+  url: site + href(lang),
+  logo: site + base + 'etatowcy-logo-blue.svg',
+  areaServed: 'PL',
+  availableLanguage: ['pl', 'en', 'es'],
+};
+---
+<!doctype html>
+<html lang={lang}>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{title}</title>
+<meta name="description" content={description}>
+<link rel="canonical" href={canonical}>
+{locales.map((l) => <link rel="alternate" hreflang={l} href={alt(l)} />)}
+<link rel="alternate" hreflang="x-default" href={alt('pl')}>
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Etatowcy">
+<meta property="og:title" content={title}>
+<meta property="og:description" content={description}>
+<meta property="og:url" content={canonical}>
+<meta property="og:locale" content={ogLocale}>
+<meta property="og:image" content={site + base + 'og.png'}>
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0a0e14" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#f7f8fa" media="(prefers-color-scheme: light)">
+<link rel="icon" href={base + 'favicon.svg'} type="image/svg+xml">
+<link rel="sitemap" href={base + 'sitemap-index.xml'}>
+<link rel="preload" href={base + 'fonts/BigShouldersDisplay-wght.woff2'} as="font" type="font/woff2" crossorigin>
+<link rel="preload" href={base + 'fonts/Inter-opsz-wght.woff2'} as="font" type="font/woff2" crossorigin>
+<style set:html={`
+@font-face{font-family:"Big Shoulders Display";src:url("${base}fonts/BigShouldersDisplay-wght.woff2") format("woff2");font-weight:100 900;font-display:swap}
+@font-face{font-family:"Big Shoulders Stencil Text";src:url("${base}fonts/BigShouldersStencilText-wght.woff2") format("woff2");font-weight:100 900;font-display:swap}
+@font-face{font-family:"Inter";src:url("${base}fonts/Inter-opsz-wght.woff2") format("woff2");font-weight:100 900;font-display:swap}
+`}></style>
+<script is:inline>
+  // Motyw: zapamiętany wybór > ustawienie systemu. Przed renderem, żeby nie mrugało.
+  try { var th = localStorage.getItem('etatowcy:theme'); if (th) document.documentElement.dataset.theme = th; } catch (e) {}
+</script>
+<script type="application/ld+json" set:html={JSON.stringify([org, ...jsonLd])}></script>
+</head>
+<body>
+<a class="skip" href="#main">{ { pl: 'Przejdź do treści', en: 'Skip to content', es: 'Ir al contenido' }[lang] }</a>
+<Header lang={lang} route={route} slug={translated ? slug : undefined} />
+<main id="main">
+  <slot />
+</main>
+<Footer lang={lang} />
+<style>
+  .skip{position:absolute;left:-999px;top:var(--space-2);z-index:100;background:var(--brand);color:var(--on-brand);padding:10px 16px;border-radius:var(--radius-pill);font-weight:600}
+  .skip:focus{left:var(--space-4)}
+</style>
+</body>
+</html>

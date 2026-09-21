@@ -1,0 +1,124 @@
+<!doctype html><html lang="pl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Etatowcy — podgląd kierunku</title>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Big+Shoulders+Stencil+Text:wght@700&family=Inter:opsz,wght@14..32,300..800&display=swap" rel="stylesheet">
+<style>
+:root{--surface:#0A0E14;--surface-2:#111721;--ink:#EEF2F7;--ink-2:#9AA6B8;--brand:#21A0FD;--glow:rgba(33,160,253,.22);--spark:#FF7A59;--line:rgba(238,242,247,.12)}
+.light{--surface:#F7F8FA;--surface-2:#FFFFFF;--ink:#0F1420;--ink-2:#4B5566;--brand:#0B6FC2;--glow:rgba(11,111,194,.12);--spark:#D9451F;--line:rgba(15,20,32,.10)}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,sans-serif;background:#000;color:#fff}
+.panel{background:var(--surface);color:var(--ink);padding:56px 48px;position:relative;overflow:hidden}
+.eyebrow{font:600 12px/1 Inter;letter-spacing:.14em;text-transform:uppercase;color:var(--brand);margin:0 0 20px}
+h1,h2,h3{margin:0}
+.disp{font-family:'Big Shoulders Display';text-transform:uppercase;line-height:.9;letter-spacing:.01em}
+.hero{min-height:560px;display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center}
+.blob{position:absolute;right:-8%;top:-10%;width:60%;height:120%;background:radial-gradient(closest-side at 40% 50%,var(--brand) 0%,rgba(33,160,253,.55) 35%,transparent 70%);filter:blur(28px);opacity:.9;animation:drift 12s ease-in-out infinite alternate;pointer-events:none}
+@keyframes drift{from{transform:translate(0,0) rotate(0) scale(1)}to{transform:translate(-8%,6%) rotate(12deg) scale(1.12)}}
+.hero h1{font-size:clamp(64px,10vw,150px);font-weight:300;animation:tighten 4s ease-in-out infinite alternate;position:relative}
+@keyframes tighten{from{font-weight:300}to{font-weight:800}}
+.hero h1 em{font-style:normal;color:var(--brand)}
+.lead{font:400 19px/1.5 Inter;color:var(--ink-2);max-width:44ch;margin:24px 0 32px}
+.search{display:flex;background:var(--surface-2);border:1px solid var(--line);border-radius:999px;padding:6px 6px 6px 22px;max-width:520px;align-items:center;gap:12px}
+.search span{flex:1;color:var(--ink-2)}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 22px;border-radius:999px;font:600 15px Inter;border:1px solid var(--line);background:transparent;color:var(--ink);cursor:pointer;transition:transform .18s,box-shadow .18s,background .18s}
+.btn.primary{background:var(--brand);color:#06121F;border-color:transparent}
+.btn:hover{transform:translateY(-2px);box-shadow:0 0 0 6px var(--glow)}
+.btn.primary:hover{background:var(--spark);color:#fff}
+.entries{display:flex;gap:12px;margin-top:22px;flex-wrap:wrap}
+.logo{display:flex;align-items:center;gap:14px;color:var(--brand)}
+.logo svg{width:44px}
+.logo b{font:700 26px 'Big Shoulders Stencil Text';letter-spacing:.12em;text-transform:uppercase}
+nav{display:flex;justify-content:space-between;align-items:center;margin-bottom:64px;position:relative;z-index:1}
+nav ul{display:flex;gap:28px;list-style:none;margin:0;padding:0;font:500 14px Inter;color:var(--ink-2)}
+nav .lang{display:flex;gap:6px;font:600 12px Inter;letter-spacing:.06em}
+nav .lang span{padding:6px 9px;border-radius:6px;border:1px solid var(--line)}
+nav .lang span.on{background:var(--brand);color:#06121F;border-color:transparent}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px}
+.sw{border-radius:14px;padding:16px;min-height:120px;display:flex;flex-direction:column;justify-content:flex-end;border:1px solid var(--line);font:500 12px/1.4 Inter}
+.sw code{font-size:11px;opacity:.75}
+.type div{padding:14px 0;border-top:1px solid var(--line)}
+.type small{display:block;color:var(--ink-2);font:500 11px Inter;letter-spacing:.1em;text-transform:uppercase;margin-bottom:8px}
+.cards{display:grid;grid-template-columns:1fr 2fr;gap:32px;align-items:start}
+.cards .list{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.card{background:var(--surface-2);border:1px solid var(--line);border-radius:18px;padding:22px;transition:transform .18s,box-shadow .18s}
+.card:hover{transform:translateY(-3px);box-shadow:0 12px 40px -18px var(--brand)}
+.card h3{font:600 17px/1.3 Inter;margin:0 0 8px}
+.card p{font:400 14px/1.5 Inter;color:var(--ink-2);margin:0 0 14px}
+.tag{display:inline-block;font:600 12px Inter;color:var(--brand);background:var(--glow);padding:5px 10px;border-radius:999px;margin-right:6px}
+.pay{font:600 15px Inter;font-variant-numeric:tabular-nums}
+.form{display:grid;grid-template-columns:1fr 1fr;gap:14px;max-width:640px}
+.form input,.form textarea{width:100%;background:var(--surface-2);border:1px solid var(--line);color:var(--ink);border-radius:12px;padding:14px;font:15px Inter}
+.form textarea{grid-column:1/-1;min-height:90px}
+.form input:focus{outline:2px solid var(--brand);outline-offset:2px}
+.check{display:inline-flex;align-items:center;gap:10px;color:var(--spark);font:600 15px Inter}
+.check svg{width:26px;stroke:var(--spark);stroke-width:3;fill:none;stroke-dasharray:40;animation:draw 1.2s ease forwards infinite}
+@keyframes draw{from{stroke-dashoffset:40}60%{stroke-dashoffset:0}to{stroke-dashoffset:0}}
+.label{position:absolute;top:14px;left:16px;font:600 11px Inter;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-2);opacity:.8}
+@media(prefers-reduced-motion:reduce){*{animation:none!important}}
+@media(max-width:800px){.panel{padding:40px 20px}.hero,.cards,.form{grid-template-columns:1fr}.cards .list{grid-template-columns:1fr}}
+</style></head><body>
+
+<section class="panel"><span class="label">1 · Hero — tryb ciemny (domyślny)</span>
+<div class="blob"></div>
+<nav><div class="logo"><svg viewBox="0 0 100 84" fill="none" stroke="currentColor" stroke-width="7" stroke-linejoin="round" stroke-linecap="round"><rect x="6" y="22" width="88" height="56" rx="8"/><path d="M34 22v-9a5 5 0 0 1 5-5h22a5 5 0 0 1 5 5v9"/><path d="M6 46c14 8 30 12 44 12s30-4 44-12"/><path d="M50 58v20"/><rect x="43" y="40" width="14" height="6" rx="3" fill="currentColor" stroke="none"/></svg><b>Etatowcy</b></div>
+<ul><li>Oferty pracy</li><li>Dla pracodawców</li><li>Rynek pracy</li><li>Kontakt</li></ul>
+<div class="lang"><span class="on">PL</span><span>EN</span><span>ES</span></div></nav>
+<div class="hero"><div style="position:relative;z-index:1">
+<p class="eyebrow">Agencja pracy · Polska</p>
+<h1 class="disp">Praca,<br>która się<br><em>opłaca.</em></h1>
+<p class="lead">Łączymy ludzi, którzy chcą pracować, z firmami, które chcą ich zatrudnić. Legalnie, szybko, bez niedomówień.</p>
+<div class="search"><span>Stanowisko, miasto albo branża…</span><button class="btn primary">Szukaj oferty</button></div>
+<div class="entries"><button class="btn">Szukam pracy →</button><button class="btn">Szukam pracownika →</button></div>
+</div></div>
+</section>
+
+<section class="panel light"><span class="label">2 · Ten sam hero — tryb jasny (automatycznie wg systemu)</span>
+<div class="blob"></div>
+<div class="hero" style="min-height:380px"><div style="position:relative;z-index:1">
+<p class="eyebrow">Agencja pracy · Polska</p>
+<h1 class="disp" style="font-size:clamp(56px,8vw,120px)">Praca,<br>która się<br><em>opłaca.</em></h1>
+<div class="entries"><button class="btn primary">Szukaj oferty</button><button class="btn">Szukam pracownika →</button></div>
+</div></div>
+</section>
+
+<section class="panel"><span class="label">3 · Paleta</span>
+<h2 class="disp" style="font-size:44px;font-weight:700;margin:24px 0">Kolory — tryb ciemny</h2>
+<div class="grid">
+<div class="sw" style="background:#0A0E14;color:#EEF2F7">surface<code>#0A0E14</code></div>
+<div class="sw" style="background:#111721;color:#EEF2F7">surface-2<code>#111721</code></div>
+<div class="sw" style="background:#EEF2F7;color:#0A0E14">ink<code>#EEF2F7</code></div>
+<div class="sw" style="background:#21A0FD;color:#06121F">brand — z logo<code>#21A0FD · 6,8:1</code></div>
+<div class="sw" style="background:rgba(33,160,253,.22);color:#EEF2F7">brand-glow<code>rgba(33,160,253,.22)</code></div>
+<div class="sw" style="background:#FF7A59;color:#1a0a05">spark — iskra<code>#FF7A59</code></div>
+</div>
+<h2 class="disp" style="font-size:44px;font-weight:700;margin:40px 0 24px">Kolory — tryb jasny</h2>
+<div class="grid">
+<div class="sw" style="background:#F7F8FA;color:#0F1420">surface<code>#F7F8FA</code></div>
+<div class="sw" style="background:#FFFFFF;color:#0F1420">surface-2<code>#FFFFFF</code></div>
+<div class="sw" style="background:#0F1420;color:#F7F8FA">ink<code>#0F1420</code></div>
+<div class="sw" style="background:#0B6FC2;color:#fff">brand — ciemniejszy do tekstu<code>#0B6FC2 · 5,1:1</code></div>
+<div class="sw" style="background:rgba(11,111,194,.12);color:#0F1420">brand-glow<code>rgba(11,111,194,.12)</code></div>
+<div class="sw" style="background:#D9451F;color:#fff">spark<code>#D9451F</code></div>
+</div></section>
+
+<section class="panel type"><span class="label">4 · Typografia</span>
+<div><small>Wyświetlany · Big Shoulders Display (zmienny 100–900) · nagłówki</small><span class="disp" style="font-size:96px;font-weight:200">Cienki </span><span class="disp" style="font-size:96px;font-weight:500">Średni </span><span class="disp" style="font-size:96px;font-weight:900">Gruby</span></div>
+<div><small>Logo · Big Shoulders Stencil (ta sama rodzina)</small><span class="disp" style="font-family:'Big Shoulders Stencil Text';font-size:64px;letter-spacing:.12em;color:var(--brand)">Etatowcy</span></div>
+<div><small>Wstęp · Inter 19/28</small><p class="lead" style="margin:0">Łączymy ludzi, którzy chcą pracować, z firmami, które chcą ich zatrudnić.</p></div>
+<div><small>Tekst · Inter 15/22</small><p style="font:400 15px/22px Inter;max-width:60ch;margin:0">Zezwolenie na pracę, oświadczenie o powierzeniu wykonywania pracy, karta pobytu — pomagamy przejść przez formalności i wyjaśniamy każdy krok prostym językiem, po polsku, angielsku i hiszpańsku.</p></div>
+<div><small>Dane · Inter tabularne cyfry</small><span class="pay">32,50 zł / h &nbsp;·&nbsp; 6 200 zł brutto &nbsp;·&nbsp; 21.09.2026</span></div>
+</section>
+
+<section class="panel light"><span class="label">5 · Oferty pracy (jasny pas, asymetria 1:2) + mikrointerakcje — najedź na kartę / przycisk</span>
+<div class="cards" style="margin-top:24px">
+<div><p class="eyebrow">Aktualne oferty</p><h2 class="disp" style="font-size:64px;font-weight:700">Rekrutujemy<br>teraz</h2><p class="lead">Nowe oferty co tydzień. Filtruj po mieście, branży i typie umowy.</p><button class="btn primary">Wszystkie oferty</button></div>
+<div class="list">
+<div class="card"><span class="tag">Produkcja</span><span class="tag">Poznań</span><h3>Operator linii produkcyjnej</h3><p>Umowa o pracę · 3 zmiany · zakwaterowanie</p><span class="pay">32,50 zł / h</span></div>
+<div class="card"><span class="tag">Logistyka</span><span class="tag">Wrocław</span><h3>Pracownik magazynu</h3><p>Umowa zlecenie · od zaraz · UA / EN</p><span class="pay">30,00 zł / h</span></div>
+<div class="card"><span class="tag">Biuro</span><span class="tag">Warszawa</span><h3>Specjalista ds. kadr</h3><p>Umowa o pracę · hybrydowo</p><span class="pay">7 500 zł brutto</span></div>
+<div class="card"><span class="tag">Kierowcy</span><span class="tag">Cała Polska</span><h3>Kierowca C+E</h3><p>Umowa o pracę · kraj i UE</p><span class="pay">9 000 zł netto</span></div>
+</div></div></section>
+
+<section class="panel"><span class="label">6 · Formularz kontaktowy + znacznik po wysłaniu</span>
+<div class="cards" style="margin-top:24px"><div><p class="eyebrow">Kontakt</p><h2 class="disp" style="font-size:64px;font-weight:700">Napisz<br>do nas</h2><p class="lead">Odpowiadamy w jeden dzień roboczy.</p><span class="check"><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg> Wiadomość wysłana</span></div>
+<div class="form"><input placeholder="Imię i nazwisko"><input placeholder="E-mail lub telefon"><textarea placeholder="W czym możemy pomóc?"></textarea><button class="btn primary" style="grid-column:1/-1;justify-content:center">Wyślij wiadomość</button></div></div>
+</section>
+</body></html>

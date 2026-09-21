@@ -1,0 +1,59 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../../layouts/Base.astro';
+import JobCard from '../../../components/JobCard.astro';
+import { locales, routes, type Lang, t } from '../../../i18n/ui';
+
+export function getStaticPaths() { return locales.map((lang) => ({ params: { lang, jobs: routes.jobs[lang] } })); }
+const lang = Astro.params.lang as Lang;
+const tr = t(lang);
+const jobs = (await getCollection('jobs', (j) => j.data.lang === lang && (!j.data.expires || j.data.expires > new Date())))
+  .sort((a, b) => +b.data.published - +a.data.published);
+const hasExample = jobs.some((j) => j.data.example);
+const title = `${tr('nav.jobs')} — Etatowcy`;
+---
+<Base lang={lang} route="jobs" title={title} description={tr('jobs.lead')}>
+  <section class="section">
+    <div class="wrap">
+      <span class="eyebrow">{tr('jobs.eyebrow')}</span>
+      <h1 class="disp h1">{tr('jobs.title.1')} {tr('jobs.title.2')}</h1>
+      <form class="filter" role="search" onsubmit="return false">
+        <label class="sr-only" for="q">{tr('jobs.filter')}</label>
+        <input id="q" name="q" type="search" placeholder={tr('hero.search')} autocomplete="off" data-filter>
+        <span class="small" data-count><b class="data">{jobs.length}</b> {tr('jobs.count')}</span>
+      </form>
+      <div class="grid-2 list" data-list>{jobs.map((job) => <JobCard job={job} lang={lang} />)}</div>
+      <p class="lead empty" data-empty hidden>{tr('jobs.none')}</p>
+      {hasExample && <p class="small note">{tr('jobs.example')}</p>}
+    </div>
+  </section>
+</Base>
+
+<style>
+  .h1{margin:var(--space-2) 0 var(--space-8)}
+  .filter{display:flex;align-items:center;gap:var(--space-4);margin-bottom:var(--space-8);flex-wrap:wrap}
+  .filter input{flex:1;min-width:240px;max-width:520px;background:var(--surface-2);border:1px solid var(--line);border-radius:var(--radius-pill);padding:14px 22px;font:400 15px/22px var(--font-sans);color:var(--ink)}
+  .filter input::placeholder{color:var(--ink-muted)}
+  .filter input::-webkit-search-cancel-button{display:none}
+  .list{grid-template-columns:repeat(auto-fill,minmax(300px,1fr))}
+  .empty{margin-top:var(--space-6)}
+  .note{margin-top:var(--space-6)}
+</style>
+
+<script>
+  // Filtr działa bez przeładowania; ?q= z hero wypełnia pole.
+  const input = document.querySelector<HTMLInputElement>('[data-filter]');
+  const cards = [...document.querySelectorAll<HTMLElement>('[data-search]')];
+  const empty = document.querySelector<HTMLElement>('[data-empty]');
+  const count = document.querySelector<HTMLElement>('[data-count] b');
+  const apply = () => {
+    const q = (input?.value ?? '').trim().toLowerCase().split(/\s+/).filter(Boolean);
+    let n = 0;
+    for (const c of cards) { const ok = q.every((w) => c.dataset.search!.includes(w)); c.hidden = !ok; if (ok) n++; }
+    if (empty) empty.hidden = n > 0;
+    if (count) count.textContent = String(n);
+  };
+  const q0 = new URLSearchParams(location.search).get('q');
+  if (input && q0) { input.value = q0; apply(); }
+  input?.addEventListener('input', apply);
+</script>

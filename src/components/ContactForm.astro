@@ -1,0 +1,92 @@
+---
+import { type Lang, t } from '../i18n/ui';
+import { site } from '../config';
+interface Props { lang: Lang; subject?: string }
+const { lang, subject = '' } = Astro.props;
+const tr = t(lang);
+---
+<form class="form" data-contact data-endpoint={site.formEndpoint} data-email={site.email} data-lang={lang} novalidate>
+  <input type="hidden" name="_subject" value={subject || `Etatowcy — ${tr('nav.contact')}`}>
+  <input type="text" name="_gotcha" class="sr-only" tabindex="-1" autocomplete="off" aria-hidden="true">
+  <div class="field">
+    <label for="f-name">{tr('form.name')}</label>
+    <input id="f-name" name="name" type="text" autocomplete="name" required>
+  </div>
+  <div class="field">
+    <label for="f-contact">{tr('form.contact')}</label>
+    <input id="f-contact" name="contact" type="text" autocomplete="email" inputmode="email" required aria-describedby="f-contact-err">
+    <span id="f-contact-err" class="err" hidden>{tr('form.err.contact')}</span>
+  </div>
+  <div class="field full">
+    <label for="f-msg">{tr('form.msg')}</label>
+    <textarea id="f-msg" name="message" rows="4" required>{subject}</textarea>
+  </div>
+  <label class="consent full">
+    <input type="checkbox" name="consent" required>
+    <span>{tr('form.consent')}</span>
+  </label>
+  <button class="btn primary wide full" type="submit" data-label={tr('form.send')} data-sending={tr('form.sending')}>{tr('form.send')}</button>
+  <p class="err full" data-net hidden>{tr('form.err.net')} <a class="link" href={`mailto:${site.email}`}>{site.email}</a>.</p>
+  <div class="done full" data-done hidden role="status">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12l5 5L20 6"/></svg>
+    <span>{tr('form.done')}</span>
+  </div>
+</form>
+
+<style>
+  .form{display:grid;grid-template-columns:1fr 1fr;gap:var(--space-3);max-width:640px}
+  .full{grid-column:1/-1}
+  .field{display:flex;flex-direction:column;gap:6px}
+  label{font:500 13px/18px var(--font-sans);color:var(--ink-muted)}
+  input[type=text],textarea{width:100%;background:var(--surface-2);border:1px solid var(--line);border-radius:var(--radius-md);padding:var(--space-4);font:400 15px/22px var(--font-sans);color:var(--ink)}
+  textarea{resize:vertical;min-height:110px}
+  input.invalid,textarea.invalid{border-color:var(--spark)}
+  .err{font:400 13px/18px var(--font-sans);color:var(--spark)}
+  .consent{display:flex;gap:10px;align-items:flex-start;font:400 13px/18px var(--font-sans);color:var(--ink-muted);cursor:pointer}
+  .consent input{margin-top:2px;accent-color:var(--brand);width:16px;height:16px;flex:none}
+  .done{display:flex;align-items:center;gap:10px;color:var(--spark);font:600 15px/20px var(--font-sans)}
+  .done svg{width:26px;height:26px;stroke:var(--spark);stroke-width:3;fill:none;stroke-dasharray:40;stroke-dashoffset:40;animation:draw 1.2s ease-out forwards}
+  @keyframes draw{to{stroke-dashoffset:0}}
+  @media (max-width:600px){.form{grid-template-columns:1fr}}
+</style>
+
+<script>
+  const form = document.querySelector<HTMLFormElement>('[data-contact]');
+  if (form) {
+    const contact = form.querySelector<HTMLInputElement>('#f-contact')!;
+    const contactErr = form.querySelector<HTMLElement>('#f-contact-err')!;
+    const btn = form.querySelector<HTMLButtonElement>('button[type=submit]')!;
+    const net = form.querySelector<HTMLElement>('[data-net]')!;
+    const done = form.querySelector<HTMLElement>('[data-done]')!;
+    const okContact = (v: string) => /\S+@\S+\.\S+/.test(v) || /^[+\d][\d\s()-]{6,}$/.test(v);
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      net.hidden = true;
+      let valid = form.checkValidity();
+      form.querySelectorAll<HTMLInputElement>('input[required],textarea[required]').forEach((el) => el.classList.toggle('invalid', !el.checkValidity()));
+      const cOk = okContact(contact.value.trim());
+      contact.classList.toggle('invalid', !cOk); contactErr.hidden = cOk;
+      if (!valid || !cOk) { (form.querySelector('.invalid') as HTMLElement | null)?.focus(); return; }
+
+      const data = new FormData(form);
+      const endpoint = form.dataset.endpoint;
+      if (!endpoint) {
+        // Brak endpointu — otwórz program pocztowy z gotową wiadomością.
+        const body = `${data.get('name')}\n${data.get('contact')}\n\n${data.get('message')}`;
+        location.href = `mailto:${form.dataset.email}?subject=${encodeURIComponent(String(data.get('_subject')))}&body=${encodeURIComponent(body)}`;
+        return;
+      }
+      btn.disabled = true; btn.textContent = btn.dataset.sending!;
+      try {
+        const res = await fetch(endpoint, { method: 'POST', body: data, headers: { Accept: 'application/json' } });
+        if (!res.ok) throw new Error(String(res.status));
+        form.querySelectorAll<HTMLElement>('.field,.consent,button').forEach((el) => (el.hidden = true));
+        done.hidden = false;
+      } catch {
+        net.hidden = false;
+        btn.disabled = false; btn.textContent = btn.dataset.label!;
+      }
+    });
+  }
+</script>

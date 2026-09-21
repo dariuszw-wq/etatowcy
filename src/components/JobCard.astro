@@ -1,0 +1,22 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { type Lang, href } from '../i18n/ui';
+interface Props { job: CollectionEntry<'jobs'>; lang: Lang }
+const { job, lang } = Astro.props;
+const d = job.data;
+const slug = job.id.split('/').pop()!;
+const tags = [d.industry, d.city, ...d.tags].slice(0, 3);
+const search = [d.title, d.city, d.industry, d.contract, ...d.tags].join(' ').toLowerCase();
+---
+<a class="card" href={href(lang, 'jobs', slug)} data-search={search}>
+  <div>{tags.map((x) => <span class="tag">{x}</span>)}</div>
+  <h3>{d.title}</h3>
+  <p>{d.terms}</p>
+  <span class="data">{d.pay}</span>
+</a>
+<style>
+  .card{display:block;background:var(--surface-2);border:1px solid var(--line);border-radius:var(--radius-lg);padding:var(--space-6);transition:transform .18s ease-out,box-shadow .18s ease-out}
+  .card:hover{transform:translateY(-3px);box-shadow:var(--shadow-card)}
+  h3{font:600 17px/22px var(--font-sans);margin:var(--space-1) 0 var(--space-2)}
+  p{font:400 14px/21px var(--font-sans);color:var(--ink-muted);margin-bottom:var(--space-3)}
+</style>

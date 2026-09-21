@@ -1,0 +1,23 @@
+<!doctype html><html lang="pl"><head><meta charset="utf-8"><title>Etatowcy – warianty logo</title>
+<link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Saira+Stencil+One&family=Big+Shoulders+Stencil+Text:wght@700&family=Stardos+Stencil:wght@700&display=swap" rel="stylesheet">
+<style>
+body{margin:0;padding:32px;background:#fff;color:#1a1a1a;font-family:system-ui,sans-serif}
+h1{font-size:18px;font-weight:600;margin:0 0 24px}
+.row{display:flex;align-items:center;gap:28px;padding:22px 0;border-top:1px solid #e6e6e6}
+.row:first-of-type{border-top:0}
+.lbl{width:190px;font-size:13px;color:#666}
+.logo{display:flex;align-items:center;gap:22px;color:#21A0FD}
+.logo svg{width:96px;height:auto;flex:none}
+.wm{font-size:64px;letter-spacing:.10em;line-height:1;text-transform:uppercase}
+.orig img{height:96px}
+.dark{background:#0f1b2a;padding:22px 28px;border-radius:12px;color:#fff}
+.dark .logo{color:#4CB4FF}
+</style></head><body>
+<h1>Etatowcy — wektorowe warianty logo (odtworzenie ze zrzutu)</h1>
+<div class="row orig"><div class="lbl">Oryginał (zrzut, niska jakość)</div><img src="logo-oryginal-zrzut.png" alt=""></div>
+<script>
+const brief=`<svg viewBox="0 0 100 84" fill="none" stroke="currentColor" stroke-width="7" stroke-linejoin="round" stroke-linecap="round"><rect x="6" y="22" width="88" height="56" rx="8"/><path d="M34 22v-9a5 5 0 0 1 5-5h22a5 5 0 0 1 5 5v9"/><path d="M6 46c14 8 30 12 44 12s30-4 44-12"/><path d="M50 58v20"/><rect x="43" y="40" width="14" height="6" rx="3" fill="currentColor" stroke="none"/></svg>`;
+const fonts=[["A — Allerta Stencil","'Allerta Stencil'"],["B — Saira Stencil One","'Saira Stencil One'"],["C — Big Shoulders Stencil","'Big Shoulders Stencil Text'"],["D — Stardos Stencil","'Stardos Stencil'"]];
+document.body.insertAdjacentHTML('beforeend',fonts.map(([n,f])=>`<div class="row"><div class="lbl">${n}</div><div class="logo">${brief}<span class="wm" style="font-family:${f}">Etatowcy</span></div></div>`).join('')+
+`<div class="row"><div class="lbl">Wariant A na ciemnym tle</div><div class="dark"><div class="logo">${brief}<span class="wm" style="font-family:'Allerta Stencil'">Etatowcy</span></div></div></div>`);
+</script></body></html>

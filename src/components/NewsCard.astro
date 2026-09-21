@@ -1,0 +1,24 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { type Lang, t, href } from '../i18n/ui';
+interface Props { item: CollectionEntry<'news'>; lang: Lang }
+const { item, lang } = Astro.props;
+const tr = t(lang);
+const d = item.data;
+const slug = item.id.split('/').pop()!;
+const date = d.published.toLocaleDateString(lang === 'pl' ? 'pl-PL' : lang, { day: '2-digit', month: '2-digit', year: 'numeric' });
+---
+<a class="news" href={href(lang, 'news', slug)}>
+  <small class="small">{date} · {d.readingTime} {tr('news.min')}</small>
+  <h3>{d.title}</h3>
+  <p>{d.excerpt}</p>
+  <span class="link">{tr('news.read')}</span>
+</a>
+<style>
+  .news{display:block;padding:var(--space-4) 0;border-bottom:1px solid var(--line)}
+  .news:first-child{padding-top:0}
+  small{display:block;margin-bottom:var(--space-2)}
+  h3{font:600 20px/26px var(--font-sans);margin-bottom:var(--space-2);transition:color .18s ease-out}
+  .news:hover h3{color:var(--brand)}
+  p{color:var(--ink-muted);margin-bottom:var(--space-2)}
+</style>

@@ -1,0 +1,35 @@
+---
+import { type Lang, t, href } from '../i18n/ui';
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const tr = t(lang);
+const base = import.meta.env.BASE_URL;
+const year = new Date().getFullYear();
+---
+<footer class="ftr">
+  <div class="wrap inner">
+    <div>
+      <img src={base + 'etatowcy-wordmark-blue.svg'} alt="Etatowcy" width="144" height="32" loading="lazy">
+      <p class="small tag">{tr('footer.tag')}</p>
+    </div>
+    <ul class="links">
+      <li><a href={href(lang, 'jobs')}>{tr('nav.jobs')}</a></li>
+      <li><a href={href(lang, 'employers')}>{tr('nav.employers')}</a></li>
+      <li><a href={href(lang, 'news')}>{tr('nav.news')}</a></li>
+      <li><a href={href(lang, 'contact')}>{tr('nav.contact')}</a></li>
+      <li><a href={href(lang, 'privacy')}>{tr('footer.privacy')}</a></li>
+    </ul>
+    <p class="small copy">© {year} Etatowcy. {tr('footer.rights')}</p>
+  </div>
+</footer>
+<style>
+  .ftr{border-top:1px solid var(--line);margin-top:var(--between)}
+  .inner{display:grid;grid-template-columns:1fr auto;gap:var(--space-8);padding-block:var(--space-12);align-items:start}
+  .inner img{height:32px;width:auto}
+  .tag{margin-top:var(--space-3)}
+  .links{display:flex;flex-wrap:wrap;gap:var(--space-4) var(--space-6)}
+  .links a{font:500 14px/20px var(--font-sans);color:var(--ink-muted)}
+  .links a:hover{color:var(--ink)}
+  .copy{grid-column:1/-1}
+  @media (max-width:800px){.inner{grid-template-columns:1fr}}
+</style>
