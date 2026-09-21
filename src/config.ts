@@ -1,7 +1,7 @@
 /** Dane kontaktowe i ustawienia serwisu — jedyne miejsce do zmiany. */
 export const site = {
-  /** Adres, na który trafiają wiadomości z formularza (także jako mailto: awaryjnie). DO POTWIERDZENIA. */
-  email: 'kontakt@etatowcy.pl',
+  /** Adres, na który trafiają wiadomości z formularza (także jako mailto: awaryjnie). */
+  email: 'biuro@etatowcy.pl',
   /** Telefon w formacie międzynarodowym; pusty = nie pokazuj. */
   phone: '',
   /**
