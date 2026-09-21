@@ -11,11 +11,11 @@ Astro (statyczny HTML) · PL / EN / ES · GitHub Pages.
 
 ```bash
 npm install
-npm run dev      # http://localhost:4321/etatowcy/
+npm run dev      # http://localhost:4321/
 npm run build    # dist/
 ```
 
 ## Wdrożenie
 
 Każdy push na `main` buduje i publikuje stronę (GitHub Actions → Pages).
-Przy podpinaniu domeny ustaw zmienne repozytorium `SITE_URL=https://etatowcy.pl` i `SITE_BASE=/` oraz dodaj `public/CNAME`.
+Domena: zmienne repozytorium `SITE_URL=https://etatowcy.pl`, `SITE_BASE=/` + `public/CNAME` (ustawione).

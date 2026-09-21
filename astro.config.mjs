@@ -2,7 +2,7 @@
 import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 
-// Etap 1 (test): GitHub Pages pod https://dariuszw-wq.github.io/etatowcy/
+// Lokalnie: base /etatowcy (jak dawny adres testowy); produkcja: zmienne SITE_URL/SITE_BASE w GitHub Actions
 // Etap 2 (domena): SITE_URL=https://etatowcy.pl SITE_BASE=/ + plik public/CNAME
 const SITE = process.env.SITE_URL || 'https://dariuszw-wq.github.io';
 const BASE = process.env.SITE_BASE || '/etatowcy';
