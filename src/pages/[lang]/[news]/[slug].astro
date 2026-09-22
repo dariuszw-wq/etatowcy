@@ -2,6 +2,7 @@
 import { getCollection, render } from 'astro:content';
 import Base from '../../../layouts/Base.astro';
 import { locales, routes, type Lang, t, href } from '../../../i18n/ui';
+import { breadcrumb } from '../../../seo';
 
 export async function getStaticPaths() {
   const all = await getCollection('news');
@@ -24,10 +25,12 @@ const article = {
   '@context': 'https://schema.org', '@type': 'NewsArticle',
   headline: d.title, description: d.excerpt, datePublished: d.published.toISOString(), inLanguage: lang,
   author: { '@type': 'Organization', name: 'Etatowcy' }, publisher: { '@type': 'Organization', name: 'Etatowcy' },
+  image: site + import.meta.env.BASE_URL + 'og.png',
   mainEntityOfPage: site + href(lang, 'news', slug),
 };
+const crumbs = breadcrumb(site, lang, 'news', 'nav.news', d.title, slug);
 ---
-<Base lang={lang} route="news" slug={slug} translated={translated} title={`${d.title} — Etatowcy`} description={d.excerpt} jsonLd={[article]}>
+<Base lang={lang} route="news" slug={slug} translated={translated} title={`${d.title} — Etatowcy`} description={d.excerpt} jsonLd={[article, crumbs]}>
   <article class="section">
     <div class="wrap narrow">
       <a class="link" href={href(lang, 'news')}>{tr('news.back')}</a>

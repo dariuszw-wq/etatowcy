@@ -3,6 +3,7 @@ import { getCollection, render } from 'astro:content';
 import Base from '../../../layouts/Base.astro';
 import ContactWizard from '../../../components/ContactWizard.astro';
 import { locales, routes, type Lang, t, href } from '../../../i18n/ui';
+import { breadcrumb } from '../../../seo';
 
 export async function getStaticPaths() {
   const all = await getCollection('jobs');
@@ -21,18 +22,41 @@ const d = job.data;
 const { Content } = await render(job);
 const date = d.published.toLocaleDateString(lang === 'pl' ? 'pl-PL' : lang, { day: '2-digit', month: '2-digit', year: 'numeric' });
 const site = Astro.site?.origin ?? '';
+
+// Google przyjmuje tylko wartości ze słownika schema.org, nie nazwę umowy w języku oferty.
+const EMPLOYMENT_TYPE: Record<string, string> = {
+  'umowa o pracę': 'FULL_TIME', 'employment contract': 'FULL_TIME', 'contrato de trabajo': 'FULL_TIME',
+  'umowa zlecenie': 'CONTRACTOR', 'civil contract (zlecenie)': 'CONTRACTOR', 'contrato civil (zlecenie)': 'CONTRACTOR',
+};
+
+/** „32,50 zł / h brutto" → 32.5 + HOUR; „7 500 – 9 000 zł brutto" → widełki + MONTH. Bez kwoty: pomijamy pole. */
+function baseSalary(pay: string) {
+  const nums = pay.match(/\d[\d  .,]*/g)?.map((n) => Number(n.replace(/[  ]/g, '').replace(',', '.'))).filter((n) => !isNaN(n)) ?? [];
+  if (!nums.length) return undefined;
+  const unitText = /\/\s*h|godz|hour|hora/i.test(pay) ? 'HOUR' : 'MONTH';
+  const value = nums.length > 1
+    ? { '@type': 'QuantitativeValue', minValue: Math.min(...nums), maxValue: Math.max(...nums), unitText }
+    : { '@type': 'QuantitativeValue', value: nums[0], unitText };
+  return { '@type': 'MonetaryAmount', currency: 'PLN', value };
+}
+
+const salary = baseSalary(d.pay);
 const jobPosting = {
   '@context': 'https://schema.org', '@type': 'JobPosting',
   title: d.title, description: d.terms, datePosted: d.published.toISOString().slice(0, 10),
   ...(d.expires ? { validThrough: d.expires.toISOString().slice(0, 10) } : {}),
-  employmentType: d.contract, industry: d.industry,
+  ...(EMPLOYMENT_TYPE[d.contract.toLowerCase()] ? { employmentType: EMPLOYMENT_TYPE[d.contract.toLowerCase()] } : {}),
+  industry: d.industry,
   hiringOrganization: { '@type': 'Organization', name: 'Etatowcy', sameAs: site + href(lang) },
   jobLocation: { '@type': 'Place', address: { '@type': 'PostalAddress', addressLocality: d.city, addressCountry: 'PL' } },
-  baseSalary: { '@type': 'MonetaryAmount', currency: 'PLN', value: { '@type': 'QuantitativeValue', value: d.pay } },
+  ...(salary ? { baseSalary: salary } : {}),
   url: site + href(lang, 'jobs', slug),
 };
+const crumbs = breadcrumb(site, lang, 'jobs', 'nav.jobs', d.title, slug);
+// Oferty poglądowe opisują nieistniejące stanowiska — dane strukturalne o nich wprowadzałyby Google w błąd.
+const jsonLd = d.example ? [crumbs] : [jobPosting, crumbs];
 ---
-<Base lang={lang} route="jobs" slug={slug} translated={translated} title={`${d.title} — ${d.city} — Etatowcy`} description={`${d.title}, ${d.city}. ${d.terms}. ${d.pay}.`} jsonLd={[jobPosting]}>
+<Base lang={lang} route="jobs" slug={slug} translated={translated} title={`${d.title} — ${d.city} — Etatowcy`} description={`${d.title}, ${d.city}. ${d.terms}. ${d.pay}.`} jsonLd={jsonLd}>
   <article class="section">
     <div class="wrap split">
       <header>

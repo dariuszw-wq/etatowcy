@@ -18,7 +18,10 @@ export default defineConfig({
   },
   integrations: [
     sitemap({
-      i18n: { defaultLocale: 'pl', locales: { pl: 'pl-PL', en: 'en', es: 'es' } },
+      // Root bez języka (`/`) ma noindex i przekierowuje — do mapy trafiają tylko adresy kanoniczne.
+      filter: (page) => page !== new URL(BASE, SITE).href,
+      // Kody języków takie same jak hreflang w <head> (Base.astro): pl / en / es.
+      i18n: { defaultLocale: 'pl', locales: { pl: 'pl', en: 'en', es: 'es' } },
     }),
   ],
   build: { inlineStylesheets: 'auto' },

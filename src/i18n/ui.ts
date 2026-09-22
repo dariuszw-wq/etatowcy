@@ -16,7 +16,7 @@ export const ui = {
   pl: {
     langName: 'Polski',
     'meta.title': 'Etatowcy — agencja pracy. Praca, która się opłaca.',
-    'meta.desc': 'Etatowcy łączy ludzi, którzy chcą pracować, z firmami, które chcą ich zatrudnić. Aktualne oferty pracy, zatrudnianie cudzoziemców, wiadomości z rynku pracy. Polski · English · Español.',
+    'meta.desc': 'Agencja pracy Etatowcy: oferty pracy w całej Polsce, legalne zatrudnianie cudzoziemców, wiadomości z rynku pracy. Po polsku, angielsku i hiszpańsku.',
     'nav.jobs': 'Oferty pracy', 'nav.employers': 'Dla pracodawców', 'nav.news': 'Rynek pracy', 'nav.contact': 'Kontakt',
     'nav.menu': 'Menu', 'nav.theme': 'Zmień motyw', 'nav.lang': 'Język',
     'hero.eyebrow': 'Agencja pracy · Polska',
@@ -53,11 +53,12 @@ export const ui = {
     'footer.tag': 'Praca, która się opłaca — dla ludzi i dla firm.',
     'footer.privacy': 'Polityka prywatności', 'footer.rights': 'Wszelkie prawa zastrzeżone.',
     'privacy.title': 'Polityka prywatności',
+    'privacy.desc': 'Jak Etatowcy przetwarza dane z formularza kontaktowego: cel, podstawa prawna, czas przechowywania i Twoje prawa. Bez ciasteczek śledzących.',
   },
   en: {
     langName: 'English',
     'meta.title': 'Etatowcy — employment agency. Work that pays.',
-    'meta.desc': 'Etatowcy connects people who want to work with companies that want to hire them. Current job offers, hiring foreign workers in Poland, labour-market news. Polski · English · Español.',
+    'meta.desc': 'Etatowcy employment agency: job offers across Poland, legal hiring of foreign workers, labour-market news. Service in Polish, English and Spanish.',
     'nav.jobs': 'Jobs', 'nav.employers': 'For employers', 'nav.news': 'Labour market', 'nav.contact': 'Contact',
     'nav.menu': 'Menu', 'nav.theme': 'Switch theme', 'nav.lang': 'Language',
     'hero.eyebrow': 'Employment agency · Poland',
@@ -94,11 +95,12 @@ export const ui = {
     'footer.tag': 'Work that pays — for people and for companies.',
     'footer.privacy': 'Privacy policy', 'footer.rights': 'All rights reserved.',
     'privacy.title': 'Privacy policy',
+    'privacy.desc': 'How Etatowcy processes data from the contact form: purpose, legal basis, retention period and your rights. No tracking cookies.',
   },
   es: {
     langName: 'Español',
     'meta.title': 'Etatowcy — agencia de empleo. Trabajo que vale la pena.',
-    'meta.desc': 'Etatowcy conecta a personas que quieren trabajar con empresas que quieren contratarlas. Ofertas de empleo actuales, contratación de extranjeros en Polonia, noticias del mercado laboral. Polski · English · Español.',
+    'meta.desc': 'Agencia de empleo Etatowcy: ofertas de trabajo en Polonia, contratación legal de extranjeros y noticias del mercado laboral. En polaco, inglés y español.',
     'nav.jobs': 'Empleos', 'nav.employers': 'Para empresas', 'nav.news': 'Mercado laboral', 'nav.contact': 'Contacto',
     'nav.menu': 'Menú', 'nav.theme': 'Cambiar tema', 'nav.lang': 'Idioma',
     'hero.eyebrow': 'Agencia de empleo · Polonia',
@@ -135,6 +137,7 @@ export const ui = {
     'footer.tag': 'Trabajo que vale la pena — para personas y para empresas.',
     'footer.privacy': 'Política de privacidad', 'footer.rights': 'Todos los derechos reservados.',
     'privacy.title': 'Política de privacidad',
+    'privacy.desc': 'Cómo trata Etatowcy los datos del formulario de contacto: finalidad, base legal, plazo de conservación y tus derechos. Sin cookies de seguimiento.',
   },
 } as const;
 

@@ -37,7 +37,7 @@ const privacy = {
   ],
 }[lang];
 ---
-<Base lang={lang} route={page} title={`${titles[page]} — Etatowcy`} description={page === 'employers' ? tr('emp.lead') : page === 'contact' ? tr('contact.lead') : undefined}>
+<Base lang={lang} route={page} title={`${titles[page]} — Etatowcy`} description={page === 'employers' ? tr('emp.lead') : page === 'contact' ? tr('contact.lead') : tr('privacy.desc')}>
   {page === 'employers' && (
     <section class="section">
       <div class="wrap split">
