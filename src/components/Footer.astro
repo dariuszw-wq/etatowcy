@@ -1,5 +1,6 @@
 ---
 import { type Lang, t, href } from '../i18n/ui';
+import { site } from '../config';
 interface Props { lang: Lang }
 const { lang } = Astro.props;
 const tr = t(lang);
@@ -11,6 +12,10 @@ const year = new Date().getFullYear();
     <div>
       <img src={base + 'etatowcy-wordmark-blue.svg'} alt="Etatowcy" width="144" height="32" loading="lazy">
       <p class="small tag">{tr('footer.tag')}</p>
+      <p class="contacts small">
+        <a class="link" href={`mailto:${site.email}`}>{site.email}</a>
+        {site.phone && <a class="link" href={`tel:${site.phone.replace(/\s/g, '')}`}>{site.phone}</a>}
+      </p>
     </div>
     <ul class="links">
       <li><a href={href(lang, 'jobs')}>{tr('nav.jobs')}</a></li>
@@ -27,6 +32,8 @@ const year = new Date().getFullYear();
   .inner{display:grid;grid-template-columns:1fr auto;gap:var(--space-8);padding-block:var(--space-12);align-items:start}
   .inner img{height:32px;width:auto}
   .tag{margin-top:var(--space-3)}
+  .contacts{display:flex;gap:var(--space-4);flex-wrap:wrap;margin-top:var(--space-2)}
+  .contacts a{color:var(--ink)}
   .links{display:flex;flex-wrap:wrap;gap:var(--space-4) var(--space-6)}
   .links a{font:500 14px/20px var(--font-sans);color:var(--ink-muted)}
   .links a:hover{color:var(--ink)}

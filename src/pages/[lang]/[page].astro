@@ -1,7 +1,7 @@
 ---
 // Strony statyczne: pracodawcy · kontakt · polityka prywatności — jeden plik, trasa wg języka.
 import Base from '../../layouts/Base.astro';
-import ContactForm from '../../components/ContactForm.astro';
+import ContactWizard from '../../components/ContactWizard.astro';
 import { locales, routes, type Lang, type RouteKey, t, href } from '../../i18n/ui';
 import { site } from '../../config';
 
@@ -56,7 +56,7 @@ const privacy = {
           <section id="zlec" class="apply">
             <span class="eyebrow">{tr('emp.cta')}</span>
             <h2 class="disp h2">{tr('contact.title.1')} {tr('contact.title.2')}</h2>
-            <ContactForm lang={lang} subject={tr('emp.cta')} />
+            <ContactWizard lang={lang} only="employer" subject={tr('emp.cta')} />
           </section>
         </div>
       </div>
@@ -72,7 +72,7 @@ const privacy = {
           <p class="data"><a class="link" href={`mailto:${site.email}`}>{site.email}</a></p>
           {site.phone && <p class="data"><a class="link" href={`tel:${site.phone.replace(/\s/g, '')}`}>{site.phone}</a></p>}
         </header>
-        <ContactForm lang={lang} />
+        <ContactWizard lang={lang} />
       </div>
     </section>
   )}

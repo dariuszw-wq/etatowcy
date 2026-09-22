@@ -124,7 +124,7 @@ export const ui = {
     'news.eyebrow': 'Mercado laboral', 'news.title.1': 'Qué', 'news.title.2': 'cambia',
     'news.lead': 'Tarifas, normas, plazos — explicados en lenguaje sencillo antes de que te sorprendan.', 'news.all': 'Todas las noticias',
     'news.read': 'Leer →', 'news.min': 'min', 'news.back': '← Mercado laboral',
-    'contact.eyebrow': 'Contacto', 'contact.title.1': 'Escríbe-', 'contact.title.2': 'nos',
+    'contact.eyebrow': 'Contacto', 'contact.title.1': 'Escríbenos', 'contact.title.2': 'hoy',
     'contact.lead': 'Respondemos en un día laborable. En polaco, inglés y español.',
     'form.name': 'Nombre y apellidos', 'form.contact': 'E-mail o teléfono', 'form.msg': '¿En qué podemos ayudarte?',
     'form.consent': 'Acepto el tratamiento de mis datos para responder a mi mensaje.',

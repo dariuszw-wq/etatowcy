@@ -4,7 +4,7 @@ import Base from '../../layouts/Base.astro';
 import Hero from '../../components/Hero.astro';
 import JobCard from '../../components/JobCard.astro';
 import NewsCard from '../../components/NewsCard.astro';
-import ContactForm from '../../components/ContactForm.astro';
+import ContactWizard from '../../components/ContactWizard.astro';
 import { locales, type Lang, t, href } from '../../i18n/ui';
 
 export function getStaticPaths() { return locales.map((lang) => ({ params: { lang } })); }
@@ -70,7 +70,7 @@ const hasExample = jobs.some((j) => j.data.example);
         <h2 class="disp h2">{tr('contact.title.1')}<br>{tr('contact.title.2')}</h2>
         <p class="lead">{tr('contact.lead')}</p>
       </header>
-      <ContactForm lang={lang} />
+      <ContactWizard lang={lang} />
     </div>
   </section>
 </Base>

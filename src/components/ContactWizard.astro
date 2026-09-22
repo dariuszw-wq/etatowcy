@@ -1,0 +1,316 @@
+---
+import { type Lang, t } from '../i18n/ui';
+import { formCopy } from '../i18n/form';
+import { site } from '../config';
+
+interface Props {
+  lang: Lang;
+  /** ograniczenie do jednej ścieżki: 'candidate' (strona oferty) albo 'employer' (dla pracodawców) */
+  only?: 'candidate' | 'employer';
+  /** temat wiadomości, np. tytuł oferty */
+  subject?: string;
+}
+const { lang, only, subject = '' } = Astro.props;
+const tr = t(lang);
+const c = formCopy[lang];
+const paths = only ? c.paths.filter((p) => p.id === only) : c.paths;
+const tel = site.phone.replace(/\s/g, '');
+---
+<div class="wiz" data-wizard data-endpoint={site.formEndpoint} data-email={site.email} data-subject={subject} data-only={only ?? ''} data-edit-label={c.edit}
+     data-copy={JSON.stringify({ errContact: c.errContact, errRequired: c.errRequired, sending: c.sending, send: c.send, step: c.step, of: c.of })}>
+
+  <!-- 0. wybór ścieżki -->
+  <section class="screen" data-screen="role">
+    <p class="lead intro">{c.intro}</p>
+    {!only && <p class="label ask">{c.chooseRole}</p>}
+    <div class="roles">
+      {paths.map((p) => (
+        <button type="button" class="role" data-role={p.id}>
+          <span class="label">{p.label}</span>
+          <span class="small">{p.desc}</span>
+        </button>
+      ))}
+    </div>
+  </section>
+
+  <!-- 1..n. pytania -->
+  {paths.map((p) => p.steps.map((s, i) => (
+    <section class="screen" data-screen="step" data-path={p.id} data-index={i} data-key={s.key} data-multi={s.multi ? '1' : ''} hidden>
+      <p class="small counter">{c.step} {i + 1} {c.of} {p.steps.length + 1}</p>
+      <h3 class="h3 q">{s.question}</h3>
+      {s.hint && <p class="small hint">{s.hint}</p>}
+      {s.options && (
+        <div class="opts">
+          {s.options.map((o) => <button type="button" class="opt" data-value={o.label}>{o.label}</button>)}
+        </div>
+      )}
+      {s.free && (
+        <label class="free">
+          <span class="small">{s.free.label}</span>
+          {s.free.long
+            ? <textarea rows="3" placeholder={s.free.placeholder} data-free data-required={s.free.required ? '1' : ''}></textarea>
+            : <input type="text" placeholder={s.free.placeholder} data-free data-required={s.free.required ? '1' : ''}>}
+        </label>
+      )}
+      <p class="err" data-step-err hidden>{c.errRequired}</p>
+      <div class="nav">
+        <button type="button" class="btn ghost" data-back>{c.back}</button>
+        <button type="button" class="btn primary" data-next>{c.next}</button>
+        {!s.free?.required && !s.multi && <button type="button" class="btn ghost" data-skip>{c.skip}</button>}
+      </div>
+    </section>
+  )))}
+
+  <!-- ostatni ekran: podsumowanie + kontakt -->
+  <section class="screen" data-screen="contact" hidden>
+    <p class="small counter" data-final-counter></p>
+    <h3 class="h3 q">{c.summary}</h3>
+    <p class="small hint">{c.summaryLead}</p>
+    <ul class="sum" data-summary></ul>
+    <form class="form" novalidate>
+      <label class="field">
+        <span class="small">{c.contact.name}</span>
+        <input type="text" name="name" autocomplete="name" placeholder={c.contact.namePh} required>
+      </label>
+      <label class="field">
+        <span class="small">{c.contact.contact}</span>
+        <input type="text" name="contact" autocomplete="email" placeholder={c.contact.contactPh} required data-contact>
+        <span class="err" data-contact-err hidden>{c.errContact}</span>
+      </label>
+      <fieldset class="field full langs">
+        <legend class="small">{c.contact.langs}</legend>
+        <div class="chips">
+          {(['Polski', 'English', 'Español'] as const).map((l, i) => (
+            <label class="chip"><input type="checkbox" name="langs" value={l} checked={i === ['pl', 'en', 'es'].indexOf(lang)}><span>{l}</span></label>
+          ))}
+        </div>
+        <span class="small hint">{c.contact.langsHint}</span>
+      </fieldset>
+      <label class="field full">
+        <span class="small">{c.contact.note}</span>
+        <textarea name="note" rows="3" placeholder={c.contact.notePh}></textarea>
+      </label>
+      <label class="consent full">
+        <input type="checkbox" name="consent" required>
+        <span>{c.contact.consent}</span>
+      </label>
+      <div class="nav full">
+        <button type="button" class="btn ghost" data-back>{c.back}</button>
+        <button type="submit" class="btn primary">{c.send}</button>
+      </div>
+      <p class="err full" data-net hidden>
+        {c.errNet} <a class="link" href={`mailto:${site.email}`}>{site.email}</a>{site.phone && <> {c.or} <a class="link" href={`tel:${tel}`}>{site.phone}</a></>}.
+      </p>
+    </form>
+  </section>
+
+  <!-- potwierdzenie -->
+  <section class="screen done" data-screen="done" hidden role="status">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12l5 5L20 6"/></svg>
+    <p class="label">{c.done}</p>
+  </section>
+
+  {site.phone && (
+    <p class="small call">
+      {c.or} <a class="link" href={`tel:${tel}`}>{c.callUs}: {site.phone}</a>
+    </p>
+  )}
+</div>
+
+<style>
+  .wiz{max-width:640px}
+  .intro{margin-bottom:var(--space-6)}
+  .ask{display:block;margin-bottom:var(--space-3)}
+  .screen[hidden]{display:none}
+  .roles{display:grid;gap:var(--space-3)}
+  .role{display:grid;gap:4px;text-align:left;padding:var(--space-6);border:1px solid var(--line);border-radius:var(--radius-lg);background:var(--surface-2);color:var(--ink);cursor:pointer;transition:transform .18s ease-out,box-shadow .18s ease-out,border-color .18s ease-out}
+  .role:hover{transform:translateY(-2px);box-shadow:var(--shadow-card);border-color:transparent}
+  .role .small{color:var(--ink-muted)}
+  .counter{color:var(--brand);font-weight:600;letter-spacing:.06em;text-transform:uppercase;margin-bottom:var(--space-2)}
+  .q{margin-bottom:var(--space-2)}
+  .hint{margin-bottom:var(--space-4)}
+  .opts{display:flex;flex-wrap:wrap;gap:var(--space-2);margin:var(--space-4) 0}
+  .opt{padding:12px 18px;border-radius:var(--radius-pill);border:1px solid var(--line);background:var(--surface-2);color:var(--ink);font:500 15px/20px var(--font-sans);cursor:pointer;transition:transform .18s ease-out,background .18s ease-out,color .18s ease-out,box-shadow .18s ease-out}
+  .opt:hover{transform:translateY(-2px);box-shadow:var(--shadow-glow)}
+  .opt[aria-pressed="true"]{background:var(--brand);color:var(--on-brand);border-color:transparent}
+  .free{display:block;margin-top:var(--space-4)}
+  .free .small,.field .small,.langs legend{display:block;color:var(--ink-muted);margin-bottom:6px}
+  .free input,.free textarea,.field input,.field textarea{width:100%;box-sizing:border-box;background:var(--surface-2);border:1px solid var(--line);border-radius:var(--radius-md);padding:var(--space-4);font:400 15px/22px var(--font-sans);color:var(--ink)}
+  .free textarea,.field textarea{resize:vertical}
+  .nav{display:flex;gap:var(--space-3);margin-top:var(--space-6);flex-wrap:wrap;align-items:center}
+  .btn.ghost{border-color:transparent;color:var(--ink-muted);padding-inline:12px}
+  .btn.ghost:hover{color:var(--ink);box-shadow:none;transform:none;text-decoration:underline;text-underline-offset:3px}
+  .sum{display:grid;gap:var(--space-2);margin:var(--space-4) 0 var(--space-6);padding:var(--space-4);background:var(--surface-2);border:1px solid var(--line);border-radius:var(--radius-md)}
+  /* wiersze podsumowania tworzy JS, więc bez zasięgu Astro */
+  .sum :global(li){display:grid;grid-template-columns:1fr auto;gap:2px var(--space-4);align-items:start;padding-bottom:var(--space-3);border-bottom:1px solid var(--line)}
+  .sum :global(li:last-child){padding-bottom:0;border-bottom:0}
+  .sum :global(.k){grid-column:1;font:400 12px/16px var(--font-sans);letter-spacing:.04em;text-transform:uppercase;color:var(--ink-muted)}
+  .sum :global(.v){grid-column:1;font:600 15px/22px var(--font-sans);color:var(--ink)}
+  .sum :global(button){grid-column:2;grid-row:1/3;align-self:center;background:none;border:0;color:var(--link);font:600 13px/18px var(--font-sans);cursor:pointer;padding:4px 6px;white-space:nowrap}
+  .sum :global(button:hover){text-decoration:underline;text-underline-offset:3px}
+  .sum button:hover{text-decoration:underline;text-underline-offset:3px}
+  .form{display:grid;grid-template-columns:1fr 1fr;gap:var(--space-3)}
+  .full{grid-column:1/-1}
+  .langs{border:0;padding:0;margin:0}
+  .chips{display:flex;gap:var(--space-2);flex-wrap:wrap;margin-bottom:6px}
+  .chip{display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border:1px solid var(--line);border-radius:var(--radius-pill);cursor:pointer;font:500 14px/20px var(--font-sans)}
+  .chip:has(input:checked){background:var(--brand-glow);border-color:transparent;color:var(--brand)}
+  .chip input{accent-color:var(--brand);width:15px;height:15px}
+  .consent{display:flex;gap:10px;align-items:flex-start;font:400 13px/18px var(--font-sans);color:var(--ink-muted);cursor:pointer}
+  .consent input{margin-top:2px;accent-color:var(--brand);width:16px;height:16px;flex:none}
+  .err{font:400 13px/18px var(--font-sans);color:var(--spark);margin-top:6px}
+  input.invalid,textarea.invalid{border-color:var(--spark)}
+  .done{display:flex;align-items:center;gap:12px;color:var(--spark);padding:var(--space-6) 0}
+  .done svg{width:28px;height:28px;flex:none;stroke:var(--spark);stroke-width:3;fill:none;stroke-dasharray:40;stroke-dashoffset:40;animation:draw 1.2s ease-out forwards}
+  @keyframes draw{to{stroke-dashoffset:0}}
+  .call{margin-top:var(--space-6)}
+  @media (max-width:600px){.form{grid-template-columns:1fr}.sum li{grid-template-columns:1fr auto}}
+  @media (prefers-reduced-motion:reduce){.done svg{animation:none;stroke-dashoffset:0}}
+</style>
+
+<script>
+  document.querySelectorAll<HTMLElement>('[data-wizard]').forEach((wiz) => {
+    const copy = JSON.parse(wiz.dataset.copy!);
+    const screens = {
+      role: wiz.querySelector<HTMLElement>('[data-screen="role"]')!,
+      contact: wiz.querySelector<HTMLElement>('[data-screen="contact"]')!,
+      done: wiz.querySelector<HTMLElement>('[data-screen="done"]')!,
+    };
+    const stepEls = [...wiz.querySelectorAll<HTMLElement>('[data-screen="step"]')];
+    const form = wiz.querySelector<HTMLFormElement>('form')!;
+    const summary = wiz.querySelector<HTMLElement>('[data-summary]')!;
+    const finalCounter = wiz.querySelector<HTMLElement>('[data-final-counter]')!;
+    const only = wiz.dataset.only || '';
+
+    let path = only || '';
+    let idx = 0;
+    const answers = new Map<string, string>();
+
+    const steps = () => stepEls.filter((s) => s.dataset.path === path);
+
+    const show = (el: HTMLElement) => {
+      [screens.role, screens.contact, screens.done, ...stepEls].forEach((s) => (s.hidden = s !== el));
+      const focusable = el.querySelector<HTMLElement>('button, input, textarea');
+      if (el !== screens.role) focusable?.focus({ preventScroll: true });
+      el.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+    };
+
+    const render = () => {
+      const list = steps();
+      if (idx < list.length) { show(list[idx]); return; }
+      // ekran końcowy: podsumowanie
+      finalCounter.textContent = `${copy.step} ${list.length + 1} ${copy.of} ${list.length + 1}`;
+      summary.innerHTML = '';
+      list.forEach((s, i) => {
+        const v = answers.get(s.dataset.key!);
+        if (!v) return;
+        const li = document.createElement('li');
+        const k = document.createElement('span'); k.className = 'k'; k.textContent = s.dataset.key!;
+        const val = document.createElement('span'); val.className = 'v'; val.textContent = v;
+        const b = document.createElement('button'); b.type = 'button'; b.textContent = wiz.dataset.editLabel || 'Edit';
+        b.setAttribute('aria-label', s.dataset.key!);
+        b.addEventListener('click', () => { idx = i; render(); });
+        li.append(k, val, b);
+        summary.append(li);
+      });
+      show(screens.contact);
+    };
+
+    const collect = (el: HTMLElement) => {
+      const picked = [...el.querySelectorAll<HTMLButtonElement>('.opt[aria-pressed="true"]')].map((b) => b.dataset.value!);
+      const free = el.querySelector<HTMLInputElement | HTMLTextAreaElement>('[data-free]');
+      const freeVal = free?.value.trim() ?? '';
+      const parts = [...picked, freeVal].filter(Boolean);
+      return { value: parts.join(' · '), free, freeRequired: free?.dataset.required === '1', hasOptions: !!el.querySelector('.opt') };
+    };
+
+    const goNext = (el: HTMLElement, skip = false) => {
+      const err = el.querySelector<HTMLElement>('[data-step-err]')!;
+      const { value, free, freeRequired } = collect(el);
+      if (!skip) {
+        if (freeRequired && !free!.value.trim()) { free!.classList.add('invalid'); err.hidden = false; free!.focus(); return; }
+        if (!value && !freeRequired) { err.hidden = false; return; }
+      }
+      err.hidden = true; free?.classList.remove('invalid');
+      if (value) answers.set(el.dataset.key!, value); else answers.delete(el.dataset.key!);
+      idx++; render();
+    };
+
+    // wybór ścieżki
+    wiz.querySelectorAll<HTMLButtonElement>('[data-role]').forEach((b) =>
+      b.addEventListener('click', () => {
+        path = b.dataset.role!; idx = 0; answers.clear();
+        answers.set('Kto pisze', b.querySelector('.label')!.textContent!.trim());
+        render();
+      }));
+    if (only) { answers.set('Kto pisze', only === 'employer' ? 'Pracodawca' : 'Kandydat'); render(); }
+
+    // przyciski w pytaniach
+    stepEls.forEach((el) => {
+      const multi = el.dataset.multi === '1';
+      el.querySelectorAll<HTMLButtonElement>('.opt').forEach((b) => {
+        b.setAttribute('aria-pressed', 'false');
+        b.addEventListener('click', () => {
+          if (!multi) el.querySelectorAll('.opt').forEach((o) => o.setAttribute('aria-pressed', 'false'));
+          b.setAttribute('aria-pressed', String(b.getAttribute('aria-pressed') !== 'true'));
+          el.querySelector<HTMLElement>('[data-step-err]')!.hidden = true;
+          // pojedynczy wybór bez pola tekstowego → od razu dalej
+          if (!multi && !el.querySelector('[data-free]')) setTimeout(() => goNext(el), 180);
+        });
+      });
+      el.querySelector('[data-next]')?.addEventListener('click', () => goNext(el));
+      el.querySelector('[data-skip]')?.addEventListener('click', () => goNext(el, true));
+      el.querySelector('[data-back]')?.addEventListener('click', () => {
+        if (idx > 0) { idx--; render(); } else if (!only) { path = ''; show(screens.role); }
+      });
+      el.querySelector<HTMLInputElement>('[data-free]')?.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' && !(e.target as HTMLElement).matches('textarea')) { e.preventDefault(); goNext(el); }
+      });
+    });
+
+    screens.contact.querySelector('[data-back]')?.addEventListener('click', () => { idx = Math.max(0, steps().length - 1); render(); });
+
+    // wysyłka
+    const contactInput = form.querySelector<HTMLInputElement>('[data-contact]')!;
+    const contactErr = form.querySelector<HTMLElement>('[data-contact-err]')!;
+    const net = form.querySelector<HTMLElement>('[data-net]')!;
+    const okContact = (v: string) => /\S+@\S+\.\S+/.test(v) || /^[+\d][\d\s()-]{6,}$/.test(v);
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      net.hidden = true;
+      form.querySelectorAll<HTMLInputElement>('input[required],textarea[required]').forEach((el) => el.classList.toggle('invalid', !el.checkValidity()));
+      const cOk = okContact(contactInput.value.trim());
+      contactInput.classList.toggle('invalid', !cOk); contactErr.hidden = cOk;
+      if (!form.checkValidity() || !cOk) { form.querySelector<HTMLElement>('.invalid')?.focus(); return; }
+
+      const fd = new FormData(form);
+      const langs = fd.getAll('langs').join(', ');
+      const lines = [...answers].map(([k, v]) => `${k}: ${v}`);
+      lines.push(`Język kontaktu: ${langs || '—'}`);
+      if (fd.get('note')) lines.push(`Dodatkowo: ${fd.get('note')}`);
+      const subject = wiz.dataset.subject || `Etatowcy — ${answers.get('Kto pisze') ?? 'zgłoszenie'}`;
+      const body = `${fd.get('name')}\n${fd.get('contact')}\n\n${lines.join('\n')}`;
+
+      const endpoint = wiz.dataset.endpoint;
+      if (!endpoint) {
+        location.href = `mailto:${wiz.dataset.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        return;
+      }
+      const btn = form.querySelector<HTMLButtonElement>('button[type=submit]')!;
+      btn.disabled = true; btn.textContent = copy.sending;
+      try {
+        const payload = new FormData();
+        payload.append('_subject', subject);
+        payload.append('name', String(fd.get('name')));
+        payload.append('contact', String(fd.get('contact')));
+        payload.append('message', body);
+        const res = await fetch(endpoint, { method: 'POST', body: payload, headers: { Accept: 'application/json' } });
+        if (!res.ok) throw new Error(String(res.status));
+        show(screens.done);
+      } catch {
+        net.hidden = false; btn.disabled = false; btn.textContent = copy.send;
+      }
+    });
+  });
+</script>

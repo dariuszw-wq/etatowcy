@@ -1,7 +1,7 @@
 ---
 import { getCollection, render } from 'astro:content';
 import Base from '../../../layouts/Base.astro';
-import ContactForm from '../../../components/ContactForm.astro';
+import ContactWizard from '../../../components/ContactWizard.astro';
 import { locales, routes, type Lang, t, href } from '../../../i18n/ui';
 
 export async function getStaticPaths() {
@@ -54,7 +54,7 @@ const jobPosting = {
         <section id="aplikuj" class="apply">
           <span class="eyebrow">{tr('jobs.apply')}</span>
           <h2 class="disp h2">{tr('contact.title.1')} {tr('contact.title.2')}</h2>
-          <ContactForm lang={lang} subject={`${d.title} — ${d.city}`} />
+          <ContactWizard lang={lang} only="candidate" subject={`${d.title} — ${d.city}`} />
         </section>
       </div>
     </div>
