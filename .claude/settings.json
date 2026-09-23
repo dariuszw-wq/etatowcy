@@ -1,0 +1,35 @@
+{
+  "permissions": {
+    "defaultMode": "acceptEdits",
+    "additionalDirectories": [
+      "G:\\Mój dysk\\STRONY\\Etatowcy",
+      "C:\\Users\\PC\\Documents\\STRONA_COSP"
+    ],
+    "allow": [
+      "Bash(cd:*)",
+      "Bash(ls:*)",
+      "Bash(cat:*)",
+      "Bash(head:*)",
+      "Bash(tail:*)",
+      "Bash(grep:*)",
+      "Bash(git:*)",
+      "Bash(npm run build:*)",
+      "Bash(npm ci:*)",
+      "Bash(curl:*)",
+      "Bash(python:*)",
+      "Bash(\"C:/Program Files/GitHub CLI/gh.exe\":*)",
+      "PowerShell(npm run build:*)",
+      "PowerShell(robocopy:*)",
+      "PowerShell(Set-Location:*)",
+      "PowerShell(git:*)",
+      "PowerShell(python:*)",
+      "WebSearch",
+      "WebFetch",
+      "Read",
+      "Glob",
+      "Grep",
+      "Write",
+      "Edit"
+    ]
+  }
+}
