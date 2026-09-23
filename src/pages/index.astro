@@ -1,6 +1,11 @@
 ---
 // Strona główna bez języka: wybiera język przeglądarki (pl/en/es), domyślnie polski.
 const base = import.meta.env.BASE_URL;
+// hreflang wymaga adresów bezwzględnych — względne Google ignoruje.
+const abs = (path: string) => (Astro.site?.origin ?? '') + base + path;
+// Komunikatory pobierają podgląd z adresu, który dostały — a „etatowcy.pl" bez języka trafia tutaj.
+const title = 'Etatowcy — agencja pracy. Praca, która się opłaca.';
+const description = 'Agencja pracy Etatowcy: oferty pracy w całej Polsce, legalne zatrudnianie cudzoziemców, wiadomości z rynku pracy. Po polsku, angielsku i hiszpańsku.';
 ---
 <!doctype html>
 <html lang="pl">
@@ -8,10 +13,21 @@ const base = import.meta.env.BASE_URL;
 <meta charset="utf-8">
 <title>Etatowcy</title>
 <meta name="robots" content="noindex">
-<link rel="alternate" hreflang="pl" href={base + 'pl/'}>
-<link rel="alternate" hreflang="en" href={base + 'en/'}>
-<link rel="alternate" hreflang="es" href={base + 'es/'}>
-<link rel="alternate" hreflang="x-default" href={base + 'pl/'}>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content={description}>
+<link rel="alternate" hreflang="pl" href={abs('pl/')}>
+<link rel="alternate" hreflang="en" href={abs('en/')}>
+<link rel="alternate" hreflang="es" href={abs('es/')}>
+<link rel="alternate" hreflang="x-default" href={abs('pl/')}>
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Etatowcy">
+<meta property="og:title" content={title}>
+<meta property="og:description" content={description}>
+<meta property="og:url" content={abs('pl/')}>
+<meta property="og:locale" content="pl_PL">
+<meta property="og:image" content={abs('og.png')}>
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href={base + 'favicon.svg'} type="image/svg+xml">
 <meta http-equiv="refresh" content={`0;url=${base}pl/`}>
 <script is:inline set:html={`
 (function(){var b=${JSON.stringify(base)};var s=null;try{s=localStorage.getItem('etatowcy:lang')}catch(e){}
