@@ -5,3 +5,6 @@ dist/
 .env.*
 .DS_Store
 Thumbs.db
+
+# Raporty audytowe — zawierają tokeny weryfikacyjne i dane kontaktowe, a repo jest publiczne
+docs/audyt-seo-*.md
