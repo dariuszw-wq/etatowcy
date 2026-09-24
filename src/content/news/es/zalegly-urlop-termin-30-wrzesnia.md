@@ -15,7 +15,7 @@ Dos detalles que suelen olvidarse:
 - **Basta con que las vacaciones comiencen** antes del 30 de septiembre. Si te quedan diez o quince días pendientes y el primero cae el 30 de septiembre, el resto puede continuar en octubre: el plazo se considera cumplido.
 - **El urlop na żądanie (permiso a demanda) no entra en esta bolsa.** Los 4 días a demanda no disfrutados en 2025 pasan a 2026 como vacaciones pendientes ordinarias, pero ya no se rigen por el régimen especial del permiso a demanda.
 
-No conceder al trabajador las vacaciones que le corresponden es una infracción contra los derechos del trabajador, castigada con una multa de **1000 a 30 000 PLN** (art. 282 § 1 punto 2 del Código de Trabajo).
+No conceder al trabajador las vacaciones que le corresponden es una infracción contra los derechos del trabajador, castigada con una multa de **2000 a 60 000 PLN** (art. 282 § 1 punto 2 del Código de Trabajo, en la redacción vigente desde el 8 de julio de 2026).
 
 ## Segundo plazo: prescripción de las vacaciones de 2022
 Las reclamaciones derivadas de la relación laboral prescriben a los **3 años** desde el día en que resultaron exigibles (art. 291 § 1 del Código de Trabajo). En el caso de las vacaciones pendientes, ese plazo empieza a correr el 30 de septiembre del año siguiente a aquel en que se generaron.

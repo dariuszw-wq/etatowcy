@@ -15,7 +15,7 @@ Dwie rzeczy, o których się najczęściej zapomina:
 - **Wystarczy, że urlop się rozpocznie** do 30 września. Jeśli masz kilkanaście zaległych dni i pierwszy z nich wypada 30 września, resztę możesz przenieść na październik — termin będzie dochowany.
 - **Urlop na żądanie nie wchodzi** do tej puli. Niewykorzystane 4 dni na żądanie z 2025 r. przechodzą na 2026 r. jako zwykły urlop zaległy, ale nie obowiązuje ich odrębny reżim 30 września jako urlopu „na żądanie".
 
-Nieudzielenie pracownikowi przysługującego urlopu jest wykroczeniem przeciwko prawom pracownika — grozi za nie grzywna od **1000 zł do 30 000 zł** (art. 282 § 1 pkt 2 Kodeksu pracy).
+Nieudzielenie pracownikowi przysługującego urlopu jest wykroczeniem przeciwko prawom pracownika — grozi za nie grzywna od **2000 zł do 60 000 zł** (art. 282 § 1 pkt 2 Kodeksu pracy, w brzmieniu obowiązującym od 8 lipca 2026 r.).
 
 ## Termin drugi: przedawnienie urlopu za 2022 r.
 Roszczenia ze stosunku pracy przedawniają się po **3 latach** od dnia, w którym stały się wymagalne (art. 291 § 1 Kodeksu pracy). Dla urlopu zaległego bieg tego terminu liczy się od 30 września roku następnego po roku, za który urlop przysługiwał.

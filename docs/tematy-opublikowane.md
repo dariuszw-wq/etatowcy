@@ -11,3 +11,5 @@ Jedna linia na artykuł. Sprawdzaj przed wyborem nowego tematu.
 | 2026-09-22 | pip-kontrole-minimalna-stawka-skarga | PIP sprawdza minimalne wypłaty — jak zgłosić niedopłatę | PIP (komunikat 18.09.2026, „Jak złożyć skargę?"); Dz.U. 2024 poz. 1773 |
 | 2026-09-23 | zalegly-urlop-termin-30-wrzesnia | Zaległy urlop: 30 września 2026 r. to dwa terminy naraz | Kodeks pracy (t.j. Dz.U. 2025 poz. 277), art. 161, 167(2), 168, 171, 282, 291; PIP |
 | 2026-09-23 | widelki-wynagrodzenia-w-rekrutacji | Widełki wynagrodzenia w rekrutacji — czego możesz wymagać od pracodawcy | Dz.U. 2025 poz. 807 (art. 18(3ca) k.p.); dyrektywa (UE) 2023/970; PIP |
+| 2026-09-24 | pip-decyzja-umowa-o-prace-zamiast-zlecenia | PIP może zamienić zlecenie w umowę o pracę — jak działa decyzja inspektora | Dz.U. 2026 poz. 473 (art. 11, 33a, 34 ustawy o PIP; art. 477⁷ᵇ k.p.c.; art. 33, 69 ustawy o cudzoziemcach); gov.pl MRPiPS |
+| 2026-09-24 | wyzsze-grzywny-pip-rok-na-umowe-o-prace | Wyższe grzywny za łamanie praw pracownika i rok na dobrowolną zmianę umowy | Dz.U. 2026 poz. 473 (art. 3, 6, 16; art. 14b ustawy o PIP); Kodeks pracy art. 281–283; k.p.w. art. 96 |

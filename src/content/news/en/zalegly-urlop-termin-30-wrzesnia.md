@@ -15,7 +15,7 @@ Two things that are most often forgotten:
 - **It is enough that the leave begins** by 30 September. If you have a dozen or so carried-over days and the first of them falls on 30 September, the rest may continue into October — the deadline is met.
 - **Urlop na żądanie (leave on demand) is not part of this pool.** Four unused on-demand days from 2025 carry over into 2026 as ordinary carried-over leave, but they are no longer governed by the separate on-demand regime.
 
-Failing to grant an employee the leave they are entitled to is an offence against employee rights, punishable by a fine of **PLN 1,000 to PLN 30,000** (art. 282 § 1 point 2 of the Labour Code).
+Failing to grant an employee the leave they are entitled to is an offence against employee rights, punishable by a fine of **PLN 2,000 to PLN 60,000** (art. 282 § 1 point 2 of the Labour Code, as in force since 8 July 2026).
 
 ## Deadline two: leave from 2022 becomes time-barred
 Claims arising from an employment relationship become time-barred after **3 years** from the day they became due (art. 291 § 1 of the Labour Code). For carried-over leave, that period runs from 30 September of the year following the year the leave was earned.
