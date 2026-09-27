@@ -7,7 +7,7 @@
 | Strona na żywo | https://etatowcy.pl |
 | Kod (źródło prawdy) | https://github.com/dariuszw-wq/etatowcy — push na `main` = automatyczne wdrożenie (~1 min) |
 | System projektowy | https://claude.ai/artifact/RD6BWzW5sNPbHdZDQ9QX1X (tokeny, komponenty, logo) |
-| Kopia zapasowa źródeł | `G:\Mój dysk\STRONY\Etatowcy` (Google Drive, tylko kopia — nie pracować tam, Drive blokuje npm) |
+| Kopia zapasowa | repozytorium GitHub (pełna historia). Innych kopii nie ma i nie tworzymy — ten folder jest jedyny. |
 
 ## Co gdzie leży
 
