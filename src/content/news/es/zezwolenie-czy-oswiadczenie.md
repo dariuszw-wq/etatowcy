@@ -8,7 +8,7 @@ readingTime: 4
 Un empleador que contrata a una persona de fuera de la UE tiene dos vías principales. Se diferencian en tiempo, coste y a quién están abiertas.
 
 ## Declaración (oświadczenie o powierzeniu wykonywania pracy)
-- para ciudadanos de determinados países (Ucrania, Bielorrusia, Moldavia, Georgia, Armenia, entre otros),
+- para ciudadanos de Armenia, Bielorrusia, Moldavia y Ucrania (Georgia salió de la lista el 1 de diciembre de 2025),
 - inscripción en la oficina de empleo del distrito — normalmente en pocos días,
 - trabajo hasta 24 meses.
 

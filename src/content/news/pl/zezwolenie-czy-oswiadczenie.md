@@ -8,7 +8,7 @@ readingTime: 4
 Pracodawca, który chce zatrudnić osobę spoza Unii Europejskiej, ma do wyboru dwie główne ścieżki. Różnią się czasem, kosztem i tym, dla kogo są dostępne.
 
 ## Oświadczenie o powierzeniu wykonywania pracy
-- dla obywateli wybranych państw (m.in. Ukraina, Białoruś, Mołdawia, Gruzja, Armenia),
+- dla obywateli Armenii, Białorusi, Mołdawii i Ukrainy (Gruzja wypadła z listy 1 grudnia 2025 r.),
 - wpis do ewidencji w powiatowym urzędzie pracy — zwykle w kilka dni,
 - praca do 24 miesięcy.
 

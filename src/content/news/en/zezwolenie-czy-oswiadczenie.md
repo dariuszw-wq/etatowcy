@@ -8,7 +8,7 @@ readingTime: 4
 An employer hiring a person from outside the EU has two main routes. They differ in time, cost and who is eligible.
 
 ## Declaration (oświadczenie o powierzeniu wykonywania pracy)
-- for citizens of selected countries (incl. Ukraine, Belarus, Moldova, Georgia, Armenia),
+- for citizens of Armenia, Belarus, Moldova and Ukraine (Georgia was removed from the list on 1 December 2025),
 - registered at the district labour office — usually within days,
 - work for up to 24 months.
 
