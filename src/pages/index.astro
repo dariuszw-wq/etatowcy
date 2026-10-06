@@ -11,11 +11,14 @@ const description = 'Agencja pracy Etatowcy: oferty pracy w całej Polsce, legal
 <html lang="pl">
 <head>
 <meta charset="utf-8">
-<title>Etatowcy</title>
-<meta name="robots" content="noindex">
+<title>{title}</title>
 <meta name="google-site-verification" content="VF3RE7dSyHKm47EivNGskAWejGo81_v2Av1ideR_UfI">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="description" content={description}>
+<!-- Korzeń domeny to adres, do którego prowadzą linki z zewnątrz. Zamiast noindex (który blokował
+     najważniejszy adres witryny) kanoniczny wskaźnik na /pl/ + natychmiastowe przekierowanie:
+     Google traktuje to jak przekierowanie i przenosi sygnały na polską stronę główną. -->
+<link rel="canonical" href={abs('pl/')}>
 <link rel="alternate" hreflang="pl" href={abs('pl/')}>
 <link rel="alternate" hreflang="en" href={abs('en/')}>
 <link rel="alternate" hreflang="es" href={abs('es/')}>

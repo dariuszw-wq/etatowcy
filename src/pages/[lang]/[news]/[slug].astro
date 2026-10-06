@@ -10,10 +10,17 @@ export async function getStaticPaths() {
     const lang = item.data.lang as Lang;
     const slug = item.id.split('/').pop()!;
     const translated = locales.every((l) => all.some((n) => n.data.lang === l && n.id.endsWith('/' + slug)));
-    return { params: { lang, news: routes.news[lang], slug }, props: { item, translated } };
+    // Bez przelinkowania robot dociera do artykułu wyłącznie przez listę — każdy tekst
+    // dostaje więc trzy sąsiednie z tego samego języka (najnowsze, pomijając samego siebie).
+    const related = all
+      .filter((n) => n.data.lang === lang && n.id !== item.id)
+      .sort((a, b) => +b.data.published - +a.data.published)
+      .slice(0, 3)
+      .map((n) => ({ slug: n.id.split('/').pop()!, title: n.data.title, excerpt: n.data.excerpt }));
+    return { params: { lang, news: routes.news[lang], slug }, props: { item, translated, related } };
   });
 }
-const { item, translated } = Astro.props;
+const { item, translated, related } = Astro.props;
 const lang = Astro.params.lang as Lang;
 const slug = Astro.params.slug!;
 const tr = t(lang);
@@ -38,6 +45,23 @@ const crumbs = breadcrumb(site, lang, 'news', 'nav.news', d.title, slug);
       <h1 class="disp h1">{d.title}</h1>
       <p class="lead">{d.excerpt}</p>
       <div class="prose"><Content /></div>
+
+      {related.length > 0 && (
+        <aside class="more">
+          <h2 class="eyebrow">{tr('news.more')}</h2>
+          <ul>
+            {related.map((r) => (
+              <li>
+                <a href={href(lang, 'news', r.slug)}>
+                  <span class="t">{r.title}</span>
+                  <span class="small">{r.excerpt}</span>
+                </a>
+              </li>
+            ))}
+          </ul>
+          <a class="link all" href={href(lang, 'news')}>{tr('news.all')} →</a>
+        </aside>
+      )}
     </div>
   </article>
 </Base>
@@ -46,4 +70,13 @@ const crumbs = breadcrumb(site, lang, 'news', 'nav.news', d.title, slug);
   .meta{margin:var(--space-6) 0 var(--space-2)}
   .h1{font-size:clamp(40px,6vw,80px);text-transform:none;margin-bottom:var(--space-6)}
   .lead{margin-bottom:var(--space-8);max-width:60ch}
+  .more{margin-top:var(--space-16);padding-top:var(--space-8);border-top:1px solid var(--line)}
+  .more .eyebrow{display:block;margin-bottom:var(--space-4)}
+  .more ul{display:grid;gap:var(--space-3)}
+  .more a{display:grid;gap:4px;padding:var(--space-4);background:var(--surface-2);border:1px solid var(--line);border-radius:var(--radius-md);transition:transform .18s ease-out,box-shadow .18s ease-out}
+  .more a:hover{transform:translateY(-2px);box-shadow:var(--shadow-card)}
+  .more .t{font:600 17px/24px var(--font-sans)}
+  .more .small{color:var(--ink-muted)}
+  .more .all{display:inline-block;margin-top:var(--space-4);padding:0;background:none;border:0}
+  .more .all:hover{transform:none;box-shadow:none}
 </style>
