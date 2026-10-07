@@ -1,6 +1,7 @@
 ---
 lang: es
 title: "Fecha de pago del sueldo: hasta el día 10, en octubre de 2026 hasta el 9.10"
+seoTitle: "Fecha de pago del sueldo: hasta el día 10"
 excerpt: "El empleador paga el sueldo mensual como muy tarde el día 10 del mes siguiente. Qué pasa si ese día es libre y qué hacer si el pago se retrasa."
 published: 2026-10-06
 readingTime: 4

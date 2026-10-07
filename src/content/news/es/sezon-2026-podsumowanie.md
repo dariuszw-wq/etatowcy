@@ -1,6 +1,7 @@
 ---
 lang: es
 title: "La temporada 2026 del trabajo temporal — tres cosas que se quedan"
+seoTitle: "La temporada 2026 del trabajo temporal"
 excerpt: "Más contratos de trabajo, selecciones más cortas, trabajadores de nuevos países."
 published: 2026-09-07
 readingTime: 3

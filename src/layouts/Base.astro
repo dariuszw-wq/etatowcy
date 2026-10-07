@@ -17,7 +17,13 @@ interface Props {
 }
 const { lang, route, slug, translated = true, jsonLd = [] } = Astro.props;
 const tr = t(lang);
-const title = Astro.props.title ?? tr('meta.title');
+// Google ucina tytuł w wynikach około 60–65 znaków. Marka ma sens tylko wtedy, gdy zdąży się
+// pokazać — przy długim tytule doklejone „— Etatowcy" zabiera miejsce samej treści i i tak ginie.
+const RAW_TITLE = Astro.props.title ?? tr('meta.title');
+const BRAND = ' — Etatowcy';
+const title = RAW_TITLE.endsWith(BRAND) && RAW_TITLE.length > 60
+  ? RAW_TITLE.slice(0, -BRAND.length)
+  : RAW_TITLE;
 const description = Astro.props.description ?? tr('meta.desc');
 const base = import.meta.env.BASE_URL;
 const site = Astro.site?.origin ?? '';

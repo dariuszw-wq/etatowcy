@@ -1,6 +1,7 @@
 ---
 lang: es
 title: "Vacaciones pendientes: el 30 de septiembre de 2026 son dos plazos a la vez"
+seoTitle: "Vacaciones pendientes: plazo 30 de septiembre"
 excerpt: "Las vacaciones pendientes de 2025 deben empezar antes del 30 de septiembre. Ese mismo día prescriben las de 2022: revisa tus días."
 published: 2026-09-23
 readingTime: 4

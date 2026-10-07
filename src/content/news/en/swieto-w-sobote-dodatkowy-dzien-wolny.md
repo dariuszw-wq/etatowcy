@@ -1,6 +1,7 @@
 ---
 lang: en
 title: "26 December 2026 falls on a Saturday — you are entitled to an extra day off"
+seoTitle: "26 December 2026 falls on a Saturday"
 excerpt: "A public holiday on a Saturday cuts working time by 8 hours. If you work Monday to Friday, your employer must give you another day off instead."
 published: 2026-10-02
 readingTime: 4

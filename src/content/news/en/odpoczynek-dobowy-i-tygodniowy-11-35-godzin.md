@@ -1,6 +1,7 @@
 ---
 lang: en
 title: "Rest at work: 11 hours a day and 35 hours a week — your right"
+seoTitle: "Rest at work: 11 hours a day and 35 hours a week"
 excerpt: "You must have at least 11 hours off between shifts and 35 hours of uninterrupted rest each week. Here is what it means for your schedule."
 published: 2026-10-07
 readingTime: 4

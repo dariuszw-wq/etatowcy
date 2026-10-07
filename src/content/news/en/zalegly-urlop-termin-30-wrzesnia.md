@@ -1,6 +1,7 @@
 ---
 lang: en
 title: "Carried-over leave: 30 September 2026 is two deadlines in one"
+seoTitle: "Carried-over leave: deadline 30 September"
 excerpt: "Carried-over leave from 2025 must start by 30 September. On the same day, leave from 2022 becomes time-barred — check your entitlement."
 published: 2026-09-23
 readingTime: 4

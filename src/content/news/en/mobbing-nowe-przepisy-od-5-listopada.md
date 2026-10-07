@@ -1,6 +1,7 @@
 ---
 lang: en
 title: "Workplace bullying (mobbing): new rules from 5 November 2026"
+seoTitle: "Mobbing: new rules from 5 November 2026"
 excerpt: "From 5 November 2026, mobbing means persistent harassment of an employee; compensation is at least six times the minimum wage."
 published: 2026-09-28
 readingTime: 4

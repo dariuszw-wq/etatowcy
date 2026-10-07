@@ -1,6 +1,7 @@
 ---
 lang: en
 title: "Minimum hourly rate in 2027 — what changes for temporary workers"
+seoTitle: "Minimum hourly rate in 2027"
 excerpt: "The new amount, who it applies to and how to check your contract complies."
 published: 2026-09-21
 readingTime: 3

@@ -1,6 +1,7 @@
 ---
 lang: en
 title: "Sick leave (L4) — how much you get and when you lose sickness benefit"
+seoTitle: "Sick leave (L4): pay and when you lose it"
 excerpt: "On sick leave you usually get 80% of your pay. Since 13 April 2026 the law states exactly what you must not do on sick leave and how ZUS checks it."
 published: 2026-10-02
 readingTime: 5

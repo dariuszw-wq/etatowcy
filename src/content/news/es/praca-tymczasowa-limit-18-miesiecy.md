@@ -1,6 +1,7 @@
 ---
 lang: es
 title: "Trabajo temporal: 18 meses en una empresa dentro de 36 — cómo contar el límite"
+seoTitle: "Trabajo temporal: 18 meses en una empresa dentro de 36"
 excerpt: "Un trabajador temporal puede trabajar para una empresa usuaria como máximo 18 meses dentro de 36 meses consecutivos. Te explicamos cómo contar este límite."
 published: 2026-09-29
 readingTime: 4

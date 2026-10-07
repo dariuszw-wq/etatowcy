@@ -1,6 +1,7 @@
 ---
 lang: en
 title: "Notice period for an employment contract — how long it lasts and when it ends"
+seoTitle: "Notice period for an employment contract"
 excerpt: "From 3 working days to 3 months: what the length of notice depends on, when it ends and what rights you have during it."
 published: 2026-09-29
 readingTime: 4

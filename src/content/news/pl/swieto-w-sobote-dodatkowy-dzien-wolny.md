@@ -1,6 +1,7 @@
 ---
 lang: pl
 title: "26 grudnia 2026 r. wypada w sobotę — należy Ci się dodatkowy dzień wolny"
+seoTitle: "26 grudnia 2026 r. wypada w sobotę"
 excerpt: "Święto w sobotę obniża wymiar czasu pracy o 8 godzin. Jeśli pracujesz od poniedziałku do piątku, pracodawca musi wyznaczyć Ci w zamian inny dzień wolny."
 published: 2026-10-02
 readingTime: 4

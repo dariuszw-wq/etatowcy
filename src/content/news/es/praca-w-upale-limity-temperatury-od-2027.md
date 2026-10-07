@@ -1,6 +1,7 @@
 ---
 lang: es
 title: "Calor en el trabajo: límite de 35 °C en interior y 32 °C fuera desde enero de 2027"
+seoTitle: "Calor en el trabajo: límites desde enero de 2027"
 excerpt: "Las nuevas normas de seguridad fijan por primera vez una temperatura a la que hay que parar el trabajo, y deberes del empleador desde 25–28 °C."
 published: 2026-09-28
 readingTime: 4

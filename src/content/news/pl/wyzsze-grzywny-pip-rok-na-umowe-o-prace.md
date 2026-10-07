@@ -1,6 +1,7 @@
 ---
 lang: pl
 title: "Wyższe grzywny za łamanie praw pracownika i rok na dobrowolną zmianę umowy"
+seoTitle: "Wyższe grzywny i rok na zmianę umowy"
 excerpt: "Od 8 lipca 2026 r. grzywny z Kodeksu pracy wzrosły dwukrotnie, a firmy mają czas do 8 lipca 2027 r., by bez kary zamienić pozorne zlecenia na umowy o pracę."
 published: 2026-09-24
 readingTime: 4

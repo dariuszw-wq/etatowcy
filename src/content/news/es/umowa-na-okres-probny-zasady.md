@@ -1,6 +1,7 @@
 ---
 lang: es
 title: "Contrato de período de prueba: cuánto puede durar y cómo se rescinde"
+seoTitle: "Contrato de prueba: duración y rescisión"
 excerpt: "El período de prueba dura como máximo 3 meses, y 1 o 2 meses antes de contratos más cortos. Cómo calcularlo, plazos de preaviso y cuándo se prorroga."
 published: 2026-10-05
 readingTime: 4

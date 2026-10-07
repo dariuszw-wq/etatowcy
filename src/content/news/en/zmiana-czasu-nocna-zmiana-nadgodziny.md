@@ -1,6 +1,7 @@
 ---
 lang: en
 title: "Clock change on 25 October 2026 — the extra hour on a night shift is overtime"
+seoTitle: "Clock change on 25 October 2026"
 excerpt: "On the night of 24 to 25 October the clocks go back. If you work the night shift then, you usually work one hour more — and you are owed a supplement for it."
 published: 2026-09-30
 readingTime: 4

@@ -1,6 +1,7 @@
 ---
 lang: pl
 title: "PIP może zamienić zlecenie w umowę o pracę — jak działa decyzja inspektora"
+seoTitle: "PIP może zamienić zlecenie w umowę o pracę"
 excerpt: "Od 8 lipca 2026 r. okręgowy inspektor pracy może decyzją stwierdzić, że zlecenie lub B2B to w praktyce umowa o pracę — oto jak to działa."
 published: 2026-09-24
 readingTime: 5

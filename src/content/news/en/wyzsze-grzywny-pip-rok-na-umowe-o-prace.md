@@ -1,6 +1,7 @@
 ---
 lang: en
 title: "Higher fines for breaching employee rights and a year to switch contracts voluntarily"
+seoTitle: "Higher fines and a year to switch contracts"
 excerpt: "Since 8 July 2026 Labour Code fines have doubled, and firms have until 8 July 2027 to turn sham civil contracts into employment contracts without a penalty."
 published: 2026-09-24
 readingTime: 4

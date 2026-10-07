@@ -1,6 +1,7 @@
 ---
 lang: es
 title: "Horquillas salariales en la selección: qué puedes exigir al empleador"
+seoTitle: "Horquillas salariales en la selección"
 excerpt: "Desde el 24 de diciembre de 2025 el candidato debe conocer el sueldo antes de firmar, y no pueden preguntarte cuánto ganabas antes."
 published: 2026-09-23
 readingTime: 4

@@ -1,6 +1,7 @@
 ---
 lang: pl
 title: "Odpoczynek w pracy: 11 godzin na dobę i 35 godzin w tygodniu — Twoje prawo"
+seoTitle: "Odpoczynek w pracy: 11 godzin na dobę i 35 godzin w tygodniu"
 excerpt: "Między zmianami musisz mieć co najmniej 11 godzin przerwy, a raz w tygodniu 35 godzin ciągłego odpoczynku. Sprawdź, co to znaczy w grafiku."
 published: 2026-10-07
 readingTime: 4

@@ -1,6 +1,7 @@
 ---
 lang: es
 title: "Descanso en el trabajo: 11 horas al día y 35 horas a la semana — tu derecho"
+seoTitle: "Descanso: 11 horas al día y 35 a la semana"
 excerpt: "Entre turnos debes tener al menos 11 horas libres y cada semana 35 horas de descanso continuo. Así se aplica a tu horario."
 published: 2026-10-07
 readingTime: 4

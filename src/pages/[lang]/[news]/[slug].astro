@@ -37,7 +37,7 @@ const article = {
 };
 const crumbs = breadcrumb(site, lang, 'news', 'nav.news', d.title, slug);
 ---
-<Base lang={lang} route="news" slug={slug} translated={translated} title={`${d.title} — Etatowcy`} description={d.excerpt} jsonLd={[article, crumbs]}>
+<Base lang={lang} route="news" slug={slug} translated={translated} title={`${d.seoTitle ?? d.title} — Etatowcy`} description={d.excerpt} jsonLd={[article, crumbs]}>
   <article class="section">
     <div class="wrap narrow">
       <a class="link" href={href(lang, 'news')}>{tr('news.back')}</a>

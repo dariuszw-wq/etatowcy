@@ -1,6 +1,7 @@
 ---
 lang: es
 title: "Acoso laboral (mobbing): nuevas reglas desde el 5 de noviembre de 2026"
+seoTitle: "Acoso laboral: nuevas reglas desde noviembre"
 excerpt: "Desde el 5 de noviembre de 2026, el mobbing es el acoso persistente al trabajador; la indemnización mínima es seis salarios mínimos."
 published: 2026-09-28
 readingTime: 4

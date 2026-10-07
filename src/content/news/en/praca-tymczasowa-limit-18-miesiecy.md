@@ -1,6 +1,7 @@
 ---
 lang: en
 title: "Temporary work: 18 months at one company within 36 — how to count the limit"
+seoTitle: "Temporary work: 18 months at one company within 36"
 excerpt: "A temporary worker may work for one user employer for no more than 18 months within 36 consecutive months. Here is how to count this limit."
 published: 2026-09-29
 readingTime: 4

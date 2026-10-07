@@ -1,6 +1,7 @@
 ---
 lang: pl
 title: "Umowa na okres próbny — ile może trwać i jak się ją wypowiada"
+seoTitle: "Umowa na okres próbny: zasady"
 excerpt: "Okres próbny trwa najwyżej 3 miesiące, a przy krótszych umowach 1 lub 2 miesiące. Sprawdź, jak go liczyć, jakie są okresy wypowiedzenia i kiedy się przedłuża."
 published: 2026-10-05
 readingTime: 4

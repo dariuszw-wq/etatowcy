@@ -1,6 +1,7 @@
 ---
 lang: pl
 title: "Widełki wynagrodzenia w rekrutacji — czego możesz wymagać od pracodawcy"
+seoTitle: "Widełki wynagrodzenia w rekrutacji"
 excerpt: "Od 24 grudnia 2025 r. kandydat musi poznać stawkę przed podpisaniem umowy, a pracodawca nie może pytać, ile zarabiałeś wcześniej."
 published: 2026-09-23
 readingTime: 4

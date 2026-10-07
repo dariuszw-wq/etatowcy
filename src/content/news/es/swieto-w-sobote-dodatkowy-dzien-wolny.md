@@ -1,6 +1,7 @@
 ---
 lang: es
 title: "El 26 de diciembre de 2026 cae en sábado: te corresponde un día libre adicional"
+seoTitle: "El 26 de diciembre de 2026 cae en sábado"
 excerpt: "Un festivo en sábado reduce la jornada en 8 horas. Si trabajas de lunes a viernes, el empleador debe darte otro día libre a cambio."
 published: 2026-10-02
 readingTime: 4

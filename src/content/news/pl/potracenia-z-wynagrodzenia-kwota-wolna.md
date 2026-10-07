@@ -1,6 +1,7 @@
 ---
 lang: pl
 title: "Potrącenia z pensji — co pracodawca może zabrać i ile musi Ci zostawić"
+seoTitle: "Potrącenia z pensji i kwota wolna"
 excerpt: "Komornik, zaliczka, kara, mieszkanie od pracodawcy: jakie potrącenia są dozwolone, kiedy potrzebna jest Twoja zgoda i ile wynosi kwota wolna w 2026 r."
 published: 2026-09-30
 readingTime: 4

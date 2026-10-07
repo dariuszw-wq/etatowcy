@@ -1,6 +1,7 @@
 ---
 lang: es
 title: "Multas más altas por vulnerar derechos laborales y un año para cambiar contratos"
+seoTitle: "Multas más altas y un año para regularizar"
 excerpt: "Desde el 8 de julio de 2026 las multas del Código de Trabajo se han duplicado y las empresas tienen hasta el 8 de julio de 2027 para regularizarse sin sanción."
 published: 2026-09-24
 readingTime: 4

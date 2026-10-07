@@ -1,6 +1,7 @@
 ---
 lang: pl
 title: "Świadectwo pracy — kiedy pracodawca musi je wydać i jak poprawić błąd"
+seoTitle: "Świadectwo pracy: termin i sprostowanie"
 excerpt: "Świadectwo dostajesz w ostatnim dniu pracy, na poprawki masz 14 dni. Co w nim jest, co zrobić, gdy go nie ma, i ile grozi pracodawcy."
 published: 2026-10-01
 readingTime: 4

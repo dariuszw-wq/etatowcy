@@ -1,6 +1,7 @@
 ---
 lang: en
 title: "Annual leave: 20 or 26 days — how to work out what you are entitled to"
+seoTitle: "Annual leave: 20 or 26 days"
 excerpt: "Your leave depends on length of service, schooling and working hours. How leave works in a first job, when changing employer and in temporary work."
 published: 2026-10-01
 readingTime: 4

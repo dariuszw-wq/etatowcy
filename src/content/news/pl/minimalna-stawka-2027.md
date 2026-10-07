@@ -1,6 +1,7 @@
 ---
 lang: pl
 title: "Minimalna stawka godzinowa w 2027 r. — co zmienia się dla pracowników tymczasowych"
+seoTitle: "Minimalna stawka godzinowa w 2027 r."
 excerpt: "Nowa kwota, kogo dotyczy i jak sprawdzić, czy Twoja umowa jest zgodna."
 published: 2026-09-21
 readingTime: 3

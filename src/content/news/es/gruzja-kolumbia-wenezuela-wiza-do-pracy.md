@@ -1,6 +1,7 @@
 ---
 lang: es
 title: "Georgia, Colombia, Venezuela: trabajar en Polonia solo con visado — qué ha cambiado"
+seoTitle: "Georgia, Colombia, Venezuela: visado obligatorio"
 excerpt: "Desde el 15 de agosto de 2026, georgianos, colombianos y venezolanos que vienen a trabajar necesitan visado; desde el 22, sin visado no trabajan con permiso."
 published: 2026-10-05
 readingTime: 4

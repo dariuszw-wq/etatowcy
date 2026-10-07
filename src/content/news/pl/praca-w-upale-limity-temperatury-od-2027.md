@@ -1,6 +1,7 @@
 ---
 lang: pl
 title: "Praca w upale: od 11 stycznia 2027 r. limit 35°C w hali i 32°C na zewnątrz"
+seoTitle: "Praca w upale: limity temperatury od 2027 r."
 excerpt: "Nowe przepisy BHP po raz pierwszy wprowadzają temperaturę, przy której pracę trzeba przerwać, i obowiązki pracodawcy już od 25–28°C."
 published: 2026-09-28
 readingTime: 4

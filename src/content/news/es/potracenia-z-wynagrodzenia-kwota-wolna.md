@@ -1,6 +1,7 @@
 ---
 lang: es
 title: "Descuentos del salario — qué puede retener el empleador y cuánto debe dejarte"
+seoTitle: "Descuentos del salario y cantidad protegida"
 excerpt: "Embargo, anticipo, multa, alojamiento: qué descuentos están permitidos, cuándo hace falta tu consentimiento y cuál es la cantidad inembargable en 2026."
 published: 2026-09-30
 readingTime: 4

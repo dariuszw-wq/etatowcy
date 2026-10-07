@@ -1,6 +1,7 @@
 ---
 lang: en
 title: "Pay day: by the 10th of the month, in October 2026 by 9 October"
+seoTitle: "Pay day: by the 10th of the month"
 excerpt: "Your employer pays your monthly salary by the 10th of the following month at the latest. What if that day is a day off, and what to do if pay is late."
 published: 2026-10-06
 readingTime: 4

@@ -1,6 +1,7 @@
 ---
 lang: en
 title: "Employment certificate — when the employer must issue it and how to correct an error"
+seoTitle: "Employment certificate: deadline and corrections"
 excerpt: "You get the certificate on your last day of work and have 14 days to request corrections. What it contains, what to do if it is missing, and the fines."
 published: 2026-10-01
 readingTime: 4

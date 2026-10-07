@@ -1,6 +1,7 @@
 ---
 lang: pl
 title: "Gruzja, Kolumbia, Wenezuela: do pracy w Polsce tylko z wizą — co się zmieniło"
+seoTitle: "Gruzja, Kolumbia, Wenezuela: do pracy w Polsce tylko z wizą"
 excerpt: "Od 15 sierpnia 2026 r. obywatele Gruzji, Kolumbii i Wenezueli jadący do pracy potrzebują wizy, a od 22 sierpnia nie pracują na zezwoleniu bez wizy."
 published: 2026-10-05
 readingTime: 4

@@ -1,6 +1,7 @@
 ---
 lang: pl
 title: "Urlop wypoczynkowy: 20 czy 26 dni — jak policzyć, ile Ci przysługuje"
+seoTitle: "Urlop wypoczynkowy: 20 czy 26 dni — jak policzyć"
 excerpt: "Wymiar urlopu zależy od stażu, szkoły i etatu. Jak liczy się urlop w pierwszej pracy, przy zmianie pracodawcy i w pracy tymczasowej."
 published: 2026-10-01
 readingTime: 4

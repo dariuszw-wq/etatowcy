@@ -1,6 +1,7 @@
 ---
 lang: en
 title: "Pay ranges in recruitment — what you can require from an employer"
+seoTitle: "Pay ranges in job ads: your rights"
 excerpt: "Since 24 December 2025 a candidate must learn the pay before signing, and the employer may not ask what you earned before."
 published: 2026-09-23
 readingTime: 4

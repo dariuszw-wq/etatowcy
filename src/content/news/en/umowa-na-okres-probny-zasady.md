@@ -1,6 +1,7 @@
 ---
 lang: en
 title: "Probationary contract — how long it can last and how to terminate it"
+seoTitle: "Probationary contract: length and termination"
 excerpt: "A probation period lasts up to 3 months, and 1 or 2 months before shorter contracts. Learn how to count it, the notice periods and when it is extended."
 published: 2026-10-05
 readingTime: 4

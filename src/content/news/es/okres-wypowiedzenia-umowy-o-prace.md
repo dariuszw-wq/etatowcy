@@ -1,6 +1,7 @@
 ---
 lang: es
 title: "Plazo de preaviso del contrato de trabajo — cuánto dura y cuándo termina"
+seoTitle: "Plazo de preaviso del contrato de trabajo"
 excerpt: "De 3 días laborables a 3 meses: de qué depende la duración del preaviso, cuándo termina y qué derechos tienes durante ese tiempo."
 published: 2026-09-29
 readingTime: 4

@@ -1,6 +1,7 @@
 ---
 lang: es
 title: "Certificado de trabajo: cuándo debe entregarlo el empleador y cómo corregir un error"
+seoTitle: "Certificado de trabajo: plazo y correcciones"
 excerpt: "Recibes el certificado el último día de trabajo y tienes 14 días para pedir correcciones. Qué contiene, qué hacer si no llega y qué multa arriesga el empleador."
 published: 2026-10-01
 readingTime: 4

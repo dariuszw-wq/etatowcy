@@ -1,6 +1,7 @@
 ---
 lang: pl
 title: "Termin wypłaty pensji: do 10. dnia miesiąca, w październiku 2026 r. do 9.10"
+seoTitle: "Termin wypłaty pensji: do 10. dnia miesiąca"
 excerpt: "Pensję za miesiąc pracodawca wypłaca najpóźniej 10. dnia następnego miesiąca. Co, gdy ten dzień jest wolny, i co możesz zrobić, gdy pracodawca się spóźnia."
 published: 2026-10-06
 readingTime: 4

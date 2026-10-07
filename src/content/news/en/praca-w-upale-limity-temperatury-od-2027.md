@@ -1,6 +1,7 @@
 ---
 lang: en
 title: "Working in heat: from 11 January 2027, a 35°C limit indoors and 32°C outdoors"
+seoTitle: "Working in heat: from 11 January 2027"
 excerpt: "New health and safety rules set, for the first time, a temperature at which work must stop — and employer duties from 25–28°C."
 published: 2026-09-28
 readingTime: 4

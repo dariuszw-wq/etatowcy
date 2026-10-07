@@ -1,6 +1,7 @@
 ---
 lang: en
 title: "Georgia, Colombia, Venezuela: work in Poland only with a visa — what has changed"
+seoTitle: "Georgia, Colombia, Venezuela: work visa now required"
 excerpt: "Since 15 August 2026 citizens of Georgia, Colombia and Venezuela coming to work need a visa; since 22 August they cannot work on a permit while visa-free."
 published: 2026-10-05
 readingTime: 4

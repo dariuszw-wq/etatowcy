@@ -1,6 +1,7 @@
 ---
 lang: es
 title: "Cambio de hora del 25 de octubre de 2026 — la hora adicional nocturna es extraordinaria"
+seoTitle: "Cambio de hora del 25 de octubre de 2026"
 excerpt: "La noche del 24 al 25 de octubre se atrasan los relojes. Si trabajas en el turno de noche, sueles trabajar una hora más y te corresponde un plus por ella."
 published: 2026-09-30
 readingTime: 4

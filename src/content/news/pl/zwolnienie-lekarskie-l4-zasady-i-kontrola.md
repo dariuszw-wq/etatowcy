@@ -1,6 +1,7 @@
 ---
 lang: pl
 title: "Zwolnienie lekarskie (L4) — ile dostaniesz i za co stracisz zasiłek"
+seoTitle: "Zwolnienie lekarskie (L4): zasady i kontrola"
 excerpt: "Na L4 dostajesz zwykle 80% wynagrodzenia. Od 13 kwietnia 2026 r. przepisy dokładnie mówią, czego nie wolno robić na zwolnieniu i jak ZUS je kontroluje."
 published: 2026-10-02
 readingTime: 5

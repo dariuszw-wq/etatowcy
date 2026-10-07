@@ -1,6 +1,7 @@
 ---
 lang: pl
 title: "Okres wypowiedzenia umowy o pracę — ile trwa i kiedy się kończy"
+seoTitle: "Okres wypowiedzenia umowy o pracę"
 excerpt: "Od 3 dni roboczych do 3 miesięcy: od czego zależy długość wypowiedzenia, kiedy się kończy i jakie prawa masz w tym czasie."
 published: 2026-09-29
 readingTime: 4

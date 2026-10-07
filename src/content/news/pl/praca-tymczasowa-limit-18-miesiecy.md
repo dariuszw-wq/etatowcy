@@ -1,6 +1,7 @@
 ---
 lang: pl
 title: "Praca tymczasowa: 18 miesięcy u jednej firmy w ciągu 36 — jak liczyć limit"
+seoTitle: "Praca tymczasowa: 18 miesięcy u jednej firmy w ciągu 36"
 excerpt: "Pracownik tymczasowy może pracować dla jednego pracodawcy użytkownika najwyżej 18 miesięcy w ciągu 36 kolejnych miesięcy. Wyjaśniamy, jak liczyć ten limit."
 published: 2026-09-29
 readingTime: 4

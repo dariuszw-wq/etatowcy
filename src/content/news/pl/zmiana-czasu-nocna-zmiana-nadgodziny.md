@@ -1,6 +1,7 @@
 ---
 lang: pl
 title: "Zmiana czasu 25 października 2026 r. — dodatkowa godzina na nocnej zmianie to nadgodzina"
+seoTitle: "Zmiana czasu 25 października 2026 r."
 excerpt: "W nocy z 24 na 25 października cofamy zegarki. Kto pracuje wtedy na nocnej zmianie, zwykle przepracuje godzinę więcej — i należy mu się za nią dodatek."
 published: 2026-09-30
 readingTime: 4

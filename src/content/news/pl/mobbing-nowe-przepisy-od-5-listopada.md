@@ -1,6 +1,7 @@
 ---
 lang: pl
 title: "Mobbing po nowemu od 5 listopada 2026 r. — definicja, zadośćuczynienie, regulamin"
+seoTitle: "Mobbing po nowemu od 5 listopada 2026 r. — definicja"
 excerpt: "Od 5 listopada 2026 r. mobbing to uporczywe nękanie pracownika; zadośćuczynienie wynosi co najmniej sześć pensji minimalnych."
 published: 2026-09-28
 readingTime: 4

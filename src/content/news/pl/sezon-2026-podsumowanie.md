@@ -1,6 +1,7 @@
 ---
 lang: pl
 title: "Sezon 2026 na rynku pracy tymczasowej — trzy rzeczy, które zostaną"
+seoTitle: "Sezon 2026 na rynku pracy tymczasowej — trzy rzeczy"
 excerpt: "Więcej umów o pracę, krótsze rekrutacje, pracownicy z nowych kierunków."
 published: 2026-09-07
 readingTime: 3

@@ -1,6 +1,7 @@
 ---
 lang: es
 title: "Baja médica (L4): cuánto cobras y cuándo pierdes la prestación"
+seoTitle: "Baja médica (L4): cuánto cobras y qué pierdes"
 excerpt: "De baja médica sueles cobrar el 80% del salario. Desde el 13 de abril de 2026 la ley precisa qué no puedes hacer durante la baja y cómo la controla ZUS."
 published: 2026-10-02
 readingTime: 5

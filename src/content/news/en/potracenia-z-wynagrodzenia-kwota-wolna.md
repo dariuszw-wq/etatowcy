@@ -1,6 +1,7 @@
 ---
 lang: en
 title: "Deductions from pay — what your employer may take and how much must be left"
+seoTitle: "Deductions from pay and the protected amount"
 excerpt: "Bailiff, advance, fine, employer housing: which deductions are allowed, when your consent is needed and what the amount exempt from deductions is in 2026."
 published: 2026-09-30
 readingTime: 4

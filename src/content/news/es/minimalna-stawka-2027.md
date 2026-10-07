@@ -1,6 +1,7 @@
 ---
 lang: es
 title: "Salario mínimo por hora en 2027 — qué cambia para los trabajadores temporales"
+seoTitle: "Salario mínimo por hora en 2027"
 excerpt: "La nueva cantidad, a quién afecta y cómo comprobar si tu contrato cumple."
 published: 2026-09-21
 readingTime: 3

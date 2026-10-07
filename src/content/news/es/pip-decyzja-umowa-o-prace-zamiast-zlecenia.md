@@ -1,6 +1,7 @@
 ---
 lang: es
 title: "La PIP puede convertir un contrato civil en contrato de trabajo: cómo funciona la decisión"
+seoTitle: "La PIP puede convertir tu contrato civil"
 excerpt: "Desde el 8 de julio de 2026 el inspector de trabajo de distrito puede decidir que un contrato civil o B2B es en realidad un contrato de trabajo; así funciona."
 published: 2026-09-24
 readingTime: 5

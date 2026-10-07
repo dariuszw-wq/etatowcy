@@ -1,6 +1,7 @@
 ---
 lang: en
 title: "PIP can turn a civil contract into an employment contract — how the decision works"
+seoTitle: "PIP can turn a civil contract into an employment contract"
 excerpt: "Since 8 July 2026 a district labour inspector can decide that a civil-law or B2B contract is in fact an employment contract — here is how it works."
 published: 2026-09-24
 readingTime: 5

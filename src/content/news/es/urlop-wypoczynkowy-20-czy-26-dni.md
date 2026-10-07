@@ -1,6 +1,7 @@
 ---
 lang: es
 title: "Vacaciones anuales: 20 o 26 días — cómo calcular cuántas te corresponden"
+seoTitle: "Vacaciones anuales: 20 o 26 días"
 excerpt: "Las vacaciones dependen de la antigüedad, los estudios y la jornada. Cómo se calculan en el primer empleo, al cambiar de empleador y en el trabajo temporal."
 published: 2026-10-01
 readingTime: 4
