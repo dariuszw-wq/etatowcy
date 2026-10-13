@@ -41,9 +41,16 @@ const crumbs = breadcrumb(site, lang, 'news', 'nav.news', d.title, slug);
   <article class="section">
     <div class="wrap narrow">
       <a class="link" href={href(lang, 'news')}>{tr('news.back')}</a>
-      <p class="small meta">{date} · {d.readingTime} {tr('news.min')}</p>
+      <p class="small meta">
+        {d.own && <span class="own">{tr('news.own')}</span>}
+        {date} · {d.readingTime} {tr('news.min')}
+      </p>
       <h1 class="disp h1">{d.title}</h1>
       <p class="lead">{d.excerpt}</p>
+      {/* Opis grafiki żyje w alt — powtórzony jako podpis byłby czytany przez czytnik ekranu dwa razy. */}
+      {d.image && (
+        <img class="hero-img" src={import.meta.env.BASE_URL + d.image.replace(/^\//, '')} alt={d.imageAlt ?? ''} width="1200" height="675" loading="eager" decoding="async">
+      )}
       <div class="prose"><Content /></div>
 
       {related.length > 0 && (
@@ -67,7 +74,9 @@ const crumbs = breadcrumb(site, lang, 'news', 'nav.news', d.title, slug);
 </Base>
 <style>
   .narrow{max-width:820px}
-  .meta{margin:var(--space-6) 0 var(--space-2)}
+  .meta{margin:var(--space-6) 0 var(--space-2);display:flex;align-items:center;gap:var(--space-3);flex-wrap:wrap}
+  .own{font:600 11px/16px var(--font-sans);letter-spacing:.1em;text-transform:uppercase;color:var(--brand);background:var(--brand-glow);padding:4px 10px;border-radius:var(--radius-pill)}
+  .hero-img{width:100%;height:auto;margin:0 0 var(--space-8);border-radius:var(--radius-lg);border:1px solid var(--line);background:#fff}
   .h1{font-size:clamp(40px,6vw,80px);text-transform:none;margin-bottom:var(--space-6)}
   .lead{margin-bottom:var(--space-8);max-width:60ch}
   .more{margin-top:var(--space-16);padding-top:var(--space-8);border-top:1px solid var(--line)}

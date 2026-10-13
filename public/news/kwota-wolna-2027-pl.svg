@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" font-family="Inter, system-ui, sans-serif" role="img">
+<rect width="1200" height="675" fill="#ffffff"/>
+<text x="60" y="62" font-size="32" font-weight="700" fill="#0f1420">Ile zostaje z pensji przy zajęciu komorniczym w 2027 r.</text>
+<text x="60" y="96" font-size="19" fill="#4b5566">Dług inny niż alimenty · pełny etat · kwota wolna 3703,93 zł netto</text>
+<rect x="60" y="116" width="14" height="14" rx="3" fill="#0b6fc2"/>
+<text x="82" y="128" font-size="17" fill="#0f1420">zostaje Tobie</text>
+<rect x="225" y="116" width="14" height="14" rx="3" fill="#d9451f"/>
+<text x="247" y="128" font-size="17" fill="#0f1420">może zająć komornik</text>
+<text x="272" y="220" font-size="21" font-weight="600" fill="#0f1420" text-anchor="end">3 703,93 zł</text>
+<text x="272" y="242" font-size="15" fill="#4b5566" text-anchor="end">na rękę</text>
+<rect x="300" y="190" width="379.7" height="44" rx="4" fill="#0b6fc2"/>
+<text x="691.7" y="218" font-size="17" font-weight="600" fill="#0b6fc2">komornik nie zabierze nic</text>
+<text x="314" y="218" font-size="17" font-weight="600" fill="#ffffff">3 703,93 zł</text>
+<text x="272" y="324" font-size="21" font-weight="600" fill="#0f1420" text-anchor="end">5 000,00 zł</text>
+<text x="272" y="346" font-size="15" fill="#4b5566" text-anchor="end">na rękę</text>
+<rect x="300" y="294" width="379.7" height="44" rx="4" fill="#0b6fc2"/>
+<rect x="681.7" y="294" width="130.8" height="44" rx="4" fill="#d9451f"/>
+<text x="824.5" y="322" font-size="17" font-weight="600" fill="#d9451f">1 296,07 zł</text>
+<text x="314" y="322" font-size="17" font-weight="600" fill="#ffffff">3 703,93 zł</text>
+<text x="272" y="428" font-size="21" font-weight="600" fill="#0f1420" text-anchor="end">6 000,00 zł</text>
+<text x="272" y="450" font-size="15" fill="#4b5566" text-anchor="end">na rękę</text>
+<rect x="300" y="398" width="379.7" height="44" rx="4" fill="#0b6fc2"/>
+<rect x="681.7" y="398" width="233.3" height="44" rx="4" fill="#d9451f"/>
+<text x="927.0" y="426" font-size="17" font-weight="600" fill="#d9451f">2 296,07 zł</text>
+<text x="314" y="426" font-size="17" font-weight="600" fill="#ffffff">3 703,93 zł</text>
+<text x="272" y="532" font-size="21" font-weight="600" fill="#0f1420" text-anchor="end">8 000,00 zł</text>
+<text x="272" y="554" font-size="15" fill="#4b5566" text-anchor="end">na rękę</text>
+<rect x="300" y="502" width="410.0" height="44" rx="4" fill="#0b6fc2"/>
+<rect x="712.0" y="502" width="408.0" height="44" rx="4" fill="#d9451f"/>
+<text x="728.0" y="530" font-size="17" font-weight="600" fill="#ffffff">4 000,00 zł</text>
+<text x="314" y="530" font-size="17" font-weight="600" fill="#ffffff">4 000,00 zł</text>
+<line x1="679.7" y1="160" x2="679.7" y2="584" stroke="#4b5566" stroke-width="2" stroke-dasharray="6 5"/>
+<text x="687.7" y="152" font-size="15" fill="#4b5566">kwota wolna</text>
+<line x1="60" y1="599" x2="1120" y2="599" stroke="#d8dde5" stroke-width="1"/>
+<text x="60" y="627" font-size="15" fill="#4b5566">Przy 8000 zł decyduje limit 50% wynagrodzenia, nie kwota wolna. · art. 87 i 87¹ Kodeksu pracy</text>
+<text text-anchor="end" x="1120" y="627" font-size="15" font-weight="600" fill="#0b6fc2">etatowcy.pl</text>
+</svg>

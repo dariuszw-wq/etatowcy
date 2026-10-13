@@ -29,6 +29,12 @@ const news = defineCollection({
     title: z.string(),
     /** Krótszy wariant tytułu do <title> — gdy pełny nagłówek nie mieści się w wyniku wyszukiwania. */
     seoTitle: z.string().max(60).optional(),
+    /** Grafika nad tekstem: ścieżka w public/, np. '/news/komornik-2027.svg'. */
+    image: z.string().optional(),
+    /** Opis grafiki dla czytających ekranem i gdy obrazek się nie wczyta. */
+    imageAlt: z.string().optional(),
+    /** Materiał własny redakcji Etatowcy (research i opracowanie nasze, nie przedruk). */
+    own: z.boolean().default(false),
     excerpt: z.string(),
     published: z.coerce.date(),
     readingTime: z.number().int().positive().default(3),
