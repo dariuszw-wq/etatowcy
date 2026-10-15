@@ -164,7 +164,7 @@
 <rect x="0" y="380" width="1200" height="295" fill="url(#fade)"/>
 <text x="60" y="78" font-size="15" font-weight="600" letter-spacing="2.4" fill="#21a0fd">PROYECTO DEL MSWIA</text>
 <text x="60" y="126" font-size="38" font-weight="700" fill="#eef2f7">Entrar en Polonia costará cuatro veces más</text>
-<text x="60" y="186" font-size="16" fill="#9aa6b8">por cada día de estancia</text>
+<text x="60" y="186" font-size="16" fill="#9aa6b8">por cada día de estancia superior a 4 días</text>
 <text x="60" y="218" font-size="13" fill="#9aa6b8">hoy</text>
 <rect x="60" y="228" width="96" height="40" rx="8" fill="#eef2f7" opacity="0.18"/>
 <text x="108" y="255" font-size="19" font-weight="700" fill="#9aa6b8" text-anchor="middle">75 zł</text>
