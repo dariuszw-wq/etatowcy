@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" font-family="Inter, system-ui, sans-serif" role="img">
+<rect width="1200" height="675" fill="#ffffff"/>
+<text x="60" y="64" font-size="33" font-weight="700" fill="#0f1420">Cuánto dura la decisión de residencia y trabajo</text>
+<text x="60" y="98" font-size="18" fill="#4b5566">la directiva y el plazo legal frente a la duración media de los procedimientos</text>
+<rect x="60" y="118" width="13" height="13" rx="3" fill="#0b6fc2"/>
+<text x="80" y="129" font-size="16" fill="#0f1420">norma legal</text>
+<rect x="200" y="118" width="13" height="13" rx="3" fill="#d9451f"/>
+<text x="220" y="129" font-size="16" fill="#0f1420">realidad</text>
+<line x1="430.3" y1="164" x2="430.3" y2="486" stroke="#0b6fc2" stroke-width="2" stroke-dasharray="6 5" opacity="0.5"/>
+<text x="304" y="204" font-size="19" font-weight="600" fill="#0f1420" text-anchor="end">Directiva de la UE</text>
+<text x="304" y="224" font-size="14" fill="#4b5566" text-anchor="end">plazo exigido</text>
+<rect x="330" y="180" width="100.3" height="36" rx="4" fill="#0b6fc2"/>
+<text x="442.3" y="204" font-size="17" font-weight="700" fill="#0b6fc2">90 días</text>
+<text x="304" y="286" font-size="19" font-weight="600" fill="#0f1420" text-anchor="end">Ley de Extranjería</text>
+<text x="304" y="306" font-size="14" fill="#4b5566" text-anchor="end">plazo para decidir</text>
+<rect x="330" y="262" width="66.9" height="36" rx="4" fill="#0b6fc2"/>
+<text x="408.9" y="286" font-size="17" font-weight="700" fill="#0b6fc2">60 días</text>
+<text x="304" y="368" font-size="19" font-weight="600" fill="#0f1420" text-anchor="end">Lublin, Łódź</text>
+<text x="304" y="388" font-size="14" fill="#4b5566" text-anchor="end">lo más rápido del país</text>
+<rect x="330" y="344" width="430.1" height="36" rx="4" fill="#d9451f"/>
+<text x="344" y="368" font-size="17" font-weight="700" fill="#ffffff">386 días</text>
+<text x="304" y="450" font-size="19" font-weight="600" fill="#0f1420" text-anchor="end">Silesia</text>
+<text x="304" y="470" font-size="14" fill="#4b5566" text-anchor="end">lo más lento del país</text>
+<rect x="330" y="426" width="733.2" height="36" rx="4" fill="#d9451f"/>
+<text x="344" y="450" font-size="17" font-weight="700" fill="#ffffff">658 días</text>
+<line x1="60" y1="601" x2="1110" y2="601" stroke="#d8dde5" stroke-width="1"/>
+<text x="60" y="629" font-size="15" fill="#4b5566">Duración media de los procedimientos de residencia temporal, a 6 de julio de 2026</text>
+<text text-anchor="end" x="1110" y="629" font-size="15" font-weight="600" fill="#0b6fc2">etatowcy.pl</text>
+</svg>

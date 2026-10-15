@@ -31,3 +31,4 @@ Jedna linia na artykuł. Sprawdzaj przed wyborem nowego tematu.
 | 2026-10-07 | odpoczynek-dobowy-i-tygodniowy-11-35-godzin | Odpoczynek w pracy: 11 godzin na dobę i 35 godzin w tygodniu — Twoje prawo | Kodeks pracy (t.j. Dz.U. 2026 poz. 1245), art. 129, 131–134, 149, 281 |
 | 2026-10-13 | kwota-wolna-od-potracen-2027-komornik | Ile zabierze komornik w 2027 r. — kwota wolna 3703,93 zł | MATERIAŁ WŁASNY: Gazeta Prawna + własny research (KP art. 87, 87¹, 91; KPC art. 767, 833, 881, 882, 886) |
 | 2026-10-15 | srodki-finansowe-wjazd-do-polski-projekt-mswia | Wjazd do Polski podrożeje czterokrotnie — 300 zł za każdy dzień pobytu | MATERIAŁ WŁASNY: Gazeta Prawna + gov.pl/mswia (projekt nr 1351), kodeks graniczny Schengen 2016/399 |
+| 2026-10-16 | dyrektywa-jedno-zezwolenie-polska-spozniona | Unia daje 90 dni na decyzję, w Polsce czeka się nawet 658 dni | MATERIAŁ WŁASNY: Gazeta Prawna + EUR-Lex (dyrektywa 2024/1233) + ustawa o cudzoziemcach art. 112a, 114, 121, 123 |

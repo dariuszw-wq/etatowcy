@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" font-family="Inter, system-ui, sans-serif" role="img">
+<rect width="1200" height="675" fill="#ffffff"/>
+<text x="60" y="64" font-size="33" font-weight="700" fill="#0f1420">Ile trwa decyzja o pobycie i pracy</text>
+<text x="60" y="98" font-size="18" fill="#4b5566">wymóg dyrektywy i termin ustawowy wobec średniego czasu postepowania</text>
+<rect x="60" y="118" width="13" height="13" rx="3" fill="#0b6fc2"/>
+<text x="80" y="129" font-size="16" fill="#0f1420">norma prawna</text>
+<rect x="209" y="118" width="13" height="13" rx="3" fill="#d9451f"/>
+<text x="229" y="129" font-size="16" fill="#0f1420">rzeczywistość</text>
+<line x1="430.3" y1="164" x2="430.3" y2="486" stroke="#0b6fc2" stroke-width="2" stroke-dasharray="6 5" opacity="0.5"/>
+<text x="304" y="204" font-size="19" font-weight="600" fill="#0f1420" text-anchor="end">Dyrektywa UE</text>
+<text x="304" y="224" font-size="14" fill="#4b5566" text-anchor="end">wymagany termin</text>
+<rect x="330" y="180" width="100.3" height="36" rx="4" fill="#0b6fc2"/>
+<text x="442.3" y="204" font-size="17" font-weight="700" fill="#0b6fc2">90 dni</text>
+<text x="304" y="286" font-size="19" font-weight="600" fill="#0f1420" text-anchor="end">Ustawa o cudzoziemcach</text>
+<text x="304" y="306" font-size="14" fill="#4b5566" text-anchor="end">termin na decyzję</text>
+<rect x="330" y="262" width="66.9" height="36" rx="4" fill="#0b6fc2"/>
+<text x="408.9" y="286" font-size="17" font-weight="700" fill="#0b6fc2">60 dni</text>
+<text x="304" y="368" font-size="19" font-weight="600" fill="#0f1420" text-anchor="end">lubelskie, łódzkie</text>
+<text x="304" y="388" font-size="14" fill="#4b5566" text-anchor="end">najkrócej w kraju</text>
+<rect x="330" y="344" width="430.1" height="36" rx="4" fill="#d9451f"/>
+<text x="344" y="368" font-size="17" font-weight="700" fill="#ffffff">386 dni</text>
+<text x="304" y="450" font-size="19" font-weight="600" fill="#0f1420" text-anchor="end">śląskie</text>
+<text x="304" y="470" font-size="14" fill="#4b5566" text-anchor="end">najdłużej w kraju</text>
+<rect x="330" y="426" width="733.2" height="36" rx="4" fill="#d9451f"/>
+<text x="344" y="450" font-size="17" font-weight="700" fill="#ffffff">658 dni</text>
+<line x1="60" y1="601" x2="1110" y2="601" stroke="#d8dde5" stroke-width="1"/>
+<text x="60" y="629" font-size="15" fill="#4b5566">Średnia długość postępowania o pobyt czasowy, stan na 6 lipca 2026 r.</text>
+<text text-anchor="end" x="1110" y="629" font-size="15" font-weight="600" fill="#0b6fc2">etatowcy.pl</text>
+</svg>
