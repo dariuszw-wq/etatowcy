@@ -8,3 +8,6 @@ Thumbs.db
 
 # Raporty audytowe — zawierają tokeny weryfikacyjne i dane kontaktowe, a repo jest publiczne
 docs/audyt-seo-*.md
+
+# katalogi robocze podglądów
+.tmp-podglad/
