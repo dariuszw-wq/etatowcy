@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" font-family="Inter, system-ui, sans-serif" role="img">
+<rect width="1200" height="675" fill="#ffffff"/>
+<text x="60" y="66" font-size="32" font-weight="700" fill="#0f1420">Quién puede representarte en un caso de residencia y trabajo</text>
+<text x="60" y="100" font-size="18" fill="#4b5566">no depende del título del jurista, sino de la fase del expediente</text>
+<rect x="60" y="142" width="1080" height="134" rx="14" fill="#f3f6fa" stroke="#d8dde5"/>
+<rect x="60" y="142" width="6" height="134" rx="3" fill="#0b6fc2"/>
+<circle cx="112" cy="188" r="21" fill="#0b6fc2"/>
+<text x="112" y="196" font-size="21" font-weight="700" fill="#ffffff" text-anchor="middle">1</text>
+<text x="150" y="184" font-size="21" font-weight="700" fill="#0f1420">Oficina del voivodato, Jefe de la Oficina de Extranjeros</text>
+<text x="150" y="210" font-size="16" fill="#4b5566">solicitudes de tarjeta de residencia y permiso de trabajo, recursos</text>
+<text x="150" y="246" font-size="19" font-weight="600" fill="#0b6fc2">cualquier persona mayor de edad</text>
+<text text-anchor="end" x="1110" y="246" font-size="15" fill="#4b5566">art. 33.1 del Cód. Proc. Admin.</text>
+<rect x="60" y="294" width="1080" height="134" rx="14" fill="#f3f6fa" stroke="#d8dde5"/>
+<rect x="60" y="294" width="6" height="134" rx="3" fill="#d9451f"/>
+<circle cx="112" cy="340" r="21" fill="#d9451f"/>
+<text x="112" y="348" font-size="21" font-weight="700" fill="#ffffff" text-anchor="middle">2</text>
+<text x="150" y="336" font-size="21" font-weight="700" fill="#0f1420">Tribunal administrativo regional</text>
+<text x="150" y="362" font-size="16" fill="#4b5566">demanda contra una resolución o por inactividad</text>
+<text x="150" y="398" font-size="19" font-weight="600" fill="#d9451f">solo adwokat o radca prawny</text>
+<text text-anchor="end" x="1110" y="398" font-size="15" fill="#4b5566">art. 35.1 p.p.s.a.</text>
+<rect x="60" y="446" width="1080" height="134" rx="14" fill="#f3f6fa" stroke="#d8dde5"/>
+<rect x="60" y="446" width="6" height="134" rx="3" fill="#d9451f"/>
+<circle cx="112" cy="492" r="21" fill="#d9451f"/>
+<text x="112" y="500" font-size="21" font-weight="700" fill="#ffffff" text-anchor="middle">3</text>
+<text x="150" y="488" font-size="21" font-weight="700" fill="#0f1420">Tribunal Supremo Administrativo</text>
+<text x="150" y="514" font-size="16" fill="#4b5566">recurso de casación</text>
+<text x="150" y="550" font-size="19" font-weight="600" fill="#d9451f">adwokat o radca — obligatorio</text>
+<text text-anchor="end" x="1110" y="550" font-size="15" fill="#4b5566">art. 175.1 p.p.s.a.</text>
+<line x1="60" y1="603" x2="1140" y2="603" stroke="#d8dde5" stroke-width="1"/>
+<text x="60" y="631" font-size="15" fill="#4b5566">Ante el tribunal también puedes actuar por tu cuenta, sin representante.</text>
+<text text-anchor="end" x="1140" y="631" font-size="15" font-weight="600" fill="#0b6fc2">etatowcy.pl</text>
+</svg>
