@@ -53,6 +53,11 @@ const crumbs = breadcrumb(site, lang, 'news', 'nav.news', d.title, slug);
       )}
       <div class="prose"><Content /></div>
 
+      {/* Schemat pod tekstem — gdy grafiką nad tytułem jest zdjęcie, a dane i tak warto pokazać. */}
+      {d.diagram && (
+        <img class="diagram" src={import.meta.env.BASE_URL + d.diagram.replace(/^\//, '')} alt={d.diagramAlt ?? ''} width="1200" height="675" loading="lazy" decoding="async">
+      )}
+
       {related.length > 0 && (
         <aside class="more">
           <h2 class="eyebrow">{tr('news.more')}</h2>
@@ -77,6 +82,7 @@ const crumbs = breadcrumb(site, lang, 'news', 'nav.news', d.title, slug);
   .meta{margin:var(--space-6) 0 var(--space-2);display:flex;align-items:center;gap:var(--space-3);flex-wrap:wrap}
   .own{font:600 11px/16px var(--font-sans);letter-spacing:.1em;text-transform:uppercase;color:var(--brand);background:var(--brand-glow);padding:4px 10px;border-radius:var(--radius-pill)}
   .hero-img{width:100%;height:auto;margin:0 0 var(--space-8);border-radius:var(--radius-lg);border:1px solid var(--line);background:#fff}
+  .diagram{width:100%;height:auto;margin:var(--space-12) 0 0;border-radius:var(--radius-lg);border:1px solid var(--line);background:#fff}
   .h1{font-size:clamp(40px,6vw,80px);text-transform:none;margin-bottom:var(--space-6)}
   .lead{margin-bottom:var(--space-8);max-width:60ch}
   .more{margin-top:var(--space-16);padding-top:var(--space-8);border-top:1px solid var(--line)}

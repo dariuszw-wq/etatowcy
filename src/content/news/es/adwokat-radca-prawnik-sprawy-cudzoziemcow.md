@@ -6,8 +6,10 @@ excerpt: "En la oficina puede representarte cualquiera; ante el tribunal, solo u
 published: 2026-10-16
 readingTime: 7
 own: true
-image: "/news/kto-reprezentuje-es.svg"
-imageAlt: "Tres fases del expediente de un extranjero: en la oficina del voivodato y ante el Jefe de la Oficina de Extranjeros puede representarte cualquier persona mayor de edad, ante el tribunal administrativo regional solo un adwokat o radca prawny, y el recurso de casación ante el Tribunal Supremo Administrativo debe redactarlo uno de ellos."
+image: "/news/kancelaria-toga.webp"
+imageAlt: "Interior de un despacho jurídico: una toga sobre el respaldo de la silla junto al escritorio, con libros de Derecho abiertos sobre la mesa."
+diagram: "/news/kto-reprezentuje-es.svg"
+diagramAlt: "Tres fases del expediente de un extranjero: en la oficina del voivodato y ante el Jefe de la Oficina de Extranjeros puede representarte cualquier persona mayor de edad, ante el tribunal administrativo regional solo un adwokat o radca prawny, y el recurso de casación ante el Tribunal Supremo Administrativo debe redactarlo uno de ellos."
 source: "Código de Procedimiento Administrativo, art. 33; Ley de procedimiento ante los tribunales administrativos, art. 35 y 175"
 ---
 **¿Solicitas la tarjeta de residencia o un permiso de trabajo y te preguntas si necesitas un abogado? En la oficina, no: allí puede representarte cualquier persona mayor de edad. Pero hay dos momentos en los que sin un *adwokat* o un *radca prawny* no se puede hacer nada, y una decisión capaz de echar por tierra toda la solicitud.** Te explicamos quién puede representarte en cada fase, por qué ceder el poder de representación a la empresa puede volverse en tu contra y en qué se diferencian en la práctica estas dos profesiones.

@@ -33,6 +33,9 @@ const news = defineCollection({
     image: z.string().optional(),
     /** Opis grafiki dla czytających ekranem i gdy obrazek się nie wczyta. */
     imageAlt: z.string().optional(),
+    /** Schemat lub wykres pokazywany pod treścią — gdy grafiką główną jest zdjęcie. */
+    diagram: z.string().optional(),
+    diagramAlt: z.string().optional(),
     /** Materiał własny redakcji Etatowcy (research i opracowanie nasze, nie przedruk). */
     own: z.boolean().default(false),
     excerpt: z.string(),

@@ -6,8 +6,10 @@ excerpt: "W urzędzie pełnomocnikiem może być każdy, przed sądem — tylko 
 published: 2026-10-16
 readingTime: 7
 own: true
-image: "/news/kto-reprezentuje-pl.svg"
-imageAlt: "Trzy etapy sprawy cudzoziemca: w urzędzie wojewódzkim i przed Szefem UdSC pełnomocnikiem może być każda osoba pełnoletnia, przed wojewódzkim sądem administracyjnym tylko adwokat lub radca prawny, a skargę kasacyjną do NSA musi sporządzić adwokat lub radca."
+image: "/news/kancelaria-toga.webp"
+imageAlt: "Wnętrze kancelarii prawnej: toga przewieszona przez oparcie krzesła przy biurku, na blacie otwarte księgi prawnicze."
+diagram: "/news/kto-reprezentuje-pl.svg"
+diagramAlt: "Trzy etapy sprawy cudzoziemca: w urzędzie wojewódzkim i przed Szefem UdSC pełnomocnikiem może być każda osoba pełnoletnia, przed wojewódzkim sądem administracyjnym tylko adwokat lub radca prawny, a skargę kasacyjną do NSA musi sporządzić adwokat lub radca."
 source: "Kodeks postępowania administracyjnego, art. 33; Prawo o postępowaniu przed sądami administracyjnymi, art. 35 i 175"
 ---
 **Składasz wniosek o kartę pobytu albo o zezwolenie na pracę i zastanawiasz się, czy potrzebujesz adwokata? W urzędzie — nie. Pełnomocnikiem może tam być każda pełnoletnia osoba. Ale są dwa momenty, w których bez adwokata lub radcy prawnego nie zrobisz nic — i jedna decyzja, która potrafi przekreślić cały wniosek.** Wyjaśniamy, kto może Cię reprezentować na każdym etapie sprawy, dlaczego oddanie pełnomocnictwa pracodawcy bywa groźne i czym w praktyce różnią się adwokat z radcą prawnym.

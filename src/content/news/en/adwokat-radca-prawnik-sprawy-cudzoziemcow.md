@@ -6,8 +6,10 @@ excerpt: "At the office anyone can act for you, before a court only an adwokat o
 published: 2026-10-16
 readingTime: 7
 own: true
-image: "/news/kto-reprezentuje-en.svg"
-imageAlt: "Three stages of a foreign national's case: at the voivodeship office and before the Head of the Office for Foreigners any adult may act as representative, before the regional administrative court only an adwokat or radca prawny, and a cassation complaint to the Supreme Administrative Court must be drafted by one of them."
+image: "/news/kancelaria-toga.webp"
+imageAlt: "Interior of a law office: a gown draped over the back of a chair at a desk, with open law books on the desktop."
+diagram: "/news/kto-reprezentuje-en.svg"
+diagramAlt: "Three stages of a foreign national's case: at the voivodeship office and before the Head of the Office for Foreigners any adult may act as representative, before the regional administrative court only an adwokat or radca prawny, and a cassation complaint to the Supreme Administrative Court must be drafted by one of them."
 source: "Code of Administrative Procedure, Art. 33; Law on Proceedings before Administrative Courts, Art. 35 and 175"
 ---
 **Applying for a residence card or a work permit and wondering whether you need a lawyer? At the office — no. Any adult can act as your representative there. But there are two moments when nothing can be done without an *adwokat* or a *radca prawny* — and one decision that can wipe out your whole application.** Here is who may represent you at each stage of a foreign national's case, and what in practice separates those two professions.
