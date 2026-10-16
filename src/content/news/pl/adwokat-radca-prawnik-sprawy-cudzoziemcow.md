@@ -2,15 +2,15 @@
 lang: pl
 title: "Karta pobytu i zezwolenie na pracę: kiedy potrzebujesz adwokata, a kiedy nie"
 seoTitle: "Karta pobytu: adwokat, radca czy prawnik?"
-excerpt: "W urzędzie wojewódzkim pełnomocnikiem może być każdy. Przed sądem — już tylko adwokat lub radca prawny. Sprawdź, na którym etapie jest Twoja sprawa."
+excerpt: "W urzędzie pełnomocnikiem może być każdy, przed sądem — tylko adwokat lub radca. Sprawdź też, dlaczego nie warto oddać wniosku pracodawcy ani agencji."
 published: 2026-10-16
-readingTime: 5
+readingTime: 7
 own: true
 image: "/news/kto-reprezentuje-pl.svg"
 imageAlt: "Trzy etapy sprawy cudzoziemca: w urzędzie wojewódzkim i przed Szefem UdSC pełnomocnikiem może być każda osoba pełnoletnia, przed wojewódzkim sądem administracyjnym tylko adwokat lub radca prawny, a skargę kasacyjną do NSA musi sporządzić adwokat lub radca."
 source: "Kodeks postępowania administracyjnego, art. 33; Prawo o postępowaniu przed sądami administracyjnymi, art. 35 i 175"
 ---
-**Składasz wniosek o kartę pobytu albo o zezwolenie na pracę i zastanawiasz się, czy potrzebujesz adwokata? W urzędzie — nie. Pełnomocnikiem może tam być każda pełnoletnia osoba. Ale są dwa momenty, w których bez adwokata lub radcy prawnego nie zrobisz nic.** Wyjaśniamy, kto kogo może reprezentować na każdym etapie sprawy cudzoziemca i czym w praktyce różnią się te dwa zawody.
+**Składasz wniosek o kartę pobytu albo o zezwolenie na pracę i zastanawiasz się, czy potrzebujesz adwokata? W urzędzie — nie. Pełnomocnikiem może tam być każda pełnoletnia osoba. Ale są dwa momenty, w których bez adwokata lub radcy prawnego nie zrobisz nic — i jedna decyzja, która potrafi przekreślić cały wniosek.** Wyjaśniamy, kto może Cię reprezentować na każdym etapie sprawy, dlaczego oddanie pełnomocnictwa pracodawcy bywa groźne i czym w praktyce różnią się adwokat z radcą prawnym.
 
 ## Etap 1: urząd wojewódzki i Szef UdSC — pełnomocnikiem może być każdy
 
@@ -21,6 +21,36 @@ Zgodnie z art. 33 § 1 Kodeksu postępowania administracyjnego **pełnomocnikiem
 Jedna praktyczna różnica jednak istnieje. Zwykły pełnomocnik musi dołączyć do akt **oryginał pełnomocnictwa albo jego urzędowo poświadczony odpis**, a adwokat, radca prawny, rzecznik patentowy i doradca podatkowy mogą **sami uwierzytelnić** odpis (art. 33 § 3). W praktyce oznacza to mniej wizyt u notariusza.
 
 Pamiętaj też o opłacie skarbowej od pełnomocnictwa — płaci się ją osobno, przy złożeniu dokumentu w urzędzie.
+
+## Najważniejsza rada: nie oddawaj swojej sprawy pracodawcy ani agencji
+
+To jest błąd, który kosztuje najwięcej — a popełnia go bardzo wielu cudzoziemców. Pracodawca albo agencja proponuje: „my złożymy za ciebie wniosek, my się wszystkim zajmiemy". Podpisujesz pełnomocnictwo i przestajesz mieć kontrolę nad własną sprawą.
+
+**Dlaczego to niebezpieczne? Bo od tej chwili urząd nie pisze już do Ciebie.** Zgodnie z art. 40 § 2 Kodeksu postępowania administracyjnego, jeżeli strona ustanowiła pełnomocnika, **pisma doręcza się pełnomocnikowi**. Wezwania, zawiadomienia, decyzje — wszystko trafia do agencji. Ty nie dostajesz nic i możesz nawet nie wiedzieć, że urząd czegoś od Ciebie chce.
+
+Dopóki współpraca układa się dobrze, zwykle nic złego się nie dzieje. Problem zaczyna się w momencie, w którym **zmieniasz pracodawcę**. Agencja przestaje mieć jakikolwiek interes w prowadzeniu Twojej sprawy. Koperta z urzędu trafia do szuflady, a nikt Cię o niej nie informuje.
+
+Wtedy uruchamia się mechanizm, który kończy sprawę:
+
+1. Urząd wzywa do uzupełnienia braków i wyznacza termin — **nie krótszy niż 7 dni** (art. 64 § 2 k.p.a.).
+2. Wezwanie trafia do pełnomocnika, czyli do byłej agencji. Ty o nim nie wiesz.
+3. Termin mija bezskutecznie.
+4. **Wniosek zostaje pozostawiony bez rozpoznania.** Nie jest rozpatrzony — po prostu przestaje istnieć.
+5. Razem z nim znika podstawa legalnego pobytu, którą dawało złożenie wniosku w terminie.
+
+Dowiadujesz się o tym zwykle miesiące później — przy kontroli, przy próbie wyjazdu albo gdy nowy pracodawca prosi o dokumenty.
+
+**Czy da się to odkręcić?** Czasem, ale jest to trudne. O przywrócenie terminu trzeba wystąpić **w ciągu 7 dni od ustania przyczyny** uchybienia i jednocześnie dopełnić zaległej czynności, a przede wszystkim uprawdopodobnić, że uchybienie nastąpiło **bez Twojej winy** (art. 58 § 1 i 2 k.p.a.). To, że pełnomocnik nie przekazał Ci pisma, nie zawsze zostanie uznane za brak winy — pełnomocnika wybrałeś przecież Ty. Terminu do złożenia samej prośby przywrócić się nie da (art. 58 § 3).
+
+**Jak się zabezpieczyć:**
+
+- **Nie dawaj pełnomocnictwa osobie zależnej od pracodawcy.** Jeśli chcesz mieć pełnomocnika, wybierz kogoś niezwiązanego z firmą, która Cię zatrudnia.
+- **Albo prowadź sprawę bez pełnomocnika** — wtedy cała korespondencja idzie na Twój adres i nic Cię nie ominie.
+- **Pełnomocnictwo możesz odwołać w każdej chwili.** Wystarczy pisemne oświadczenie złożone do akt sprawy w urzędzie. Od tego momentu pisma wracają do Ciebie.
+- **Pilnuj swojego adresu.** Każdą zmianę zgłoś do urzędu — w razie zaniedbania doręczenie pod stary adres jest skuteczne tak samo, jakbyś pismo odebrał (art. 41 k.p.a.).
+- **Po zmianie pracodawcy sprawdź, kto figuruje w aktach jako pełnomocnik.** Jeśli to poprzednia agencja — odwołaj pełnomocnictwo od razu, nie czekaj.
+
+Pomoc pracodawcy przy skompletowaniu dokumentów to dobra rzecz. Ale **podpis pod wnioskiem i adres do korespondencji powinny pozostać Twoje.**
 
 ## Etap 2: skarga do wojewódzkiego sądu administracyjnego — tylko adwokat lub radca
 
@@ -66,6 +96,7 @@ Uwaga na osoby, które przedstawiają się jako „doradcy imigracyjni" i obiecu
 ## Co to znaczy dla Ciebie
 
 **Jeśli jesteś cudzoziemcem:**
+- **Nie podpisuj pełnomocnictwa dla pracodawcy ani agencji pracy.** Po zmianie pracy to oni dostają wezwania z urzędu, a Ty możesz się o nich nie dowiedzieć — i stracisz wniosek.
 - Wniosek o kartę pobytu, zezwolenie na pracę, odwołanie do Szefa UdSC — pełnomocnikiem może być każda pełnoletnia osoba. Nie przepłacaj za tytuł tam, gdzie nie jest wymagany.
 - Idziesz do sądu administracyjnego? Potrzebujesz adwokata lub radcy — albo działasz samodzielnie, ewentualnie z pomocą małżonka czy rodzeństwa.
 - Skarga kasacyjna do NSA bez adwokata lub radcy zostanie odrzucona. Tu nie ma drogi na skróty.
@@ -78,4 +109,4 @@ Uwaga na osoby, które przedstawiają się jako „doradcy imigracyjni" i obiecu
 
 Masz sprawę w urzędzie wojewódzkim i nie wiesz, czy została poprowadzona prawidłowo? [Napisz do nas](/pl/kontakt/) — odpowiadamy w jeden dzień roboczy, po polsku, angielsku i hiszpańsku. Prowadzimy sprawy przed wojewodą i Szefem UdSC; jeżeli sprawa wymaga drogi sądowej, powiemy wprost, na jakim etapie potrzebny będzie adwokat lub radca prawny.
 
-*Podstawa: ustawa z dnia 14 czerwca 1960 r. — Kodeks postępowania administracyjnego (t.j. Dz.U. 2025 poz. 1691), art. 33; ustawa z dnia 30 sierpnia 2002 r. — Prawo o postępowaniu przed sądami administracyjnymi (t.j. Dz.U. 2026 poz. 143), art. 35 i art. 175. Informacje o różnicach między zawodami adwokata i radcy prawnego za: „Adwokat czy radca prawny? Do kogo się zwrócić i czym różnią się ich uprawnienia?", Aleksandra Gruszczyńska, Gazeta Prawna, 14 października 2026 r. Stan prawny na 16 października 2026 r. Artykuł ma charakter informacyjny i nie stanowi porady prawnej w indywidualnej sprawie.*
+*Podstawa: ustawa z dnia 14 czerwca 1960 r. — Kodeks postępowania administracyjnego (t.j. Dz.U. 2025 poz. 1691), art. 33, 40, 41, 58 i 64; ustawa z dnia 30 sierpnia 2002 r. — Prawo o postępowaniu przed sądami administracyjnymi (t.j. Dz.U. 2026 poz. 143), art. 35 i art. 175. Informacje o różnicach między zawodami adwokata i radcy prawnego za: „Adwokat czy radca prawny? Do kogo się zwrócić i czym różnią się ich uprawnienia?", Aleksandra Gruszczyńska, Gazeta Prawna, 14 października 2026 r. Stan prawny na 16 października 2026 r. Artykuł ma charakter informacyjny i nie stanowi porady prawnej w indywidualnej sprawie.*

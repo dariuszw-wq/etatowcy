@@ -2,15 +2,15 @@
 lang: es
 title: "Tarjeta de residencia y permiso de trabajo: cuándo necesitas un abogado colegiado"
 seoTitle: "Tarjeta de residencia: ¿qué jurista elegir?"
-excerpt: "En la oficina del voivodato puede representarte cualquiera. Ante el tribunal, solo un adwokat o radca prawny. Mira en qué fase está tu expediente."
+excerpt: "En la oficina puede representarte cualquiera; ante el tribunal, solo un adwokat o radca prawny. Y mira por qué ceder el expediente a la empresa puede costarte la solicitud."
 published: 2026-10-16
-readingTime: 5
+readingTime: 7
 own: true
 image: "/news/kto-reprezentuje-es.svg"
 imageAlt: "Tres fases del expediente de un extranjero: en la oficina del voivodato y ante el Jefe de la Oficina de Extranjeros puede representarte cualquier persona mayor de edad, ante el tribunal administrativo regional solo un adwokat o radca prawny, y el recurso de casación ante el Tribunal Supremo Administrativo debe redactarlo uno de ellos."
 source: "Código de Procedimiento Administrativo, art. 33; Ley de procedimiento ante los tribunales administrativos, art. 35 y 175"
 ---
-**¿Solicitas la tarjeta de residencia o un permiso de trabajo y te preguntas si necesitas un abogado? En la oficina, no: allí puede representarte cualquier persona mayor de edad. Pero hay dos momentos en los que sin un *adwokat* o un *radca prawny* no se puede hacer nada.** Te explicamos quién puede representarte en cada fase del expediente de un extranjero y en qué se diferencian en la práctica estas dos profesiones.
+**¿Solicitas la tarjeta de residencia o un permiso de trabajo y te preguntas si necesitas un abogado? En la oficina, no: allí puede representarte cualquier persona mayor de edad. Pero hay dos momentos en los que sin un *adwokat* o un *radca prawny* no se puede hacer nada, y una decisión capaz de echar por tierra toda la solicitud.** Te explicamos quién puede representarte en cada fase, por qué ceder el poder de representación a la empresa puede volverse en tu contra y en qué se diferencian en la práctica estas dos profesiones.
 
 Ambos títulos son profesiones jurídicas reguladas en Polonia. No tienen equivalente exacto en español, así que mantenemos los nombres polacos.
 
@@ -23,6 +23,36 @@ Según el art. 33.1 del Código de Procedimiento Administrativo, **el representa
 Sí existe una diferencia práctica. El representante ordinario debe aportar **el original del poder o una copia compulsada oficialmente**, mientras que el *adwokat*, el *radca prawny*, el agente de la propiedad industrial y el asesor fiscal pueden **compulsar ellos mismos** la copia (art. 33.3). En la práctica, menos visitas al notario.
 
 Recuerda la tasa administrativa del poder de representación: se paga aparte, al presentar el documento.
+
+## El consejo más importante: no entregues tu expediente a la empresa ni a la agencia
+
+Este es el error que más caro sale, y lo cometen muchísimos extranjeros. La empresa o la agencia te propone: "nosotros presentamos la solicitud por ti, nos ocupamos de todo". Firmas el poder de representación y pierdes el control de tu propio expediente.
+
+**¿Por qué es peligroso? Porque desde ese momento la oficina ya no te escribe a ti.** Según el art. 40.2 del Código de Procedimiento Administrativo, si la parte ha designado representante, **las notificaciones se entregan al representante**. Requerimientos, avisos, resoluciones: todo llega a la agencia. Tú no recibes nada y puedes ni enterarte de que la oficina te pide algo.
+
+Mientras la relación va bien, normalmente no pasa nada. El problema empieza en cuanto **cambias de empleador**. La agencia deja de tener interés alguno en tu expediente. El sobre de la oficina acaba en un cajón y nadie te avisa.
+
+Entonces se pone en marcha la cadena que acaba con el expediente:
+
+1. La oficina requiere subsanar defectos y fija un plazo **no inferior a 7 días** (art. 64.2).
+2. El requerimiento llega al representante, es decir, a tu antigua agencia. Tú no lo sabes.
+3. El plazo vence sin respuesta.
+4. **La solicitud se deja sin examinar.** No se resuelve: simplemente deja de existir.
+5. Y con ella desaparece la base de residencia legal que te daba haber presentado la solicitud a tiempo.
+
+Sueles enterarte meses después: en un control, al intentar viajar o cuando un nuevo empleador te pide los documentos.
+
+**¿Se puede deshacer?** A veces, pero es difícil. La solicitud de restitución del plazo debe presentarse **en los 7 días siguientes a que cese la causa**, junto con el trámite omitido, y sobre todo hay que acreditar que el incumplimiento se produjo **sin culpa tuya** (art. 58.1 y 58.2). Que el representante no te transmitiera el escrito no siempre se considerará ausencia de culpa: al fin y al cabo, lo elegiste tú. El plazo para presentar esa misma solicitud no puede restituirse (art. 58.3).
+
+**Cómo protegerte:**
+
+- **No des poder de representación a alguien que dependa de tu empleador.** Si quieres un representante, elige a alguien ajeno a la empresa que te contrata.
+- **O lleva el expediente sin representante**: así toda la correspondencia va a tu dirección y no se te escapa nada.
+- **Puedes revocar el poder en cualquier momento.** Basta una declaración por escrito presentada en el expediente. Desde ese instante los escritos vuelven a ti.
+- **Mantén tu dirección actualizada.** Comunica cada cambio a la oficina: si no lo haces, la notificación en la dirección antigua surte efecto igual que si la hubieras recibido (art. 41).
+- **Tras cambiar de empleador, comprueba quién figura en el expediente como representante.** Si es la agencia anterior, revoca el poder de inmediato, no esperes.
+
+Que la empresa te ayude a reunir documentos está bien. Pero **la firma de la solicitud y la dirección de notificaciones deben seguir siendo tuyas.**
 
 ## Fase 2: demanda ante el tribunal administrativo regional — solo *adwokat* o *radca prawny*
 
@@ -68,6 +98,7 @@ Cuidado con quienes se presentan como "asesores de inmigración" y prometen una 
 ## Qué significa esto para ti
 
 **Si eres extranjero:**
+- **No firmes un poder de representación a favor de tu empleador ni de una agencia de trabajo.** Tras cambiar de empleo son ellos quienes reciben los requerimientos de la oficina y puede que nunca te enteres: perderás la solicitud.
 - Solicitud de tarjeta de residencia, permiso de trabajo, recurso ante el Jefe de la Oficina de Extranjeros: puede representarte cualquier persona mayor de edad. No pagues de más por un título donde no se exige.
 - ¿Vas al tribunal administrativo? Necesitas un *adwokat* o un *radca prawny*, o actúas por tu cuenta, eventualmente con ayuda del cónyuge o de un hermano.
 - Un recurso de casación sin uno de ellos se inadmite. Aquí no hay atajos.
@@ -80,4 +111,4 @@ Cuidado con quienes se presentan como "asesores de inmigración" y prometen una 
 
 ¿Tienes un expediente en la oficina del voivodato y dudas de si se tramitó correctamente? [Escríbenos](/es/contacto/): respondemos en un día laborable, en polaco, inglés y español. Llevamos expedientes ante el voivoda y el Jefe de la Oficina de Extranjeros; si el caso exige la vía judicial, te diremos con claridad en qué punto hace falta un *adwokat* o un *radca prawny*.
 
-*Base: Ley de 14 de junio de 1960, Código de Procedimiento Administrativo (texto refundido, Dz.U. 2025 pos. 1691), art. 33; Ley de 30 de agosto de 2002 de procedimiento ante los tribunales administrativos (texto refundido, Dz.U. 2026 pos. 143), art. 35 y art. 175. La información sobre las diferencias entre ambas profesiones procede de "Adwokat czy radca prawny? Do kogo się zwrócić i czym różnią się ich uprawnienia?", Aleksandra Gruszczyńska, Gazeta Prawna, 14 de octubre de 2026. Situación legal a 16 de octubre de 2026. Este artículo es informativo y no constituye asesoramiento jurídico en un caso concreto.*
+*Base: Ley de 14 de junio de 1960, Código de Procedimiento Administrativo (texto refundido, Dz.U. 2025 pos. 1691), art. 33, 40, 41, 58 y 64; Ley de 30 de agosto de 2002 de procedimiento ante los tribunales administrativos (texto refundido, Dz.U. 2026 pos. 143), art. 35 y art. 175. La información sobre las diferencias entre ambas profesiones procede de "Adwokat czy radca prawny? Do kogo się zwrócić i czym różnią się ich uprawnienia?", Aleksandra Gruszczyńska, Gazeta Prawna, 14 de octubre de 2026. Situación legal a 16 de octubre de 2026. Este artículo es informativo y no constituye asesoramiento jurídico en un caso concreto.*
