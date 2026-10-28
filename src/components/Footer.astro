@@ -14,7 +14,7 @@ const year = new Date().getFullYear();
       <p class="small tag">{tr('footer.tag')}</p>
       <p class="contacts small">
         <a class="link" href={`mailto:${site.email}`}>{site.email}</a>
-        {site.phone && <a class="link" href={`tel:${site.phone.replace(/\s/g, '')}`}>{site.phone}</a>}
+        {site.whatsapp && <a class="link" href={`https://wa.me/${site.whatsapp.replace(/\D/g, '')}`} rel="noopener">WhatsApp {site.whatsapp}</a>}
       </p>
     </div>
     <ul class="links">

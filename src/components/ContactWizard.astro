@@ -14,7 +14,7 @@ const { lang, only, subject = '' } = Astro.props;
 const tr = t(lang);
 const c = formCopy[lang];
 const paths = only ? c.paths.filter((p) => p.id === only) : c.paths;
-const tel = site.phone.replace(/\s/g, '');
+const wa = `https://wa.me/${site.whatsapp.replace(/\D/g, '')}`;
 ---
 <div class="wiz" data-wizard data-endpoint={site.formEndpoint} data-email={site.email} data-subject={subject} data-only={only ?? ''} data-edit-label={c.edit}
      data-copy={JSON.stringify({ errContact: c.errContact, errRequired: c.errRequired, sending: c.sending, send: c.send, step: c.step, of: c.of })}>
@@ -99,7 +99,7 @@ const tel = site.phone.replace(/\s/g, '');
         <button type="submit" class="btn primary">{c.send}</button>
       </div>
       <p class="err full" data-net hidden>
-        {c.errNet} <a class="link" href={`mailto:${site.email}`}>{site.email}</a>{site.phone && <> {c.or} <a class="link" href={`tel:${tel}`}>{site.phone}</a></>}.
+        {c.errNet} <a class="link" href={`mailto:${site.email}`}>{site.email}</a>{site.whatsapp && <> {c.or} <a class="link" href={wa} rel="noopener">WhatsApp {site.whatsapp}</a></>}.
       </p>
     </form>
   </section>
@@ -110,9 +110,9 @@ const tel = site.phone.replace(/\s/g, '');
     <p class="label">{c.done}</p>
   </section>
 
-  {site.phone && (
+  {site.whatsapp && (
     <p class="small call">
-      {c.or} <a class="link" href={`tel:${tel}`}>{c.callUs}: {site.phone}</a>
+      {c.or} <a class="link" href={wa} rel="noopener">{c.waUs}: {site.whatsapp}</a>
     </p>
   )}
 </div>

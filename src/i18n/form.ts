@@ -40,7 +40,7 @@ export type FormCopy = {
   errRequired: string;
   errNet: string;
   or: string;
-  callUs: string;
+  waUs: string;
   paths: Path[];
 };
 
@@ -60,8 +60,8 @@ const pl: FormCopy = {
   done: 'Zgłoszenie wysłane. Odpowiadamy w jeden dzień roboczy.',
   errContact: 'Wpisz numer telefonu albo e-mail — jedno wystarczy.',
   errRequired: 'To pytanie jest potrzebne, żebyśmy mogli pomóc.',
-  errNet: 'Nie udało się wysłać. Zadzwoń albo napisz na',
-  or: 'albo', callUs: 'Zadzwoń',
+  errNet: 'Nie udało się wysłać. Napisz na WhatsApp albo na',
+  or: 'albo', waUs: 'Napisz na WhatsApp',
   paths: [
     {
       id: 'candidate', label: 'Szukam pracy', desc: 'Chcę podjąć pracę w Polsce albo zmienić obecną.',
@@ -140,8 +140,8 @@ const en: FormCopy = {
   done: 'Enquiry sent. We reply within one business day.',
   errContact: 'Enter a phone number or an e-mail — one is enough.',
   errRequired: 'We need this answer to be able to help.',
-  errNet: "Couldn't send. Call us or write to",
-  or: 'or', callUs: 'Call',
+  errNet: "Couldn't send. Message us on WhatsApp or write to",
+  or: 'or', waUs: 'WhatsApp',
   paths: [
     {
       id: 'candidate', label: 'I am looking for work', desc: 'I want to start working in Poland or change my job.',
@@ -220,8 +220,8 @@ const es: FormCopy = {
   done: 'Consulta enviada. Respondemos en un día laborable.',
   errContact: 'Escribe un teléfono o un e-mail — con uno basta.',
   errRequired: 'Necesitamos esta respuesta para poder ayudarte.',
-  errNet: 'No se pudo enviar. Llámanos o escribe a',
-  or: 'o', callUs: 'Llamar',
+  errNet: 'No se pudo enviar. Escríbenos por WhatsApp o a',
+  or: 'o', waUs: 'Escríbenos por WhatsApp',
   paths: [
     {
       id: 'candidate', label: 'Busco trabajo', desc: 'Quiero trabajar en Polonia o cambiar de empleo.',

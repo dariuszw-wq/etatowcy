@@ -70,7 +70,7 @@ const privacy = {
           <h1 class="disp h1">{tr('contact.title.1')}<br>{tr('contact.title.2')}</h1>
           <p class="lead">{tr('contact.lead')}</p>
           <p class="data"><a class="link" href={`mailto:${site.email}`}>{site.email}</a></p>
-          {site.phone && <p class="data"><a class="link" href={`tel:${site.phone.replace(/\s/g, '')}`}>{site.phone}</a></p>}
+          {site.whatsapp && <p class="data"><a class="link" href={`https://wa.me/${site.whatsapp.replace(/\D/g, '')}`} rel="noopener">WhatsApp {site.whatsapp}</a></p>}
         </header>
         <ContactWizard lang={lang} />
       </div>
