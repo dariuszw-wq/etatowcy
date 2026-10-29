@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" font-family="Inter, system-ui, sans-serif" role="img">
+<rect width="1200" height="675" fill="#ffffff"/>
+<text x="60" y="66" font-size="31" font-weight="700" fill="#0f1420">800+ sin requisito de trabajar: cuándo corresponde</text>
+<text x="60" y="100" font-size="18" fill="#4b5566">el requisito de actividad laboral (art. 1.2a) no se aplica si el menor:</text>
+<rect x="60" y="136" width="1080" height="112" rx="14" fill="#f3f6fa" stroke="#d8dde5"/>
+<rect x="60" y="136" width="6" height="112" rx="3" fill="#0b6fc2"/>
+<circle cx="112" cy="192" r="21" fill="#0b6fc2"/>
+<text x="112" y="200" font-size="21" font-weight="700" fill="#ffffff" text-anchor="middle">1</text>
+<text x="150" y="186" font-size="20" font-weight="700" fill="#0f1420">Tiene la nacionalidad polaca</text>
+<text x="150" y="214" font-size="16" fill="#4b5566">sea cual sea el título de estancia del progenitor</text>
+<text text-anchor="end" x="1110" y="232" font-size="15" fill="#4b5566">art. 1.2a, frase 2</text>
+<rect x="60" y="264" width="1080" height="112" rx="14" fill="#f3f6fa" stroke="#d8dde5"/>
+<rect x="60" y="264" width="6" height="112" rx="3" fill="#0b6fc2"/>
+<circle cx="112" cy="320" r="21" fill="#0b6fc2"/>
+<text x="112" y="328" font-size="21" font-weight="700" fill="#ffffff" text-anchor="middle">2</text>
+<text x="150" y="314" font-size="20" font-weight="700" fill="#0f1420">Tiene certificado de discapacidad</text>
+<text x="150" y="342" font-size="16" fill="#4b5566">o de grado moderado o severo</text>
+<text text-anchor="end" x="1110" y="360" font-size="15" fill="#4b5566">art. 1.2a, frase 2</text>
+<rect x="60" y="392" width="1080" height="112" rx="14" fill="#f3f6fa" stroke="#d8dde5"/>
+<rect x="60" y="392" width="6" height="112" rx="3" fill="#0b6fc2"/>
+<circle cx="112" cy="448" r="21" fill="#0b6fc2"/>
+<text x="112" y="456" font-size="21" font-weight="700" fill="#ffffff" text-anchor="middle">3</text>
+<text x="150" y="455" font-size="20" font-weight="700" fill="#0f1420">Está bajo la tutela de un tutor designado por su país de origen</text>
+<text text-anchor="end" x="1110" y="488" font-size="15" fill="#4b5566">art. 1.2a, frase 2</text>
+<text x="60" y="548" font-size="18" font-weight="600" fill="#0f1420">¿No trabajas y no encajas en ninguno de estos casos?</text>
+<rect x="60" y="568" width="1080" height="96" rx="14" fill="#f3f6fa" stroke="#d8dde5"/>
+<rect x="60" y="568" width="6" height="96" rx="3" fill="#d9451f"/>
+<text x="96" y="610" font-size="20" font-weight="700" fill="#0f1420">Desempleado inscrito: 800+ durante 3 meses</text>
+<text x="96" y="638" font-size="16" fill="#4b5566">6 meses con tres o más hijos; una vez por periodo</text>
+<text text-anchor="end" x="1110" y="648" font-size="15" fill="#4b5566">art. 1.2b–2c</text>
+</svg>

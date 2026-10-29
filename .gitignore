@@ -11,3 +11,8 @@ docs/audyt-seo-*.md
 
 # katalogi robocze podglądów
 .tmp-podglad/
+
+# materiały nowego kierunku trzymamy POZA tym repozytorium (D:/PROJEKTY/NOWY-KIERUNEK)
+nowy-kierunek/
+reports/
+research_notes/
