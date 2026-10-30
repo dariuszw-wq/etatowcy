@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" font-family="Inter, system-ui, sans-serif" role="img">
+<rect width="1200" height="675" fill="#ffffff"/>
+<text x="60" y="66" font-size="31" font-weight="700" fill="#0f1420">Obywatelstwo polskie: dziś i w projekcie MSWiA</text>
+<text x="60" y="100" font-size="18" fill="#4b5566">uznanie za obywatela przez wojewodę · projekt UD491 z 27.10.2026 — to jeszcze nie jest prawo</text>
+<rect x="60" y="128" width="1080" height="40" rx="10" fill="#0f1420"/>
+<text x="84" y="154" font-size="16" font-weight="700" fill="#ffffff">Warunek</text>
+<text x="380" y="154" font-size="16" font-weight="700" fill="#ffffff">Dziś (ustawa z 2009 r.)</text>
+<text x="790" y="154" font-size="16" font-weight="700" fill="#ffffff">W projekcie</text>
+<rect x="60" y="178" width="1080" height="50" rx="10" fill="#f3f6fa" stroke="#d8dde5"/>
+<rect x="776" y="178" width="364" height="50" rx="10" fill="#e8f1fa"/>
+<rect x="60" y="178" width="6" height="50" rx="3" fill="#0b6fc2"/>
+<text x="84" y="209" font-size="17" font-weight="700" fill="#0f1420">Okres pobytu</text>
+<text x="380" y="209" font-size="17" fill="#4b5566">najczęściej 3 lata na pobycie stałym</text>
+<text x="790" y="209" font-size="17" font-weight="700" fill="#0b4f8a">dłuższy — liczby jeszcze nie ma</text>
+<rect x="60" y="234" width="1080" height="50" rx="10" fill="#f3f6fa" stroke="#d8dde5"/>
+<rect x="776" y="234" width="364" height="50" rx="10" fill="#e8f1fa"/>
+<rect x="60" y="234" width="6" height="50" rx="3" fill="#0b6fc2"/>
+<text x="84" y="265" font-size="17" font-weight="700" fill="#0f1420">Język polski</text>
+<text x="380" y="265" font-size="17" fill="#4b5566">certyfikat B1</text>
+<text x="790" y="265" font-size="17" font-weight="700" fill="#0b4f8a">B2</text>
+<rect x="60" y="290" width="1080" height="50" rx="10" fill="#f3f6fa" stroke="#d8dde5"/>
+<rect x="776" y="290" width="364" height="50" rx="10" fill="#e8f1fa"/>
+<rect x="60" y="290" width="6" height="50" rx="3" fill="#0b6fc2"/>
+<text x="84" y="321" font-size="17" font-weight="700" fill="#0f1420">Test obywatelski</text>
+<text x="380" y="321" font-size="17" fill="#4b5566">nie</text>
+<text x="790" y="321" font-size="17" font-weight="700" fill="#0b4f8a">egzamin z wiedzy o Polsce</text>
+<rect x="60" y="346" width="1080" height="50" rx="10" fill="#f3f6fa" stroke="#d8dde5"/>
+<rect x="776" y="346" width="364" height="50" rx="10" fill="#e8f1fa"/>
+<rect x="60" y="346" width="6" height="50" rx="3" fill="#0b6fc2"/>
+<text x="84" y="377" font-size="17" font-weight="700" fill="#0f1420">Deklaracja wierności</text>
+<text x="380" y="377" font-size="17" fill="#4b5566">nie</text>
+<text x="790" y="377" font-size="17" font-weight="700" fill="#0b4f8a">obowiązkowa</text>
+<rect x="60" y="402" width="1080" height="50" rx="10" fill="#f3f6fa" stroke="#d8dde5"/>
+<rect x="776" y="402" width="364" height="50" rx="10" fill="#e8f1fa"/>
+<rect x="60" y="402" width="6" height="50" rx="3" fill="#0b6fc2"/>
+<text x="84" y="433" font-size="17" font-weight="700" fill="#0f1420">Dochód i mieszkanie</text>
+<text x="380" y="433" font-size="17" fill="#4b5566">tylko w części ścieżek</text>
+<text x="790" y="433" font-size="17" font-weight="700" fill="#0b4f8a">dla wszystkich + minimalny dochód</text>
+<rect x="60" y="458" width="1080" height="50" rx="10" fill="#f3f6fa" stroke="#d8dde5"/>
+<rect x="776" y="458" width="364" height="50" rx="10" fill="#e8f1fa"/>
+<rect x="60" y="458" width="6" height="50" rx="3" fill="#0b6fc2"/>
+<text x="84" y="489" font-size="17" font-weight="700" fill="#0f1420">Centrum życiowe</text>
+<text x="380" y="489" font-size="17" fill="#4b5566">nie</text>
+<text x="790" y="489" font-size="17" font-weight="700" fill="#0b4f8a">w Polsce + rezydencja podatkowa</text>
+<rect x="60" y="514" width="1080" height="50" rx="10" fill="#f3f6fa" stroke="#d8dde5"/>
+<rect x="776" y="514" width="364" height="50" rx="10" fill="#e8f1fa"/>
+<rect x="60" y="514" width="6" height="50" rx="3" fill="#0b6fc2"/>
+<text x="84" y="545" font-size="17" font-weight="700" fill="#0f1420">Odmowa i uchylenie</text>
+<text x="380" y="545" font-size="17" fill="#4b5566">brak warunków / zagrożenie</text>
+<text x="790" y="545" font-size="17" font-weight="700" fill="#0b4f8a">skazanie, mandaty, fałsz; uchylenie</text>
+<rect x="60" y="576" width="1080" height="58" rx="12" fill="#fff6f2" stroke="#f1cbbd"/>
+<rect x="60" y="576" width="6" height="58" rx="3" fill="#d9451f"/>
+<text x="90" y="611" font-size="17" font-weight="600" fill="#0f1420">Kto spełnia warunki dziś, może rozważyć wniosek przed zmianą — przepisy przejściowe pozna się z projektu.</text>
+</svg>
