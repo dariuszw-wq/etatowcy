@@ -1,0 +1,95 @@
+---
+import data from '../data/trusted-profile-points.json';
+import { type Lang, href } from '../i18n/ui';
+import { profileUi, profileSlug } from '../i18n/trusted-profile';
+const { lang } = Astro.props as { lang: Lang };
+const text = profileUi[lang];
+const provinces = [...new Set(data.points.map(p => p.province))].sort((a,b) => a.localeCompare(b, 'pl'));
+---
+<section class="section directory">
+  <div class="wrap">
+    <p class="eyebrow">{text.resources}</p>
+    <h1 class="disp">{text.title}</h1>
+    <p class="lead">{text.intro}</p>
+    <p><a class="link" href={href(lang, 'news', profileSlug)}>{text.guide} →</a></p>
+    <p class="snapshot">{text.snapshot}</p>
+    <p class="sources"><a class="link" href={data.source}>{text.source}</a><a class="link" href={data.originalSource}>{text.official}</a></p>
+    <p class="help">{text.help}</p>
+    <form role="search" id="points-filter" hidden>
+      <div><label for="point-query">{text.search}</label><input type="search" id="point-query" autocomplete="off" aria-controls="points-list" /></div>
+      <div><label for="point-province">{text.province}</label><select id="point-province" aria-controls="points-list"><option value="">{text.all}</option>{provinces.map(p => <option value={p} lang="pl">{p}</option>)}</select></div>
+      <button type="reset" class="btn primary">{text.reset}</button>
+    </form>
+    <noscript><p>{text.nojs}</p></noscript>
+    <p role="status" aria-live="polite" aria-atomic="true" class="results">{text.results}: <span id="points-count">2293</span> / 2293</p>
+    <p id="points-empty" hidden>{text.empty}</p>
+    <div id="points-list">
+      {provinces.map(province => {
+        const points = data.points.filter(p => p.province === province);
+        return <details class="province" data-province={province}>
+          <summary><span lang="pl">{province}</span> <span class="province-count">({points.length})</span></summary>
+          {points.map(p => <section class="point" data-point-id={p.id} data-search={`${p.name} ${p.city} ${p.address}`}>
+            <h2 lang="pl">{p.name}</h2>
+            <p class="address" lang="pl">{p.address}</p>
+            {p.comment && <p class="comment" lang="pl">{p.comment}</p>}
+            <div class="point-links">{p.links.map(a => <a class="link" data-action={a.action} href={a.url} target="_blank" rel="noopener noreferrer">{a.action === 'map' ? text.map : a.action === 'book' ? text.book : a.label} ↗</a>)}</div>
+          </section>)}
+        </details>;
+      })}
+    </div>
+  </div>
+</section>
+<script>
+  const form = document.querySelector<HTMLFormElement>('#points-filter');
+  const query = document.querySelector<HTMLInputElement>('#point-query')!;
+  const province = document.querySelector<HTMLSelectElement>('#point-province')!;
+  const normalize = (value: string) => value.toLocaleLowerCase('pl').normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/ł/g, 'l').replace(/\s+/g, ' ').trim();
+  const groups = [...document.querySelectorAll<HTMLDetailsElement>('.province')].map(element => ({
+    element, count: element.querySelector('.province-count')!,
+    points: [...element.querySelectorAll<HTMLElement>('.point')].map(element => ({ element, search: normalize(element.dataset.search ?? '') })),
+  }));
+  const filter = () => {
+    const words = normalize(query.value).split(' ').filter(Boolean);
+    const active = words.length > 0 || province.value !== '';
+    let total = 0;
+    for (const group of groups) {
+      let count = 0;
+      for (const point of group.points) {
+        const match = (!province.value || province.value === group.element.dataset.province) && words.every(word => point.search.includes(word));
+        point.element.hidden = !match;
+        if (match) count++;
+      }
+      group.element.hidden = count === 0;
+      group.element.open = active && count > 0;
+      group.count.textContent = `(${count})`;
+      total += count;
+    }
+    document.querySelector('#points-count')!.textContent = String(total);
+    document.querySelector<HTMLElement>('#points-empty')!.hidden = total !== 0;
+  };
+  if (form) {
+    form.hidden = false;
+    form.addEventListener('submit', event => { event.preventDefault(); filter(); });
+    query.addEventListener('input', filter);
+    province.addEventListener('change', filter);
+    form.addEventListener('reset', () => { query.value = ''; province.value = ''; filter(); });
+  }
+</script>
+<style>
+  .directory h1{font-size:clamp(38px,6vw,76px);max-width:22ch;margin:var(--space-4) 0}
+  .lead,.snapshot,.help{max-width:85ch;margin:var(--space-6) 0}
+  .snapshot,.help{color:var(--ink-muted)}
+  .sources,.point-links{display:flex;gap:var(--space-4);flex-wrap:wrap}
+  form{display:grid;grid-template-columns:2fr 1fr auto;gap:var(--space-4);align-items:end;background:var(--surface-2);border:1px solid var(--line);border-radius:var(--radius-lg);padding:var(--space-6);margin-top:var(--space-8)}
+  label{display:block;font-weight:600;margin-bottom:var(--space-2)}
+  input,select{width:100%;min-width:0;padding:12px;font:inherit;background:var(--surface);color:var(--ink);border:1px solid var(--line);border-radius:var(--radius-sm)}
+  .results{font-weight:600;margin-block:var(--space-6)}
+  .province{border:1px solid var(--line);border-radius:var(--radius-md);margin-bottom:var(--space-4);background:var(--surface)}
+  summary{padding:var(--space-6);cursor:pointer;font-weight:600;text-transform:capitalize}
+  .point{padding:var(--space-6);border-top:1px solid var(--line);content-visibility:auto;contain-intrinsic-size:auto 210px;overflow-wrap:anywhere}
+  .point h2{font:600 20px/1.4 var(--font-sans);margin:0 0 var(--space-3)}
+  .address,.comment{white-space:pre-line;margin-bottom:var(--space-4)}
+  .comment{color:var(--ink-muted)}
+  [hidden]{display:none!important}
+  @media(max-width:760px){form{grid-template-columns:1fr}.directory h1{overflow-wrap:anywhere}}
+</style>

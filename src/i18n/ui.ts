@@ -4,6 +4,7 @@ export const defaultLang: Lang = 'pl';
 
 /** Przetłumaczone segmenty adresów: /pl/oferty/ · /en/jobs/ · /es/empleos/ */
 export const routes = {
+  points: { pl: 'punkty-potwierdzajace-profil-zaufany', en: 'trusted-profile-confirmation-points', es: 'puntos-confirmacion-perfil-confianza' },
   jobs: { pl: 'oferty', en: 'jobs', es: 'empleos' },
   employers: { pl: 'pracodawcy', en: 'employers', es: 'empresas' },
   news: { pl: 'rynek-pracy', en: 'labour-market', es: 'mercado-laboral' },

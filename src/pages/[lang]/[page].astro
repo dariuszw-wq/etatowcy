@@ -4,15 +4,17 @@ import Base from '../../layouts/Base.astro';
 import ContactWizard from '../../components/ContactWizard.astro';
 import { locales, routes, type Lang, type RouteKey, t, href } from '../../i18n/ui';
 import { site } from '../../config';
+import ConfirmationPoints from '../../components/ConfirmationPoints.astro';
+import { profileUi } from '../../i18n/trusted-profile';
 
 export function getStaticPaths() {
-  const pages: RouteKey[] = ['employers', 'contact', 'privacy'];
+  const pages: RouteKey[] = ['employers', 'contact', 'privacy', 'points'];
   return locales.flatMap((lang) => pages.map((page) => ({ params: { lang, page: routes[page][lang] }, props: { page } })));
 }
 const { page } = Astro.props as { page: RouteKey };
 const lang = Astro.params.lang as Lang;
 const tr = t(lang);
-const titles: Record<string, string> = { employers: tr('nav.employers'), contact: tr('nav.contact'), privacy: tr('privacy.title') };
+const titles: Record<string, string> = { employers: tr('nav.employers'), contact: tr('nav.contact'), privacy: tr('privacy.title'), points: profileUi[lang].title };
 const privacy = {
   pl: [
     `Administratorem danych osobowych podanych w formularzu kontaktowym jest ${site.legalName}. Kontakt: ${site.email}.`,
@@ -37,7 +39,8 @@ const privacy = {
   ],
 }[lang];
 ---
-<Base lang={lang} route={page} title={`${titles[page]} — Etatowcy`} description={page === 'employers' ? tr('emp.lead') : page === 'contact' ? tr('contact.lead') : tr('privacy.desc')}>
+<Base lang={lang} route={page} title={`${titles[page]} — Etatowcy`} description={page === 'points' ? profileUi[lang].description : page === 'employers' ? tr('emp.lead') : page === 'contact' ? tr('contact.lead') : tr('privacy.desc')} jsonLd={page === 'points' ? [{ '@context': 'https://schema.org', '@type': 'CollectionPage', name: titles[page], inLanguage: lang, url: Astro.site!.origin + href(lang, 'points'), datePublished: '2026-11-05', description: profileUi[lang].description }] : []}>
+  {page === 'points' && <ConfirmationPoints lang={lang} />}
   {page === 'employers' && (
     <section class="section">
       <div class="wrap split">

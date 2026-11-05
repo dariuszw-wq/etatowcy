@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import Hero from '../../components/Hero.astro';
+import ProfileLinks from '../../components/ProfileLinks.astro';
 import JobCard from '../../components/JobCard.astro';
 import NewsCard from '../../components/NewsCard.astro';
 import ContactWizard from '../../components/ContactWizard.astro';
@@ -17,6 +18,7 @@ const hasExample = jobs.some((j) => j.data.example);
 <Base lang={lang}>
   <script is:inline set:html={`try{localStorage.setItem('etatowcy:lang',${JSON.stringify(lang)})}catch(e){}`}></script>
   <Hero lang={lang} />
+  <div class="wrap"><ProfileLinks lang={lang} /></div>
 
   <section class="section band" data-theme="light" id="oferty">
     <div class="wrap split">

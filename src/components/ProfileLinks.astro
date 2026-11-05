@@ -1,0 +1,15 @@
+---
+import { type Lang, href } from '../i18n/ui';
+import { profileUi, profileSlug } from '../i18n/trusted-profile';
+const { lang } = Astro.props as { lang: Lang };
+const text = profileUi[lang];
+---
+<nav class="profile-links" aria-label={text.resources}>
+  <h2 class="eyebrow">{text.resources}</h2>
+  <a class="link" href={href(lang, 'news', profileSlug)}>{text.guide} →</a>
+  <a class="link" href={href(lang, 'points')}>{text.points} →</a>
+</nav>
+<style>
+  .profile-links{display:flex;flex-wrap:wrap;align-items:center;gap:var(--space-4) var(--space-8);padding-block:var(--space-6);border-block:1px solid var(--line);margin-bottom:var(--space-8)}
+  .profile-links h2{margin:0}
+</style>

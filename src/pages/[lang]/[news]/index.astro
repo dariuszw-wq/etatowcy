@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 import Base from '../../../layouts/Base.astro';
 import NewsCard from '../../../components/NewsCard.astro';
+import ProfileLinks from '../../../components/ProfileLinks.astro';
 import { locales, routes, type Lang, t } from '../../../i18n/ui';
 
 export function getStaticPaths() { return locales.map((lang) => ({ params: { lang, news: routes.news[lang] } })); }
@@ -16,6 +17,7 @@ const news = (await getCollection('news', (n) => n.data.lang === lang)).sort((a,
         <span class="eyebrow">{tr('news.eyebrow')}</span>
         <h1 class="disp h1">{tr('news.title.1')}<br>{tr('news.title.2')}</h1>
         <p class="lead">{tr('news.lead')}</p>
+        <ProfileLinks lang={lang} />
       </header>
       <div>{news.map((item) => <NewsCard item={item} lang={lang} />)}</div>
     </div>
