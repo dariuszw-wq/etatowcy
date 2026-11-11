@@ -2,7 +2,7 @@
 lang: en
 title: "Holding a residence card and thinking of a Polish passport? This application may not wait"
 seoTitle: "Polish citizenship: B2 and a civic test in the draft"
-excerpt: "The Interior Ministry has entered in the government's legislative list a draft that tightens the path to Polish citizenship: B2 instead of B1, a civic test, a declaration of loyalty. What applies today and why the timing of your application matters."
+excerpt: "A government draft tightens the path to Polish citizenship: B2 instead of B1, a civic test, a loyalty declaration. What applies today."
 published: 2026-10-30
 readingTime: 6
 own: true

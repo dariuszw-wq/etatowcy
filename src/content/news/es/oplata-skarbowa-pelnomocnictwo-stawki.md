@@ -2,7 +2,7 @@
 lang: es
 title: "Los 17 zł olvidados por los que te devuelven la solicitud de tarjeta de residencia"
 seoTitle: "Tasa administrativa y poder de representación"
-excerpt: "La tasa por presentar un poder es de 17 zł, pero por cada representante, no por documento. Mira las tarifas, las exenciones y a qué cuenta hay que pagar de verdad."
+excerpt: "La tasa por un poder es de 17 zł, pero por cada representante, no por documento. Mira las tarifas, las exenciones y a qué cuenta se paga."
 published: 2026-11-11
 readingTime: 8
 own: true

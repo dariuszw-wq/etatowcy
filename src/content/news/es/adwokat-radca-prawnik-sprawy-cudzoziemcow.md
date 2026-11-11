@@ -2,7 +2,7 @@
 lang: es
 title: "Tarjeta de residencia y permiso de trabajo: cuándo necesitas un abogado colegiado"
 seoTitle: "Tarjeta de residencia: ¿qué jurista elegir?"
-excerpt: "En la oficina puede representarte cualquiera; ante el tribunal, solo un adwokat o radca prawny. Y mira por qué ceder el expediente a la empresa puede costarte la solicitud."
+excerpt: "En la oficina puede representarte cualquiera; ante el tribunal, solo un adwokat o radca prawny. Mira qué arriesgas al ceder el expediente."
 published: 2026-10-16
 readingTime: 7
 own: true

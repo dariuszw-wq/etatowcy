@@ -1,6 +1,6 @@
 ---
 lang: pl
-title: "Masz mniej niż 26 lat? Do 85 528 zł zarobków w roku bez podatku PIT"
+title: "Masz mniej niż 26 lat? Do 85 528 zł rocznie bez podatku PIT"
 excerpt: "Ulga dla młodych obejmuje etat i zlecenie w firmie. Sprawdź limit, znaczenie daty 26. urodzin i sytuacje, w których podatek jednak zapłacisz."
 published: 2026-11-03
 readingTime: 4

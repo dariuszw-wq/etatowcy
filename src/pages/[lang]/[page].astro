@@ -39,7 +39,7 @@ const privacy = {
   ],
 }[lang];
 ---
-<Base lang={lang} route={page} title={`${titles[page]} — Etatowcy`} description={page === 'points' ? profileUi[lang].description : page === 'employers' ? tr('emp.lead') : page === 'contact' ? tr('contact.lead') : tr('privacy.desc')} jsonLd={page === 'points' ? [{ '@context': 'https://schema.org', '@type': 'CollectionPage', name: titles[page], inLanguage: lang, url: Astro.site!.origin + href(lang, 'points'), datePublished: '2026-11-05', description: profileUi[lang].description }] : []}>
+<Base lang={lang} route={page} title={`${titles[page]} — Etatowcy`} description={page === 'points' ? profileUi[lang].description : page === 'employers' ? tr('emp.lead') : page === 'contact' ? tr('contact.meta') : tr('privacy.desc')} jsonLd={page === 'points' ? [{ '@context': 'https://schema.org', '@type': 'CollectionPage', name: titles[page], inLanguage: lang, url: Astro.site!.origin + href(lang, 'points'), datePublished: '2026-11-05', description: profileUi[lang].description }] : []}>
   {page === 'points' && <ConfirmationPoints lang={lang} />}
   {page === 'employers' && (
     <section class="section">

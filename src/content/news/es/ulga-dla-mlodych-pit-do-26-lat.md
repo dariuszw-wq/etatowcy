@@ -1,6 +1,6 @@
 ---
 lang: es
-title: "¿Tienes menos de 26 años? Hasta 85 528 PLN al año sin pagar el impuesto PIT"
+title: "¿Menos de 26 años? Hasta 85 528 PLN al año sin PIT"
 excerpt: "La desgravación para jóvenes cubre el contrato laboral y el de mandato con una empresa. Revisa el límite, tu 26.º cumpleaños y cuándo sí pagas impuesto."
 published: 2026-11-03
 readingTime: 4

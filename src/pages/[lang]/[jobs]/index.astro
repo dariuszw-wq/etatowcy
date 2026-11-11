@@ -12,7 +12,7 @@ const jobs = (await getCollection('jobs', (j) => j.data.lang === lang && (!j.dat
 const hasExample = jobs.some((j) => j.data.example);
 const title = `${tr('nav.jobs')} — Etatowcy`;
 ---
-<Base lang={lang} route="jobs" title={title} description={tr('jobs.lead')}>
+<Base lang={lang} route="jobs" title={title} description={tr('jobs.meta')}>
   <section class="section">
     <div class="wrap">
       <span class="eyebrow">{tr('jobs.eyebrow')}</span>

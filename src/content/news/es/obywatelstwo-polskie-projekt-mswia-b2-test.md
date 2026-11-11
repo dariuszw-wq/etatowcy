@@ -2,7 +2,7 @@
 lang: es
 title: "¿Tienes tarjeta de residencia y piensas en el pasaporte polaco? Esta solicitud quizá no pueda esperar"
 seoTitle: "Nacionalidad polaca: B2 y examen en el proyecto"
-excerpt: "El Ministerio del Interior ha incluido en la lista de trabajos legislativos del Gobierno un proyecto que endurece el camino a la nacionalidad polaca: B2 en lugar de B1, examen cívico y declaración de lealtad. Qué rige hoy y por qué importa cuándo presentas la solicitud."
+excerpt: "Un proyecto del Gobierno endurece el camino a la nacionalidad polaca: B2 en lugar de B1, examen cívico y declaración de lealtad."
 published: 2026-10-30
 readingTime: 6
 own: true

@@ -2,7 +2,7 @@
 lang: en
 title: "How much a bailiff can take in 2027 — PLN 3,703.93 is protected"
 seoTitle: "Protected pay in 2027: PLN 3,703.93"
-excerpt: "From January a bailiff must leave you PLN 3,703.93 net. See how much is taken at your salary level, and how maintenance, civil contracts and part-time work change it."
+excerpt: "From January a bailiff must leave you PLN 3,703.93 net. See how much is taken at your pay level and how maintenance changes it."
 published: 2026-10-13
 readingTime: 6
 own: true

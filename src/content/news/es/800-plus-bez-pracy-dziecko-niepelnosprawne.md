@@ -2,7 +2,7 @@
 lang: es
 title: "El ZUS denegó el 800+ a los hermanos sanos. Tres tribunales dijeron lo contrario"
 seoTitle: "800+ para el extranjero que no trabaja"
-excerpt: "Desde febrero de 2026 el extranjero debe trabajar para cobrar el 800+. El ZUS lee una excepción de forma estrecha, y los tribunales acaban de decir que la lee mal."
+excerpt: "Desde febrero de 2026 el extranjero debe trabajar para cobrar el 800+. El ZUS lee la excepción de forma estrecha y los tribunales lo corrigen."
 published: 2026-10-29
 readingTime: 7
 own: true

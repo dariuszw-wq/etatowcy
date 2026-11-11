@@ -1,6 +1,6 @@
 ---
 lang: en
-title: "Under 26? Earn up to PLN 85,528 a year without paying PIT income tax"
+title: "Under 26? Up to PLN 85,528 a year without PIT tax"
 excerpt: "The youth relief covers employment and mandate contracts with a company. Check the limit, why your 26th birthday matters and when you still pay tax."
 published: 2026-11-03
 readingTime: 4

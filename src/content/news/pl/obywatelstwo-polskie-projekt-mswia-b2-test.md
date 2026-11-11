@@ -2,7 +2,7 @@
 lang: pl
 title: "Masz kartę pobytu i myślisz o polskim paszporcie? Ten wniosek może nie poczekać"
 seoTitle: "Obywatelstwo polskie: B2 i test w projekcie MSWiA"
-excerpt: "MSWiA wpisało do wykazu prac rządu projekt, który zaostrza drogę do obywatelstwa polskiego: B2 zamiast B1, test obywatelski, deklaracja wierności. Co obowiązuje dziś i dlaczego termin wniosku ma znaczenie."
+excerpt: "Projekt MSWiA zaostrza drogę do obywatelstwa polskiego: B2 zamiast B1, test obywatelski, deklaracja wierności. Co obowiązuje dziś."
 published: 2026-10-30
 readingTime: 6
 own: true
