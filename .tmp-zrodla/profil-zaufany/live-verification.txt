@@ -1,1 +1,0 @@
-PASS: 6 pages HTTP 200; all 2293 records match in PL/EN/ES; metadata, robots and sitemaps accessible; permanent links present. Deployment 42049290342 success, commit 1896b5c.
