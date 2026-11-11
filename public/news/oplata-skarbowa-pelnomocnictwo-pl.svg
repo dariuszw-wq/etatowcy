@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" font-family="Inter, system-ui, sans-serif" role="img">
+<rect width="1200" height="675" fill="#ffffff"/>
+<text x="60" y="64" font-size="30" font-weight="700" fill="#0f1420">Pełnomocnictwo w urzędzie — płacisz 17 zł czy nie?</text>
+<text x="60" y="97" font-size="17" fill="#4b5566">opłatę wnosi się od każdego stosunku pełnomocnictwa, nie od liczby kartek</text>
+<rect x="60" y="130" width="1080" height="116" rx="14" fill="#fdf2ee" stroke="#f0cdbf"/>
+<rect x="60" y="130" width="6" height="116" rx="3" fill="#d9451f"/>
+<text x="96" y="172" font-size="22" font-weight="700" fill="#d9451f">PŁACISZ 17 zł</text>
+<text x="96" y="204" font-size="16" fill="#4b5566">każdy pełnomocnik osobno • pełnomocnictwo substytucyjne osobno • każde postępowanie osobno</text>
+<text text-anchor="end" x="1110" y="230" font-size="14" fill="#8a94a3">zał. cz. IV</text>
+<text x="60" y="296" font-size="20" font-weight="700" fill="#0f1420">NIE PŁACISZ, gdy:</text>
+<rect x="60" y="320" width="1080" height="104" rx="14" fill="#f3f6fa" stroke="#d8dde5"/>
+<rect x="60" y="320" width="6" height="104" rx="3" fill="#0b6fc2"/>
+<circle cx="112" cy="372" r="17" fill="#0b6fc2"/>
+<path d="M104 372 l6 6 l12 -13" stroke="#ffffff" stroke-width="3.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="148" y="370" font-size="18" font-weight="600" fill="#0f1420">pełnomocnik to małżonek, wstępny, zstępny lub rodzeństwo</text>
+<text x="148" y="396" font-size="14" fill="#8a94a3">zał. cz. IV, kol. 4</text>
+<rect x="60" y="436" width="1080" height="104" rx="14" fill="#f3f6fa" stroke="#d8dde5"/>
+<rect x="60" y="436" width="6" height="104" rx="3" fill="#0b6fc2"/>
+<circle cx="112" cy="488" r="17" fill="#0b6fc2"/>
+<path d="M104 488 l6 6 l12 -13" stroke="#ffffff" stroke-width="3.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="148" y="486" font-size="18" font-weight="600" fill="#0f1420">pełnomocnik lub prokurent jest ujawniony w CEIDG albo w KRS</text>
+<text x="148" y="512" font-size="14" fill="#8a94a3">art. 30a Prawa przedsiębiorców</text>
+<rect x="60" y="552" width="1080" height="104" rx="14" fill="#f3f6fa" stroke="#d8dde5"/>
+<rect x="60" y="552" width="6" height="104" rx="3" fill="#0b6fc2"/>
+<circle cx="112" cy="604" r="17" fill="#0b6fc2"/>
+<path d="M104 604 l6 6 l12 -13" stroke="#ffffff" stroke-width="3.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="148" y="602" font-size="18" font-weight="600" fill="#0f1420">sprawa dotyczy ubezpieczenia społecznego lub zdrowotnego (ZUS)</text>
+<text x="148" y="628" font-size="14" fill="#8a94a3">art. 2 ust. 1 pkt 1 lit. b</text>
+</svg>
