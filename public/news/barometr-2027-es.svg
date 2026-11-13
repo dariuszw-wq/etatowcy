@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" font-family="Inter, system-ui, sans-serif" role="img">
+<rect width="1200" height="675" fill="#ffffff"/>
+<text x="60" y="60" font-size="30" font-weight="700" fill="#0f1420">14 profesiones deficitarias en 2027: siete sectores</text>
+<text x="60" y="92" font-size="16" fill="#4b5566">previsión del Barómetro de profesiones; un año antes la lista tenía 17 profesiones y ocho sectores</text>
+<rect x="60" y="118" width="1080" height="72" rx="12" fill="#f3f6fa" stroke="#d8dde5"/>
+<rect x="60" y="118" width="6" height="72" rx="3" fill="#d9451f"/>
+<circle cx="104" cy="154" r="19" fill="#d9451f"/>
+<text x="104" y="161" font-size="19" font-weight="700" fill="#ffffff" text-anchor="middle">4</text>
+<text x="140" y="149" font-size="17" font-weight="700" fill="#0f1420">Sanitario y de cuidados</text>
+<text x="140" y="172" font-size="13.5" fill="#4b5566">médicos • cuidadores de mayores y personas con discapacidad • enfermeras y matronas • psicólogos y terapeutas</text>
+<rect x="60" y="196" width="1080" height="72" rx="12" fill="#f3f6fa" stroke="#d8dde5"/>
+<rect x="60" y="196" width="6" height="72" rx="3" fill="#d9451f"/>
+<circle cx="104" cy="232" r="19" fill="#d9451f"/>
+<text x="104" y="239" font-size="19" font-weight="700" fill="#ffffff" text-anchor="middle">3</text>
+<text x="140" y="227" font-size="17" font-weight="700" fill="#0f1420">Transporte y logística</text>
+<text x="140" y="250" font-size="13.5" fill="#4b5566">conductores de autobús • conductores de camión y tractocamión • mozos de almacén</text>
+<rect x="60" y="274" width="1080" height="72" rx="12" fill="#f3f6fa" stroke="#d8dde5"/>
+<rect x="60" y="274" width="6" height="72" rx="3" fill="#d9451f"/>
+<circle cx="104" cy="310" r="19" fill="#d9451f"/>
+<text x="104" y="317" font-size="19" font-weight="700" fill="#ffffff" text-anchor="middle">3</text>
+<text x="140" y="305" font-size="17" font-weight="700" fill="#0f1420">Educación</text>
+<text x="140" y="328" font-size="13.5" fill="#4b5566">profesores de formación práctica • profesores de materias profesionales • profesores de educación especial</text>
+<rect x="60" y="352" width="1080" height="72" rx="12" fill="#f3f6fa" stroke="#d8dde5"/>
+<rect x="60" y="352" width="6" height="72" rx="3" fill="#0b6fc2"/>
+<circle cx="104" cy="388" r="19" fill="#0b6fc2"/>
+<text x="104" y="395" font-size="19" font-weight="700" fill="#ffffff" text-anchor="middle">1</text>
+<text x="140" y="383" font-size="17" font-weight="700" fill="#0f1420">Construcción</text>
+<text x="140" y="406" font-size="13.5" fill="#4b5566">operadores y mecánicos de maquinaria de movimiento de tierras</text>
+<rect x="60" y="430" width="1080" height="72" rx="12" fill="#f3f6fa" stroke="#d8dde5"/>
+<rect x="60" y="430" width="6" height="72" rx="3" fill="#0b6fc2"/>
+<circle cx="104" cy="466" r="19" fill="#0b6fc2"/>
+<text x="104" y="473" font-size="19" font-weight="700" fill="#ffffff" text-anchor="middle">1</text>
+<text x="140" y="461" font-size="17" font-weight="700" fill="#0f1420">Electricidad y energía</text>
+<text x="140" y="484" font-size="13.5" fill="#4b5566">electricistas y técnicos de energía</text>
+<rect x="60" y="508" width="1080" height="72" rx="12" fill="#f3f6fa" stroke="#d8dde5"/>
+<rect x="60" y="508" width="6" height="72" rx="3" fill="#0b6fc2"/>
+<circle cx="104" cy="544" r="19" fill="#0b6fc2"/>
+<text x="104" y="551" font-size="19" font-weight="700" fill="#ffffff" text-anchor="middle">1</text>
+<text x="140" y="539" font-size="17" font-weight="700" fill="#0f1420">Finanzas y derecho</text>
+<text x="140" y="562" font-size="13.5" fill="#4b5566">contables senior</text>
+<rect x="60" y="586" width="1080" height="72" rx="12" fill="#f3f6fa" stroke="#d8dde5"/>
+<rect x="60" y="586" width="6" height="72" rx="3" fill="#0b6fc2"/>
+<circle cx="104" cy="622" r="19" fill="#0b6fc2"/>
+<text x="104" y="629" font-size="19" font-weight="700" fill="#ffffff" text-anchor="middle">1</text>
+<text x="140" y="617" font-size="17" font-weight="700" fill="#0f1420">Producción y transformación</text>
+<text x="140" y="640" font-size="13.5" fill="#4b5566">soldadores</text>
+</svg>
